@@ -34,6 +34,16 @@ SECTION_SPECS = [
 ]
 SPEC = {s["id"]: s for s in SECTION_SPECS}
 
+FALLBACK_HEADINGS = {
+    "hook": "What Just Happened",
+    "context": "The Story Behind the News",
+    "core1": "The Key Facts Explained",
+    "core2": "Looking Closer at the Details",
+    "story": "What This Means for You",
+    "keys": "Key Takeaways at a Glance",
+    "outro": "Final Thoughts",
+}
+
 FORMAT_RULES = (
     "Formatting (lightweight markup): blank line between paragraphs; **bold** for key phrases (2-4 per section); "
     "==highlight== for the single most important phrase (max 2); __underline__ for one key term (max 1); "
@@ -45,6 +55,12 @@ def _clean(s):
     return re.sub(r"\s+", " ", str(s or "")).strip().strip('"')
 
 
+def _trim(t, n):
+    if len(t) <= n:
+        return t
+    return t[:n].rsplit(" ", 1)[0].rstrip(",:;-– ")
+
+
 def sources_text(sources, limit=7000):
     per = max(1200, limit // max(1, len(sources)))
     return "\n\n".join(f"SOURCE {i + 1} - {s['title']}\n{s['text'][:per]}" for i, s in enumerate(sources))
@@ -52,6 +68,11 @@ def sources_text(sources, limit=7000):
 
 def facts_block(article):
     return "\n".join(f"{f['id']}: {f['fact']}" for f in article["facts"])
+
+
+def _sentences(text):
+    parts = re.split(r"(?<=[.!?])\s+", re.sub(r"\s+", " ", text))
+    return [p.strip() for p in parts if 40 <= len(p.strip()) <= 300]
 
 
 def plan_meta(item, sources):
@@ -64,42 +85,65 @@ def plan_meta(item, sources):
         f"category (one of {CATS} or \"None\" if none clearly fits), "
         "short_summary (2-3 plain sentences, 45-70 words: what happened and why it matters)."
     )
-    raw = llm.chat_json(M["writer"], SYS, user, temperature=0.3, num_predict=500)
+    try:
+        raw = llm.chat_json(M["writer"], SYS, user, temperature=0.3, num_predict=500)
+    except llm.OutOfTime:
+        raise
+    except Exception as e:
+        print(f"  meta planning failed ({e}), using fallback", flush=True)
+        raw = {}
     kws = raw.get("keywords") or []
     if not isinstance(kws, list):
         kws = [kws]
     title = _clean(raw.get("title")) or item["title"]
+    summary = _clean(raw.get("short_summary")) or _trim(item["summary"] or item["title"], 300)
     return {
         "title": title,
         "focus_keyword": _clean(raw.get("focus_keyword")) or " ".join(title.split()[:3]),
         "keywords": [_clean(k) for k in kws if k][:8],
-        "meta_description": _clean(raw.get("meta_description")),
+        "meta_description": _clean(raw.get("meta_description")) or _trim(summary, 155),
         "category": _clean(raw.get("category")),
-        "short_summary": _clean(raw.get("short_summary")),
+        "short_summary": summary,
     }
 
 
 def extract_facts(sources):
-    user = (
-        sources_text(sources, 7000)
-        + "\n\nExtract 10 to 12 key facts. Each fact is ONE self-contained sentence with concrete details "
-        "(who, what, numbers, dates, places) stated accurately as in the sources. "
-        'Return JSON: {"facts":[{"id":"F1","fact":"..."}]}'
-    )
-    raw = llm.chat_json(M["writer"], SYS, user, temperature=0.2, num_predict=800)
     src = " ".join(s["text"] for s in sources).replace(",", "").lower()
     facts = []
-    for f in raw.get("facts", []):
-        t = _clean(f.get("fact") if isinstance(f, dict) else f)
-        if len(t) < 25:
-            continue
-        nums = [n.replace(",", "").rstrip(".") for n in re.findall(r"\d[\d,]*(?:\.\d+)?", t) if len(re.sub(r"\D", "", n)) >= 2]
-        if any(n not in src for n in nums):
-            continue
-        facts.append({"id": f"F{len(facts) + 1}", "fact": t})
-    if len(facts) < 6:
-        raise ValueError("not enough verified facts")
-    return facts[:12]
+    try:
+        user = (
+            sources_text(sources, 7000)
+            + "\n\nExtract 10 to 12 key facts. Each fact is ONE self-contained sentence with concrete details "
+            "(who, what, numbers, dates, places) stated accurately as in the sources. "
+            'Return JSON: {"facts":[{"id":"F1","fact":"..."}]}'
+        )
+        raw = llm.chat_json(M["writer"], SYS, user, temperature=0.2, num_predict=800)
+        for f in raw.get("facts", []):
+            t = _clean(f.get("fact") if isinstance(f, dict) else f)
+            if len(t) < 25:
+                continue
+            nums = [n.replace(",", "").rstrip(".") for n in re.findall(r"\d[\d,]*(?:\.\d+)?", t) if len(re.sub(r"\D", "", n)) >= 2]
+            if any(n not in src for n in nums):
+                continue
+            facts.append({"fact": t})
+    except llm.OutOfTime:
+        raise
+    except Exception as e:
+        print(f"  fact extraction failed ({e}), using source sentences", flush=True)
+    if len(facts) < 6:  # fallback: plain sentences from the sources
+        have = {f["fact"] for f in facts}
+        for s in _sentences(" ".join(x["text"] for x in sources)):
+            if len(facts) >= 10:
+                break
+            if s not in have:
+                facts.append({"fact": s})
+                have.add(s)
+    if not facts:
+        raise ValueError("no usable facts in sources")
+    facts = facts[:12]
+    for i, f in enumerate(facts):
+        f["id"] = f"F{i + 1}"
+    return facts
 
 
 def _clean_body(b):
@@ -124,15 +168,46 @@ def write_section(article, spec, done_headings):
         '"image_query": "2-4 concrete English words describing a real photo that illustrates this section (objects, places, activities; avoid abstract words)", '
         '"caption": "one sentence, max 22 words, linking the picture to the fact it supports; describe the subject, do not claim it shows the exact event"}'
     )
-    raw = llm.chat_json(M["writer"], SYS, user, temperature=0.5, num_predict=700)
+    last = None
+    for _ in range(2):
+        try:
+            raw = llm.chat_json(M["writer"], SYS, user, temperature=0.5, num_predict=700)
+            body = _clean_body(raw.get("body"))
+            if len(body.split()) < 25:
+                raise ValueError("section too short")
+            return {
+                "id": spec["id"],
+                "heading": _clean(raw.get("heading")) or FALLBACK_HEADINGS[spec["id"]],
+                "body": body,
+                "image_query": _clean(raw.get("image_query")) or m["focus_keyword"],
+                "caption": _clean(raw.get("caption")),
+                "has_image": spec["image"],
+                "image": None,
+            }
+        except llm.OutOfTime:
+            raise
+        except Exception as e:
+            last = e
+    raise RuntimeError(f"section {spec['id']} failed: {last}")
+
+
+def fallback_section(article, spec):
+    """Used when the AI fails or time is up, so the post is always complete."""
+    facts = [f["fact"] for f in article["facts"]]
+    idx = [s["id"] for s in SECTION_SPECS].index(spec["id"])
+    kw = article["meta"]["focus_keyword"]
+    chunk = facts[idx * 2: idx * 2 + 3] or facts[:3]
+    if spec["id"] == "keys":
+        body = "\n".join("- " + f for f in facts[:6])
+    elif spec["id"] == "outro":
+        body = f"To sum up, {article['meta']['short_summary']}\n\nWhat do you think about {kw}?"
+    elif spec["id"] == "core1":
+        body = "Here are the main points, step by step:\n\n" + "\n".join("- **" + f.split(",")[0][:60] + "**: " + f for f in chunk)
+    else:
+        body = "\n\n".join(chunk)
     return {
-        "id": spec["id"],
-        "heading": _clean(raw.get("heading")) or spec["id"].title(),
-        "body": _clean_body(raw.get("body")),
-        "image_query": _clean(raw.get("image_query")) or m["focus_keyword"],
-        "caption": _clean(raw.get("caption")),
-        "has_image": spec["image"],
-        "image": None,
+        "id": spec["id"], "heading": FALLBACK_HEADINGS[spec["id"]], "body": body,
+        "image_query": kw, "caption": article["meta"]["title"], "has_image": spec["image"], "image": None,
     }
 
 
@@ -148,11 +223,46 @@ def build_article(item, sources):
     article = {"meta": meta, "facts": facts, "label": label, "sections": []}
     done = []
     for spec in SECTION_SPECS:
-        sec = write_section(article, spec, done)
+        try:
+            sec = write_section(article, spec, done)
+        except Exception as e:  # includes OutOfTime
+            print(f"  section {spec['id']}: using fallback ({type(e).__name__})", flush=True)
+            sec = fallback_section(article, spec)
         article["sections"].append(sec)
         done.append(sec["heading"])
-        print(f"  wrote section {spec['id']} ({len(sec['body'].split())} words)", flush=True)
+        print(f"  section {spec['id']}: {len(sec['body'].split())} words", flush=True)
     return article
+
+
+def quick_article(item, sources):
+    """One-call emergency article, used only if the normal pipeline breaks."""
+    user = (
+        sources_text(sources, 6000)
+        + "\n\nWrite a complete news article of 450-600 words in your own words using only the sources. "
+        "Structure: a hook, background, core facts with evidence, a conversational part, a short summary, and end with an open-ended question. "
+        + FORMAT_RULES
+        + f"\nReturn JSON with keys: title (45-60 chars), meta_description (130-155 chars), focus_keyword, keywords (array), "
+        f"category (one of {CATS} or \"None\"), short_summary (2-3 sentences), body."
+    )
+    raw = llm.chat_json(M["writer"], SYS, user, temperature=0.4, num_predict=1100)
+    body = _clean_body(raw.get("body"))
+    if len(body.split()) < 120:
+        raise ValueError("quick article too short")
+    title = _clean(raw.get("title")) or item["title"]
+    summary = _clean(raw.get("short_summary")) or _trim(item["summary"] or title, 300)
+    kws = raw.get("keywords") or []
+    meta = {
+        "title": title,
+        "focus_keyword": _clean(raw.get("focus_keyword")) or " ".join(title.split()[:3]),
+        "keywords": [_clean(k) for k in (kws if isinstance(kws, list) else [kws]) if k][:8],
+        "meta_description": _clean(raw.get("meta_description")) or _trim(summary, 155),
+        "category": _clean(raw.get("category")),
+        "short_summary": summary,
+    }
+    label = item["category"] if item["category"] in CATS else (meta["category"] if meta["category"] in CATS else None)
+    sec = {"id": "main", "heading": "The Full Story", "body": body, "image_query": meta["focus_keyword"],
+           "caption": title, "has_image": True, "image": None}
+    return {"meta": meta, "facts": [], "label": label, "sections": [sec], "quick": True}
 
 
 def fix_section(article, sid, issues):
@@ -260,7 +370,7 @@ def build_html(article):
             images.append(s["image"]["url"])
         h2 = f"<h2>{html.escape(s['heading'], quote=False)}</h2>"
         body = md_to_html(s["body"])
-        if s["id"] == "hook":
+        if s["id"] in ("hook", "main"):
             parts.append((figure(s, kw) if s["image"] else "") + h2 + body)
         elif s["id"] == "keys":
             parts.append(
