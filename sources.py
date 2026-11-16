@@ -2,6 +2,7 @@ import calendar
 import json
 import re
 import time
+from urllib.parse import urljoin
 
 import feedparser
 import requests
@@ -9,6 +10,10 @@ import trafilatura
 
 import config
 from utils import jaccard, strip_html, tokens
+
+BAD_IMG = re.compile(
+    r"(logo|icon|sprite|avatar|pixel|tracking|blank|placeholder|badge|/ads?/|\.svg|\.gif|1x1|spacer|emoji|button)", re.I
+)
 
 
 def load_feeds(path="feeds.json"):
@@ -25,12 +30,16 @@ def _rss_image(e):
     for l in e.get("links", []) or []:
         if str(l.get("type", "")).startswith("image"):
             return l.get("href", "")
-    return ""
+    for enc in e.get("enclosures", []) or []:
+        if str(enc.get("type", "")).startswith("image"):
+            return enc.get("href", "")
+    m = re.search(r'<img[^>]+src=["\']([^"\']+)', e.get("summary", "") or "", re.I)
+    return m.group(1) if m else ""
 
 
 def fetch_feed(cat, url):
     try:
-        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0 (compatible; TheNewsDetailBot/1.0)"}, timeout=20)
+        r = requests.get(url, headers={"User-Agent": config.BROWSER_UA}, timeout=20)
         d = feedparser.parse(r.content)
     except Exception:
         return []
@@ -81,31 +90,88 @@ def rank(items, st):
     return sorted(fresh, key=lambda x: -x["score"])
 
 
+def _attr(tag, name):
+    m = re.search(r"(?<![\w-])" + name + r'=["\']([^"\']*)["\']', tag, re.I)
+    return m.group(1) if m else ""
+
+
+def _srcset_best(srcset):
+    best, best_w = "", -1
+    for part in srcset.split(","):
+        bits = part.strip().split()
+        if not bits:
+            continue
+        w = 0
+        if len(bits) > 1 and bits[1].endswith("w"):
+            try:
+                w = int(bits[1][:-1])
+            except ValueError:
+                w = 0
+        if w >= best_w:
+            best, best_w = bits[0], w
+    return best
+
+
+def extract_images(page, base):
+    found = []
+
+    def add(url, alt=""):
+        if not url or url.startswith("data:"):
+            return
+        u = urljoin(base, url.strip())
+        if not u.startswith("http") or BAD_IMG.search(u):
+            return
+        if all(f["url"] != u for f in found):
+            found.append({"url": u, "alt": strip_html(alt)[:200]})
+
+    for pat in (
+        r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]+content=["\']([^"\']+)',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+        r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)',
+    ):
+        for m in re.finditer(pat, page, re.I):
+            add(m.group(1))
+    m = re.search(r"<article.*?</article>", page, re.I | re.S)
+    area = m.group(0) if m else page
+    for tag in re.findall(r"<img\b[^>]*>", area, re.I)[:40]:
+        w = _attr(tag, "width")
+        if w.isdigit() and int(w) < 200:
+            continue
+        srcset = _attr(tag, "srcset") or _attr(tag, "data-srcset")
+        url = _srcset_best(srcset) if srcset else ""
+        url = url or _attr(tag, "data-src") or _attr(tag, "src")
+        add(url, _attr(tag, "alt"))
+    return found[:8]
+
+
 def fetch_article(url):
     try:
-        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0 (compatible; TheNewsDetailBot/1.0)"}, timeout=25)
+        r = requests.get(url, headers={"User-Agent": config.BROWSER_UA}, timeout=25)
         if r.status_code != 200:
-            return "", ""
+            return "", []
         page = r.text
         text = trafilatura.extract(page, include_comments=False, include_tables=False) or ""
-        m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', page, re.I)
-        return text.strip(), (m.group(1) if m else "")
+        return text.strip(), extract_images(page, url)
     except Exception:
-        return "", ""
+        return "", []
 
 
 def gather_sources(item):
     out = []
-    text, og = fetch_article(item["link"])
+    text, imgs = fetch_article(item["link"])
+    if item.get("image"):
+        imgs = imgs[:1] + [{"url": item["image"], "alt": item["title"]}] + imgs[1:]
     if len(text) < 500:
         text = (text + " " + item["summary"]).strip()
     if text:
-        out.append({"title": item["title"], "text": text[:6000], "og": og or item.get("image", "")})
+        out.append({"title": item["title"], "text": text[:6000], "images": imgs, "link": item["link"]})
     for rel in item.get("related", [])[:2]:
-        t, _ = fetch_article(rel["link"])
+        t, rimgs = fetch_article(rel["link"])
+        if rel.get("image"):
+            rimgs = rimgs[:1] + [{"url": rel["image"], "alt": rel["title"]}] + rimgs[1:]
         if len(t) < 500:
             t = (t + " " + rel["summary"]).strip()
         if len(t) >= 200:
-            out.append({"title": rel["title"], "text": t[:4000], "og": ""})
+            out.append({"title": rel["title"], "text": t[:4000], "images": rimgs, "link": rel["link"]})
     total = sum(len(s["text"]) for s in out)
-    return out if total >= 900 else None
+    return out if total >= 500 else None
