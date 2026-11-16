@@ -4,6 +4,10 @@ import config
 import llm
 
 
+class PublishError(Exception):
+    pass
+
+
 def access_token():
     r = requests.post(
         "https://oauth2.googleapis.com/token",
@@ -15,7 +19,10 @@ def access_token():
         },
         timeout=30,
     )
-    r.raise_for_status()
+    if r.status_code != 200:
+        raise PublishError(
+            f"Google token error {r.status_code}: {r.text[:200]} -> check CLIENT_ID, CLIENT_SECRET and REFRESH_TOKEN secrets"
+        )
     return r.json()["access_token"]
 
 
@@ -32,7 +39,7 @@ def publish_post(title, html_content, labels):
         timeout=60,
     )
     if r.status_code >= 300:
-        raise RuntimeError(f"Blogger error {r.status_code}: {r.text[:300]}")
+        raise PublishError(f"Blogger error {r.status_code}: {r.text[:300]} -> check BLOG_ID and that Blogger API is enabled")
     return r.json().get("url", "")
 
 
