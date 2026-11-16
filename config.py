@@ -33,17 +33,20 @@ MODELS = {
 CATEGORIES = ["Health", "Business", "World News", "Political", "Science", "Education", "Movie"]
 
 UA = "TheNewsDetailBot/1.0 (news publishing bot)"
+BROWSER_UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
-MIN_IMAGES = int(env("MIN_IMAGES", "4"))
+FORCE_PUBLISH = env("FORCE_PUBLISH", "1") == "1"      # always publish, even if reviewers are not 100% happy
+USE_SOURCE_IMAGE = env("USE_SOURCE_IMAGE", "1") == "1"  # use RSS / news-page images when needed
+MIN_IMAGES = int(env("MIN_IMAGES", "1"))
 MIN_WORDS = int(env("MIN_WORDS", "900"))
 MAX_AGE_HOURS = int(env("MAX_AGE_HOURS", "36"))
-MAX_CANDIDATES = int(env("MAX_CANDIDATES", "3"))
-MAX_FIX = int(env("MAX_FIX_ATTEMPTS", "3"))
+MAX_CANDIDATES = int(env("MAX_CANDIDATES", "6"))
+MAX_FIX = int(env("MAX_FIX_ATTEMPTS", "2"))
 CHECK_TOLERANCE = int(env("CHECK_TOLERANCE", "1"))
-USE_SOURCE_IMAGE = env("USE_SOURCE_IMAGE", "0") == "1"
 PUBLISH_DRAFT = env("PUBLISH_DRAFT", "0") == "1"
 DRY_RUN = env("DRY_RUN", "0") == "1"
 ADD_JSONLD = env("ADD_JSONLD", "1") == "1"
 
-RUN_BUDGET_MIN = int(env("RUN_BUDGET_MIN", "22"))
+RUN_BUDGET_MIN = int(env("RUN_BUDGET_MIN", "25"))
+REVIEW_RESERVE_SEC = int(env("REVIEW_RESERVE_SEC", "150"))
 DEADLINE = time.time() + RUN_BUDGET_MIN * 60
