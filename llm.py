@@ -31,11 +31,15 @@ def chat(model, system, user, json_mode=False, temperature=0.3, num_predict=600,
         try:
             timeout = max(60, min(900, config.DEADLINE - time.time() + 30))
             r = requests.post(f"{config.OLLAMA_URL}/api/chat", json=payload, timeout=timeout)
+            if r.status_code == 404 and payload["model"] != config.MODELS["writer"]:
+                print(f"  model {payload['model']} is missing, using the writer model instead", flush=True)
+                payload["model"] = config.MODELS["writer"]
+                continue
             r.raise_for_status()
             return r.json()["message"]["content"].strip()
         except Exception as e:
             last = e
-            print(f"  LLM retry ({model}): {e}", flush=True)
+            print(f"  LLM retry ({payload['model']}): {e}", flush=True)
             time.sleep(4)
             if time.time() > config.DEADLINE:
                 raise OutOfTime()
