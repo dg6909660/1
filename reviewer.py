@@ -1,4 +1,6 @@
 import re
+import time
+import traceback
 
 import config
 import images
@@ -74,17 +76,20 @@ def _apply(article, issues):
         sid = _normalize(article, i)
         if sid:
             grouped.setdefault(sid, []).append(i)
-        else:
-            print(f"    (unmapped issue skipped: {i.get('problem')})", flush=True)
     for sid, lst in grouped.items():
-        if sid == "meta":
-            writer.fix_meta(article, lst)
-            continue
-        sec = ids[sid]
-        text = " ".join((x.get("problem", "") + " " + x.get("fix", "")).lower() for x in lst)
-        if sec["has_image"] and re.search(r"\b(image|photo|picture)\b", text):
-            images.replace_image(article, sid)
-        writer.fix_section(article, sid, lst)
+        try:
+            if sid == "meta":
+                writer.fix_meta(article, lst)
+                continue
+            sec = ids[sid]
+            text = " ".join((x.get("problem", "") + " " + x.get("fix", "")).lower() for x in lst)
+            if sec["has_image"] and re.search(r"\b(image|photo|picture)\b", text):
+                images.replace_image(article, sid)
+            writer.fix_section(article, sid, lst)
+        except llm.OutOfTime:
+            raise
+        except Exception as e:
+            print(f"    fix for {sid} failed: {e}", flush=True)
 
 
 def run_round(n, name, model_key, focus, article, sources):
@@ -100,7 +105,13 @@ def run_round(n, name, model_key, focus, article, sources):
             '[{"section": "hook|context|core1|core2|story|keys|outro|meta", "problem": "...", "fix": "specific instruction"}]}. '
             "Include all 10 check names. List issues only for checks that are false; otherwise issues must be []."
         )
-        res = llm.chat_json(model, "You are a meticulous news editor and fact-checker.", user, temperature=0.1, num_predict=600)
+        try:
+            res = llm.chat_json(model, "You are a meticulous news editor and fact-checker.", user, temperature=0.1, num_predict=600)
+        except llm.OutOfTime:
+            raise
+        except Exception as e:
+            print(f"  round {n} {name}: reviewer unavailable ({e}), moving on", flush=True)
+            return False
         checks = res.get("checks") if isinstance(res.get("checks"), dict) else {}
         raw_issues = [i for i in (res.get("issues") or []) if isinstance(i, dict) and i.get("problem")]
         false_checks = [k for k, v in checks.items() if v is False]
@@ -117,13 +128,61 @@ def run_round(n, name, model_key, focus, article, sources):
     return False
 
 
+def _trim(t, n):
+    if len(t) <= n:
+        return t
+    return t[:n].rsplit(" ", 1)[0].rstrip(",:;-– ")
+
+
+def finalize(article, sources):
+    """Deterministic clean-up so the post is always safe and well-formed."""
+    src_norm = validators.source_norm(sources)
+    m = article["meta"]
+    for s in article["sections"]:
+        s["heading"] = validators.URL_RE.sub("", s["heading"]).strip() or "More Details"
+        body = validators.URL_RE.sub("", s["body"])
+        kept = []
+        for line in body.split("\n"):
+            if not line.strip():
+                kept.append(line)
+                continue
+            is_bullet = bool(re.match(r"^\s*[-*•]\s+", line))
+            sentences = [line] if is_bullet else re.split(r"(?<=[.!?])\s+", line)
+            good = [x for x in sentences if all(n in src_norm for n in validators.numbers(x))]
+            if good:
+                kept.append(" ".join(good))
+        cleaned = "\n".join(kept).strip()
+        s["body"] = cleaned if len(cleaned.split()) >= 20 else body.strip()
+    if len(m["title"]) > 65:
+        m["title"] = _trim(m["title"], 62)
+    if len(m["meta_description"]) > 160:
+        m["meta_description"] = _trim(m["meta_description"], 155)
+    if len(m["meta_description"]) < 60:
+        m["meta_description"] = _trim(m["short_summary"], 155)
+    outro = next((s for s in article["sections"] if s["id"] == "outro"), None)
+    if outro and "?" not in outro["body"]:
+        outro["body"] += f"\n\nWhat do you think about {m['focus_keyword']}?"
+
+
 def run_all(article, sources):
+    """Runs the 5 review rounds. Never raises; returns (all_passed, remaining_issues)."""
+    all_ok = True
     for n, name, model_key, focus in ROUNDS:
-        if not run_round(n, name, model_key, focus, article, sources):
-            print(f"  REJECTED at round {n} ({name})", flush=True)
-            return False
-    final = validators.validate(article, sources)
-    if final:
-        print(f"  REJECTED by final validation: {final[:2]}", flush=True)
-        return False
-    return True
+        if time.time() > config.DEADLINE - config.REVIEW_RESERVE_SEC:
+            print("  time is almost up, skipping remaining review rounds", flush=True)
+            all_ok = False
+            break
+        try:
+            ok = run_round(n, name, model_key, focus, article, sources)
+        except llm.OutOfTime:
+            all_ok = False
+            break
+        except Exception:
+            traceback.print_exc()
+            ok = False
+        if not ok:
+            print(f"  round {n} ({name}) was not fully satisfied", flush=True)
+            all_ok = False
+    finalize(article, sources)
+    remaining = validators.validate(article, sources)
+    return all_ok and not remaining, remaining
