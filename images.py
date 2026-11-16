@@ -1,3 +1,6 @@
+import re
+from urllib.parse import urlparse
+
 import requests
 
 import config
@@ -5,7 +8,8 @@ import llm
 from utils import strip_html
 
 H = {"User-Agent": config.UA}
-import re  # noqa: E402
+HB = {"User-Agent": config.BROWSER_UA}
+_OK = {}
 
 
 def commons(q, n=8):
@@ -73,17 +77,26 @@ def openverse(q, n=8):
 
 
 def ok_image(url):
+    if url in _OK:
+        return _OK[url]
+    good = False
     try:
-        r = requests.get(url, headers=H, timeout=20, stream=True)
-        good = r.status_code == 200 and r.headers.get("content-type", "").startswith("image/")
+        r = requests.get(url, headers=HB, timeout=20, stream=True)
         size = int(r.headers.get("content-length") or 0)
+        good = (
+            r.status_code == 200
+            and r.headers.get("content-type", "").lower().startswith("image/")
+            and (size == 0 or size > 12000)
+        )
         r.close()
-        return good and (size == 0 or size > 15000)
     except Exception:
-        return False
+        good = False
+    _OK[url] = good
+    return good
 
 
 def score(cands, text):
+    """Return {index: score} or None if the AI could not score (e.g. out of time)."""
     lines = "\n".join(f"{i}. title: {c['title']} | details: {c['desc']}" for i, c in enumerate(cands))
     user = (
         f"SECTION TEXT:\n{text[:700]}\n\nPHOTO CANDIDATES:\n{lines}\n\n"
@@ -94,17 +107,15 @@ def score(cands, text):
     try:
         res = llm.chat_json(
             config.MODELS["seo"],
-            "You judge whether stock photos honestly illustrate a news section.",
+            "You judge whether photos honestly illustrate a news section.",
             user, temperature=0.1, num_predict=250,
         )
         return {int(s["id"]): float(s["score"]) for s in res.get("scores", [])}
-    except llm.OutOfTime:
-        raise
     except Exception:
-        return {}
+        return None
 
 
-def pick(queries, text, used):
+def pick(queries, text, used, min_score=6):
     seen = set()
     for q in queries:
         cands = []
@@ -115,13 +126,49 @@ def pick(queries, text, used):
         cands = cands[:12]
         if not cands:
             continue
-        sc = score(cands, text)
-        for i in sorted(range(len(cands)), key=lambda i: -sc.get(i, 0)):
-            if sc.get(i, 0) < 6:
+        sc = score(cands, text) if min_score > 0 else None
+        order = range(len(cands)) if sc is None else sorted(range(len(cands)), key=lambda i: -sc.get(i, 0))
+        for i in order:
+            if sc is not None and sc.get(i, 0) < min_score:
                 break
             if ok_image(cands[i]["url"]):
                 return cands[i]
     return None
+
+
+def source_pool(sources):
+    pool, seen = [], set()
+    for s in sources:
+        name = urlparse(s.get("link", "")).netloc.replace("www.", "") or "the original publisher"
+        for im in s.get("images", []):
+            if im["url"] in seen:
+                continue
+            seen.add(im["url"])
+            pool.append({
+                "url": im["url"], "title": im.get("alt", ""), "desc": "",
+                "credit_line": f"Image: courtesy of {name}",
+            })
+    return pool
+
+
+def take_source(pool, text, used, first=False):
+    good = []
+    for c in pool:
+        if c["url"] in used:
+            continue
+        if ok_image(c["url"]):
+            good.append(c)
+        if len(good) >= 5:
+            break
+    if not good:
+        return None
+    if first or len(good) == 1:
+        return good[0]
+    sc = score(good, text)
+    if sc is None:
+        return good[0]
+    best = max(range(len(good)), key=lambda i: sc.get(i, 0))
+    return good[best] if sc.get(best, 0) >= 4 else None
 
 
 def _queries(article, sec):
@@ -132,16 +179,31 @@ def _queries(article, sec):
 
 def attach_images(article, item, sources):
     used = set()
+    pool = source_pool(sources) if config.USE_SOURCE_IMAGE else []
     for s in article["sections"]:
         if not s["has_image"]:
             continue
-        c = pick(_queries(article, s), s["heading"] + ". " + s["body"], used)
-        if not c and s["id"] == "hook" and config.USE_SOURCE_IMAGE and sources[0].get("og"):
-            c = {"url": sources[0]["og"], "title": "", "desc": "", "credit_line": "Image courtesy of the original publisher"}
+        text = s["heading"] + ". " + s["body"]
+        c = None
+        if s["id"] in ("hook", "main") and pool:
+            c = take_source(pool, text, used, first=True)  # the story's own picture makes the best hero image
+        if not c:
+            c = pick(_queries(article, s), text, used)
+        if not c and pool:
+            c = take_source(pool, text, used)
         if c:
             used.add(c["url"])
             s["image"] = c
-            print(f"  image for {s['id']}: {c['url'][:80]}", flush=True)
+            print(f"  image for {s['id']}: {c['url'][:90]}", flush=True)
+    # last resort: make sure at least one image exists
+    if not any(s["image"] for s in article["sections"]):
+        first = next((s for s in article["sections"] if s["has_image"]), None)
+        if first:
+            kw = article["meta"]["focus_keyword"]
+            c = pick([kw, article["label"] or "news"], "", used, min_score=0) or take_source(pool, "", used, first=True)
+            if c:
+                first["image"] = c
+                print(f"  fallback image: {c['url'][:90]}", flush=True)
 
 
 def replace_image(article, sid):
