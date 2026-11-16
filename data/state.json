@@ -1,10 +1,22 @@
 {
- "seen": [],
+ "seen": [
+  "29145374f8690efa"
+ ],
  "failed": {
   "29145374f8690efa": 1,
   "c2bf10ae6da6b30a": 1,
   "e37abfc0f60f6b78": 1
  },
- "posts": [],
- "last_cat": {}
+ "posts": [
+  {
+   "title": "...Robert Pattinson James Bond...",
+   "src_title": "Robert Pattinson Named as the Next James Bond",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/robert-pattinson-james-bond.html",
+   "label": "Movie",
+   "ts": 1794872172
+  }
+ ],
+ "last_cat": {
+  "General": 1794872172
+ }
 }
