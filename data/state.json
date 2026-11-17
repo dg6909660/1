@@ -1,7 +1,8 @@
 {
  "seen": [
   "29145374f8690efa",
-  "55f43fa74192ee67"
+  "55f43fa74192ee67",
+  "773600b325201c4e"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -22,10 +23,18 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/robert-pattinson-james-bond_01877276615.html",
    "label": "Movie",
    "ts": 1794875585
+  },
+  {
+   "title": "...Robert Pattinson Bond...",
+   "src_title": "When will we see Robert Pattinson as Bond in cinemas?",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/robert-pattinson-bond.html",
+   "label": "World News",
+   "ts": 1794881583
   }
  ],
  "last_cat": {
   "General": 1794872172,
-  "Movie": 1794875585
+  "Movie": 1794875585,
+  "World News": 1794881583
  }
 }
