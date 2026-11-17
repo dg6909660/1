@@ -5,7 +5,10 @@
   "773600b325201c4e",
   "3871cc67e0443490",
   "888ad85e37f67344",
-  "ef2965d8c37dda8b"
+  "ef2965d8c37dda8b",
+  "e37abfc0f60f6b78",
+  "325059606130af6e",
+  "49a1ce094a2bb655"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -57,9 +60,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/isolation-flu-encourage-reduces.html",
    "label": "Health",
    "ts": 1794891628
+  },
+  {
+   "title": "US President Trump Supports Nvidia CEO Resignation",
+   "titles": [
+    "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
+    "Trump backs calls for reinstatement of Jensen Huang as Nvidia CEO"
+   ],
+   "focus": "Nvidia CEO",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nvidiaceo-resignation.html",
+   "label": "Business",
+   "ts": 1794894098
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
