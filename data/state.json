@@ -36,7 +36,8 @@
   "4b3d6fbd53085187",
   "7d4573cf4949fac2",
   "08cb1bd51201e43e",
-  "85ffccd678494595"
+  "85ffccd678494595",
+  "0ee92d00ba8ab01c"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -198,9 +199,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/voyager-1-light-day.html",
    "label": "Science",
    "ts": 1794916312
+  },
+  {
+   "title": "Belfast Boys' Model GTA 6 Prize Draw",
+   "titles": [
+    "School offers prizes to pupils for turning up to class on day GTA 6 comes out"
+   ],
+   "focus": "GTA 6",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/gta-6-belfast-boys-model-prize.html",
+   "label": "Education",
+   "ts": 1794918767
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
