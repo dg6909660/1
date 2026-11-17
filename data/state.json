@@ -33,7 +33,10 @@
   "9d990a16befddd03",
   "8cd3c59916c7e3df",
   "7f1150d37cae2af8",
-  "4b3d6fbd53085187"
+  "4b3d6fbd53085187",
+  "7d4573cf4949fac2",
+  "08cb1bd51201e43e",
+  "85ffccd678494595"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -184,9 +187,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/russell-brand-prison-statement.html",
    "label": "Political",
    "ts": 1794913755
+  },
+  {
+   "title": "Voyager 1 Hits One Light-Day Milestone",
+   "titles": [
+    "NASA's interstellar Voyager 1 probe is about to reach 1 light-day from Earth after nearly 50 years in space",
+    "NASA's Voyager 1 reaches a light-day away from Earth"
+   ],
+   "focus": "Voyager 1",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/voyager-1-light-day.html",
+   "label": "Science",
+   "ts": 1794916312
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
