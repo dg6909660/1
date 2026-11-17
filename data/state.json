@@ -57,7 +57,11 @@
   "2f730ed45da87e4f",
   "4efe43de955b77f8",
   "6eff4d24d9a6e77c",
-  "e48f7604f7771e49"
+  "e48f7604f7771e49",
+  "9ea6cb3a686f5458",
+  "701564270e850da1",
+  "5e39bb37b737a778",
+  "2f9a8ae680bc27f0"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -306,9 +310,22 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/hunger-games.html",
    "label": "Movie",
    "ts": 1794936353
+  },
+  {
+   "title": "U.S. Loses Measles Elimination Status, Worst Outbreak in Decades",
+   "titles": [
+    "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
+    "Health organization to announce that the U.S. has lost its measles elimination status",
+    "U.S. officially loses measles elimination status amid ongoing outbreaks",
+    "US loses measles elimination status after 26 years amid record case numbers"
+   ],
+   "focus": "Measles Elimination",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status.html",
+   "label": "Health",
+   "ts": 1794938877
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
