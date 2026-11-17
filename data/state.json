@@ -54,7 +54,10 @@
   "0a0e369d3f8b767c",
   "1c4f421c594a5fc3",
   "1a2c85b60266f2e6",
-  "2f730ed45da87e4f"
+  "2f730ed45da87e4f",
+  "4efe43de955b77f8",
+  "6eff4d24d9a6e77c",
+  "e48f7604f7771e49"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -291,9 +294,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/milburn-neets-plan.html",
    "label": "Education",
    "ts": 1794933840
+  },
+  {
+   "title": "...The Hunger Games...",
+   "titles": [
+    "The Hunger Games: Sunrise on the Reaping review – surreally awful prequel to the Katniss Everdeen era",
+    "‘The Hunger Games: Sunrise on the Reaping’ Review: Not as Deadly as ‘Songbirds & Snakes,’ the Haymitch Origin Story Makes for a Watchable if Meandering Prequel",
+    "‘The Hunger Games: Sunrise on the Reaping’ Review: They Shoot Franchises, Don’t They?"
+   ],
+   "focus": "The Hunger Games",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/hunger-games.html",
+   "label": "Movie",
+   "ts": 1794936353
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
