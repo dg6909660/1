@@ -72,13 +72,15 @@
   "907a6b705a796b45",
   "c3f977f0833743ac",
   "a3cf813fd7c9cec9",
-  "fc7fe1669c57645a"
+  "fc7fe1669c57645a",
+  "6782d9f170fcb72b"
  ],
  "failed": {
   "29145374f8690efa": 1,
   "c2bf10ae6da6b30a": 1,
   "e37abfc0f60f6b78": 1,
-  "5e776772777c1d14": 1
+  "5e776772777c1d14": 1,
+  "191716913866e5a0": 1
  },
  "posts": [
   {
@@ -367,9 +369,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/democrats-immigration-push.html",
    "label": "Political",
    "ts": 1794946288
+  },
+  {
+   "title": "...Mars Water Discovery on Curiosity Rover Data...",
+   "titles": [
+    "Over a decade of atmospheric data from NASA's Curiosity rover hints at small amounts of surface water on Mars"
+   ],
+   "focus": "Mars Water Discovery",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/mars-water-discovery-curiosity-rover.html",
+   "label": "Science",
+   "ts": 1794948866
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
