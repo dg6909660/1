@@ -73,7 +73,9 @@
   "c3f977f0833743ac",
   "a3cf813fd7c9cec9",
   "fc7fe1669c57645a",
-  "6782d9f170fcb72b"
+  "6782d9f170fcb72b",
+  "447ab83e329fa24e",
+  "dd80da1ad235a85b"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -379,9 +381,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/mars-water-discovery-curiosity-rover.html",
    "label": "Science",
    "ts": 1794948866
+  },
+  {
+   "title": "University Pauses Shakespeare Institute Move to Birmingham",
+   "titles": [
+    "University of Birmingham pauses plans to move Shakespeare Institute after outcry",
+    "University pauses Shakespeare move after backlash"
+   ],
+   "focus": "Shakespeare Institute",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/shakespeare-institute-university.html",
+   "label": "Education",
+   "ts": 1794951348
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
