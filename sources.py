@@ -69,6 +69,7 @@ def fetch_feed(cat, url):
 
 
 def rank(items, st):
+    """Fresh, unseen stories; stories covered by many outlets (trending) first."""
     now = time.time()
     fresh = [i for i in items if -3600 <= now - i["ts"] <= config.MAX_AGE_HOURS * 3600 and not st.is_seen(i)]
     uniq = {}
@@ -83,10 +84,9 @@ def rank(items, st):
             if b != a and fresh[b]["feed"] != i["feed"] and jaccard(toks[a], toks[b]) >= 0.3
         ]
         i["related"] = rel[:3]
-        feeds_cnt = len({r["feed"] for r in rel})  # how many outlets cover it = trending
+        feeds_cnt = len({r["feed"] for r in rel})
         age = (now - i["ts"]) / 3600
-        cat_gap = min((now - st.last_post_ts(i["category"])) / 3600, 24) / 6  # rotate categories
-        i["score"] = feeds_cnt * 3 + max(0, config.MAX_AGE_HOURS - age) / 12 + cat_gap
+        i["score"] = feeds_cnt * 3 + max(0, config.MAX_AGE_HOURS - age) / 12
     return sorted(fresh, key=lambda x: -x["score"])
 
 
