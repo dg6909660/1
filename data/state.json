@@ -83,7 +83,9 @@
   "566598e1eca81ebb",
   "fbe1847f933b3456",
   "46bd1587f896f009",
-  "31a340241a73a2d5"
+  "31a340241a73a2d5",
+  "5b565cfaa4953e93",
+  "1090a85f87f6bf79"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -421,9 +423,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html",
    "label": "Health",
    "ts": 1794957024
+  },
+  {
+   "title": "Nvidia Board Declines Huang: Security, Misconduct",
+   "titles": [
+    "Microsoft’s Satya Nadella praises Jensen Huang, says return as CEO is ‘up to the Nvidia board’",
+    "Nvidia board says it does not intend to reinstate Jensen Huang as CEO"
+   ],
+   "focus": "Nvidia Board",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nvidia-board-declines-huang.html",
+   "label": "Business",
+   "ts": 1794959558
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

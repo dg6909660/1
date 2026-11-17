@@ -3,31 +3,37 @@
  "count": 0,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
-   "ts": 1794957040,
+   "ts": 1794959572,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/us-soldier-spying-case.html": {
-   "ts": 1794957040,
+   "ts": 1794959572,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/shakespeare-institute-university.html": {
-   "ts": 1794957040,
+   "ts": 1794959572,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/mars-water-discovery-curiosity-rover.html": {
-   "ts": 1794957040,
+   "ts": 1794959572,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/democrats-immigration-push.html": {
    "ts": 1794957040,
+   "type": "URL_UPDATED",
+   "ok": false,
+   "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/nvidia-board-declines-huang.html": {
+   "ts": 1794959572,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
