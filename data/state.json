@@ -51,12 +51,14 @@
   "2a25e8c6bdfa0819",
   "a077b67b56722504",
   "47b4728cc9a6d81a",
-  "0a0e369d3f8b767c"
+  "0a0e369d3f8b767c",
+  "1c4f421c594a5fc3"
  ],
  "failed": {
   "29145374f8690efa": 1,
   "c2bf10ae6da6b30a": 1,
-  "e37abfc0f60f6b78": 1
+  "e37abfc0f60f6b78": 1,
+  "5e776772777c1d14": 1
  },
  "posts": [
   {
@@ -266,9 +268,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/uk-sanctions-israel-imposes-israeli.html",
    "label": "Political",
    "ts": 1794928704
+  },
+  {
+   "title": "Nanogap WSe₂ for Quantum Light Sources",
+   "titles": [
+    "Nanogap architecture could help integrate quantum light sources onto chips"
+   ],
+   "focus": "Nanogap WSe₂",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nanogap-wse2-quantum-light-sources.html",
+   "label": "Science",
+   "ts": 1794931230
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
