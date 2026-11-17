@@ -43,7 +43,9 @@
   "2bf24907448112ae",
   "cf7d471cbf203e50",
   "11d740d735555cec",
-  "c8803f105a406600"
+  "c8803f105a406600",
+  "961479e61fb9484f",
+  "fa070605e9f213a9"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -236,9 +238,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nfl-cte-75.html",
    "label": "Health",
    "ts": 1794923772
+  },
+  {
+   "title": "...Milburn Neets Plan 2036",
+   "titles": [
+    "Alan Milburn says his plan to get young people into work will save only £200m a year",
+    "Why Milburn's Neets reforms will only save £200m a year by 2036"
+   ],
+   "focus": "Milburn Neets Plan",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/milburn-neets-plan-2036.html",
+   "label": "Business",
+   "ts": 1794926244
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
