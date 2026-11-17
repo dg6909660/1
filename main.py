@@ -6,6 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 import config
 import dedupe
 import images
+import indexing
 import publisher
 import reviewer
 import sources
@@ -86,6 +87,10 @@ def try_post(item, st, live):
         publisher.pinterest_share(art, url)
     except Exception as e:
         log("  Pinterest failed:", e)
+    try:
+        indexing.index_post(url, art["label"])  # ask Google to crawl + index the new post
+    except Exception as e:
+        log("  Google indexing step failed:", e)
     return True
 
 
@@ -137,6 +142,10 @@ def main():
                     st.mark_failed(item)
             if posted or attempts >= config.MAX_CANDIDATES:
                 break
+        try:
+            indexing.retry_pending()  # re-send recent posts whose Google notification failed earlier
+        except Exception as e:
+            log("  indexing retry failed:", e)
     except SystemExit as e:
         exit_code = e.code if isinstance(e.code, int) else 2
     finally:
