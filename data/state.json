@@ -19,7 +19,13 @@
   "6cf698d0cf3181d7",
   "0d58915ba7c3c9fc",
   "2dccb7b1f465beee",
-  "2ae5bdea6b1b75aa"
+  "2ae5bdea6b1b75aa",
+  "418dda9649bf57f6",
+  "d734075ced4f1e0d",
+  "4474d1b52113cf0b",
+  "c2bf10ae6da6b30a",
+  "60958b77c8a63b24",
+  "393be579022b445e"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -127,9 +133,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/youthorchestras-funding-threat.html",
    "label": "Education",
    "ts": 1794903858
+  },
+  {
+   "title": "...Trump to Attend ASEAN Summit in Manila, Leaving Early...",
+   "titles": [
+    "Trump Will Miss Most of the ASEAN Summit",
+    "Trump departs for ASEAN on summit with Xi and Putin"
+   ],
+   "focus": "Trump ASEAN Summit",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/trump-asean-summit.html",
+   "label": "World News",
+   "ts": 1794906357
   }
  ],
- "next_idx": 6,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
