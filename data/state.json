@@ -1,6 +1,7 @@
 {
  "seen": [
-  "29145374f8690efa"
+  "29145374f8690efa",
+  "55f43fa74192ee67"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -14,9 +15,17 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/robert-pattinson-james-bond.html",
    "label": "Movie",
    "ts": 1794872172
+  },
+  {
+   "title": "...Robert Pattinson James Bond...",
+   "src_title": "James Bond 26 Breaks A 64-Year-Old Franchise Rule With Robert Pattinson Announcement",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/robert-pattinson-james-bond_01877276615.html",
+   "label": "Movie",
+   "ts": 1794875585
   }
  ],
  "last_cat": {
-  "General": 1794872172
+  "General": 1794872172,
+  "Movie": 1794875585
  }
 }
