@@ -81,7 +81,9 @@
   "9466f73c9f1d4585",
   "0129ad58649038c8",
   "566598e1eca81ebb",
-  "fbe1847f933b3456"
+  "fbe1847f933b3456",
+  "46bd1587f896f009",
+  "31a340241a73a2d5"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -409,9 +411,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/us-soldier-spying-case.html",
    "label": "World News",
    "ts": 1794954554
+  },
+  {
+   "title": "U.S. Loses Measles Elimination Status, Expert Reacts",
+   "titles": [
+    "Public health expert reacts to latest measles milestone"
+   ],
+   "focus": "measles elimination",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html",
+   "label": "Health",
+   "ts": 1794957024
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
