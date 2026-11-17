@@ -8,7 +8,11 @@
   "ef2965d8c37dda8b",
   "e37abfc0f60f6b78",
   "325059606130af6e",
-  "49a1ce094a2bb655"
+  "49a1ce094a2bb655",
+  "643dde1ba15847aa",
+  "e6c927f989913d89",
+  "6a0b0cc96336930c",
+  "ddbbc267e449a5b0"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -71,9 +75,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nvidiaceo-resignation.html",
    "label": "Business",
    "ts": 1794894098
+  },
+  {
+   "title": "Ukraine Mayor: Bridges Hit, Diplomacy Continues",
+   "titles": [
+    "Ukraine: Russian strikes hit bridges in Kyiv, mayor says",
+    "Two major Kyiv bridges hit in Russian attack, mayor says",
+    "Ukraine war briefing: Crimea bridge attacked again after Russia strikes major Kyiv bridges"
+   ],
+   "focus": "UkraineBridges",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/ukrainebridges-ukraine-mayor-bridges.html",
+   "label": "World News",
+   "ts": 1794896563
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
