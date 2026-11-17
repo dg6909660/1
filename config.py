@@ -17,8 +17,11 @@ REFRESH_TOKEN = env("REFRESH_TOKEN")
 
 # Pinterest (optional)
 PIN_TOKEN = env("PINTEREST_ACCESS_TOKEN")
-PIN_BOARD = env("PINTEREST_BOARD_ID")
+PIN_BOARD = env("PINTEREST_BOARD_ID")  # board id OR board name
 PIN_API = env("PINTEREST_API_BASE", "https://api.pinterest.com/v5")
+PIN_APP_ID = env("PINTEREST_APP_ID")
+PIN_APP_SECRET = env("PINTEREST_APP_SECRET")
+PIN_REFRESH = env("PINTEREST_REFRESH_TOKEN")
 
 # Local AI (Ollama)
 OLLAMA_URL = env("OLLAMA_URL", "http://127.0.0.1:11434")
@@ -31,13 +34,14 @@ MODELS = {
 }
 
 CATEGORIES = ["Health", "Business", "World News", "Political", "Science", "Education", "Movie"]
+# Posting order. "General" = stories without a category (they only show on Home).
+ROTATION = [c.strip() for c in env("ROTATION", ",".join(CATEGORIES + ["General"])).split(",") if c.strip()]
 
 UA = "TheNewsDetailBot/1.0 (news publishing bot)"
 BROWSER_UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
-FORCE_PUBLISH = env("FORCE_PUBLISH", "1") == "1"      # always publish, even if reviewers are not 100% happy
-USE_SOURCE_IMAGE = env("USE_SOURCE_IMAGE", "1") == "1"  # use RSS / news-page images when needed
-MIN_IMAGES = int(env("MIN_IMAGES", "1"))
+FORCE_PUBLISH = env("FORCE_PUBLISH", "1") == "1"
+USE_SOURCE_IMAGE = env("USE_SOURCE_IMAGE", "1") == "1"
 MIN_WORDS = int(env("MIN_WORDS", "900"))
 MAX_AGE_HOURS = int(env("MAX_AGE_HOURS", "36"))
 MAX_CANDIDATES = int(env("MAX_CANDIDATES", "6"))
@@ -47,6 +51,6 @@ PUBLISH_DRAFT = env("PUBLISH_DRAFT", "0") == "1"
 DRY_RUN = env("DRY_RUN", "0") == "1"
 ADD_JSONLD = env("ADD_JSONLD", "1") == "1"
 
-RUN_BUDGET_MIN = int(env("RUN_BUDGET_MIN", "25"))
+RUN_BUDGET_MIN = int(env("RUN_BUDGET_MIN", "38"))
 REVIEW_RESERVE_SEC = int(env("REVIEW_RESERVE_SEC", "150"))
 DEADLINE = time.time() + RUN_BUDGET_MIN * 60
