@@ -4,7 +4,8 @@
   "55f43fa74192ee67",
   "773600b325201c4e",
   "3871cc67e0443490",
-  "888ad85e37f67344"
+  "888ad85e37f67344",
+  "ef2965d8c37dda8b"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -46,8 +47,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/robert-pattinson-to-replace-craig-as.html",
    "label": "Movie",
    "ts": 1794888670
+  },
+  {
+   "title": "...Encourage Isolation Reduces Flu...",
+   "titles": [
+    "Encouraging sick college students to isolate may reduce flu spread"
+   ],
+   "focus": "Isolation And Flu",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/isolation-flu-encourage-reduces.html",
+   "label": "Health",
+   "ts": 1794891628
   }
  ],
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
