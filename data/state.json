@@ -28,7 +28,12 @@
   "393be579022b445e",
   "f2cc3b8fc278a2cb",
   "458954e371fb7479",
-  "59e6ae9bc1ba3f74"
+  "59e6ae9bc1ba3f74",
+  "ae5a3a697fa13c5f",
+  "9d990a16befddd03",
+  "8cd3c59916c7e3df",
+  "7f1150d37cae2af8",
+  "4b3d6fbd53085187"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -168,9 +173,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/us-banks-service-outage-struggle.html",
    "label": "Business",
    "ts": 1794911342
+  },
+  {
+   "title": "... Russell Brand Prison Statement Sparks Investigation...",
+   "titles": [
+    "Russell Brand declares ‘I am not guilty’ in new statement from prison",
+    "Russell Brand prison message 'appalling' and being investigated, No 10 says"
+   ],
+   "focus": "Russell Brand prison statement",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/russell-brand-prison-statement.html",
+   "label": "Political",
+   "ts": 1794913755
   }
  ],
- "next_idx": 2,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
