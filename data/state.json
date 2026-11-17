@@ -69,7 +69,10 @@
   "f6e43b434e77fcf2",
   "09a764319905301b",
   "fde850be0cc8a6a6",
-  "907a6b705a796b45"
+  "907a6b705a796b45",
+  "c3f977f0833743ac",
+  "a3cf813fd7c9cec9",
+  "fc7fe1669c57645a"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -353,9 +356,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/iran-denies-dirty-bomb.html",
    "label": "World News",
    "ts": 1794943797
+  },
+  {
+   "title": "...Democrats immigration push...",
+   "titles": [
+    "Art of the immigration deal: Can Trump and Democrats find common ground?",
+    "Democrats won big in the midterms. What can they do about Trump’s immigration crackdown?"
+   ],
+   "focus": "Democrats immigration",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/democrats-immigration-push.html",
+   "label": "Political",
+   "ts": 1794946288
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
