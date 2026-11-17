@@ -3,7 +3,8 @@
   "29145374f8690efa",
   "55f43fa74192ee67",
   "773600b325201c4e",
-  "3871cc67e0443490"
+  "3871cc67e0443490",
+  "888ad85e37f67344"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -38,11 +39,18 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/united-airlines-resolves-system-outage.html",
    "label": "Business",
    "ts": 1794885137
+  },
+  {
+   "title": "...Robert Pattinson to Replace Craig as James Bond...",
+   "src_title": "Elizabeth Debicki Says ‘Tenet’ Co-Star Robert Pattinson Will Be the ‘Perfect’ James Bond: ‘I’m So Thrilled’",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/robert-pattinson-to-replace-craig-as.html",
+   "label": "Movie",
+   "ts": 1794888670
   }
  ],
  "last_cat": {
   "General": 1794872172,
-  "Movie": 1794875585,
+  "Movie": 1794888670,
   "World News": 1794881583,
   "Business": 1794885137
  }
