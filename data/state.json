@@ -16,7 +16,9 @@
   "2990b0f21e2f6c8b",
   "2f3e3028b5a9d2c9",
   "8c2c38fe4c9afe70",
-  "6cf698d0cf3181d7"
+  "6cf698d0cf3181d7",
+  "0d58915ba7c3c9fc",
+  "2dccb7b1f465beee"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -103,9 +105,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/openai-lawsuit.html",
    "label": "Political",
    "ts": 1794898900
+  },
+  {
+   "title": "Leonid Meteor Shower 2026: When & Where",
+   "titles": [
+    "The Leonid meteor shower peaks Nov. 17-18! Here's what you need to know",
+    "Leonid meteor shower 2026: When and where to see it from where you live"
+   ],
+   "focus": "Leonid meteor shower",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/leonid-meteor-shower.html",
+   "label": "Science",
+   "ts": 1794901398
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
