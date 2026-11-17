@@ -61,7 +61,8 @@
   "9ea6cb3a686f5458",
   "701564270e850da1",
   "5e39bb37b737a778",
-  "2f9a8ae680bc27f0"
+  "2f9a8ae680bc27f0",
+  "d395daa074b46681"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -323,9 +324,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status.html",
    "label": "Health",
    "ts": 1794938877
+  },
+  {
+   "title": "Lung-Brain Axis Hypothesis: Air Pollutants & Epilepsy",
+   "titles": [
+    "Communication between the lungs and brain could help explain how air pollution could trigger epilepsy"
+   ],
+   "focus": "lung-brain axis, epilepsy, air pollution",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/lungbrainaxis-airpollution-epilepsy.html",
+   "label": "Health",
+   "ts": 1794941305
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
