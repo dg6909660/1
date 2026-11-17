@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 
 import config
 import llm
+from utils import STOP
 
 M = config.MODELS
 CATS = config.CATEGORIES
@@ -19,13 +20,13 @@ SYS = (
 SECTION_SPECS = [
     dict(id="hook", image=True, words="90-130",
          brief="Open with a strong question, a shocking fact or a small mystery taken from the facts, then tease what the reader will learn. Two short paragraphs."),
-    dict(id="context", image=True, words="130-180",
+    dict(id="context", image=False, words="130-180",
          brief="Explain the background and history of this topic in simple words so readers understand why this news matters. Two or three short paragraphs."),
-    dict(id="core1", image=True, words="150-200",
+    dict(id="core1", image=False, words="150-200",
          brief="Core facts, step by step: present the main details, data and evidence. Include one bullet list of 3-4 facts."),
-    dict(id="core2", image=True, words="150-200",
+    dict(id="core2", image=False, words="150-200",
          brief="Deeper analysis: arguments, reactions, causes and effects backed by evidence from the facts. Explain who is affected and why."),
-    dict(id="story", image=True, words="120-170",
+    dict(id="story", image=False, words="120-170",
          brief="Conversational storytelling: talk directly to the reader (use 'you') like explaining to a friend, with a relatable scenario that stays true to the facts."),
     dict(id="keys", image=False, words="60-100",
          brief="Key takeaways: exactly 6 short bullet points, each starting with a **bold key phrase** followed by a short explanation."),
@@ -130,7 +131,7 @@ def extract_facts(sources):
         raise
     except Exception as e:
         print(f"  fact extraction failed ({e}), using source sentences", flush=True)
-    if len(facts) < 6:  # fallback: plain sentences from the sources
+    if len(facts) < 6:
         have = {f["fact"] for f in facts}
         for s in _sentences(" ".join(x["text"] for x in sources)):
             if len(facts) >= 10:
@@ -158,15 +159,17 @@ def _clean_body(b):
 
 def write_section(article, spec, done_headings):
     m = article["meta"]
+    cap = (
+        ', "caption": "one sentence, max 22 words, describing what the story\'s main photo shows in relation to the key fact; do not invent details"'
+        if spec["image"] else ""
+    )
     user = (
         f"STORY SUMMARY: {m['short_summary']}\nFOCUS KEYWORD: {m['focus_keyword']}\n\nVERIFIED FACTS:\n{facts_block(article)}\n\n"
         f"Headings already used (do not repeat ideas): {done_headings}\n\n"
         f"WRITE SECTION '{spec['id']}'.\nTask: {spec['brief']}\nLength: {spec['words']} words.\n{FORMAT_RULES}\n"
         "Use the focus keyword naturally where it fits. Use only the verified facts.\n"
         'Return JSON: {"heading": "natural news-style subheading, 4-9 words, never a generic label like Hook or Background", '
-        '"body": "the section text", '
-        '"image_query": "2-4 concrete English words describing a real photo that illustrates this section (objects, places, activities; avoid abstract words)", '
-        '"caption": "one sentence, max 22 words, linking the picture to the fact it supports; describe the subject, do not claim it shows the exact event"}'
+        '"body": "the section text"' + cap + "}"
     )
     last = None
     for _ in range(2):
@@ -179,7 +182,6 @@ def write_section(article, spec, done_headings):
                 "id": spec["id"],
                 "heading": _clean(raw.get("heading")) or FALLBACK_HEADINGS[spec["id"]],
                 "body": body,
-                "image_query": _clean(raw.get("image_query")) or m["focus_keyword"],
                 "caption": _clean(raw.get("caption")),
                 "has_image": spec["image"],
                 "image": None,
@@ -192,7 +194,6 @@ def write_section(article, spec, done_headings):
 
 
 def fallback_section(article, spec):
-    """Used when the AI fails or time is up, so the post is always complete."""
     facts = [f["fact"] for f in article["facts"]]
     idx = [s["id"] for s in SECTION_SPECS].index(spec["id"])
     kw = article["meta"]["focus_keyword"]
@@ -207,7 +208,7 @@ def fallback_section(article, spec):
         body = "\n\n".join(chunk)
     return {
         "id": spec["id"], "heading": FALLBACK_HEADINGS[spec["id"]], "body": body,
-        "image_query": kw, "caption": article["meta"]["title"], "has_image": spec["image"], "image": None,
+        "caption": article["meta"]["title"], "has_image": spec["image"], "image": None,
     }
 
 
@@ -219,13 +220,13 @@ def build_article(item, sources):
     elif meta["category"] in CATS:
         label = meta["category"]
     else:
-        label = None  # no category label -> shows only on Home
+        label = None  # no label -> shows only on Home
     article = {"meta": meta, "facts": facts, "label": label, "sections": []}
     done = []
     for spec in SECTION_SPECS:
         try:
             sec = write_section(article, spec, done)
-        except Exception as e:  # includes OutOfTime
+        except Exception as e:
             print(f"  section {spec['id']}: using fallback ({type(e).__name__})", flush=True)
             sec = fallback_section(article, spec)
         article["sections"].append(sec)
@@ -235,7 +236,6 @@ def build_article(item, sources):
 
 
 def quick_article(item, sources):
-    """One-call emergency article, used only if the normal pipeline breaks."""
     user = (
         sources_text(sources, 6000)
         + "\n\nWrite a complete news article of 450-600 words in your own words using only the sources. "
@@ -260,9 +260,43 @@ def quick_article(item, sources):
         "short_summary": summary,
     }
     label = item["category"] if item["category"] in CATS else (meta["category"] if meta["category"] in CATS else None)
-    sec = {"id": "main", "heading": "The Full Story", "body": body, "image_query": meta["focus_keyword"],
-           "caption": title, "has_image": True, "image": None}
+    sec = {"id": "main", "heading": "The Full Story", "body": body, "caption": title, "has_image": True, "image": None}
     return {"meta": meta, "facts": [], "label": label, "sections": [sec], "quick": True}
+
+
+def make_permalink(article):
+    """Local AI writes the permalink phrase. Blogger builds the post URL from the title at first publish."""
+    m = article["meta"]
+    words = []
+    try:
+        raw = llm.chat_json(
+            M["seo"],
+            "You create short SEO-friendly URL slugs for news articles.",
+            f"Headline: {m['title']}\nFocus keyword: {m['focus_keyword']}\n\n"
+            "Create a permalink phrase: 3 to 6 lowercase English words, at most 36 characters in total, containing the main words "
+            "of the focus keyword, without filler words (the, a, of, in, to), without numbers unless essential, without punctuation.\n"
+            'Return JSON: {"slug": "..."}',
+            temperature=0.2, num_predict=60,
+        )
+        words = re.findall(r"[a-z0-9]+", str(raw.get("slug", "")).lower())
+    except Exception:
+        words = []
+    if len(words) < 2:
+        words = re.findall(r"[a-z0-9]+", (m["focus_keyword"] + " " + m["title"]).lower())
+    picked, total = [], 0
+    for w in words:
+        if w in STOP or w in picked:
+            continue
+        add = len(w) + (1 if picked else 0)
+        if total + add > 36:
+            break
+        picked.append(w)
+        total += add
+        if len(picked) == 6:
+            break
+    if len(picked) < 2:
+        picked = ["latest", "news", "update"]
+    return " ".join(picked).title()
 
 
 def fix_section(article, sid, issues):
@@ -346,40 +380,41 @@ def figure(sec, kw):
     cap = sec["caption"] or sec["heading"]
     alt = cap if kw.lower() in cap.lower() else f"{kw} - {cap}"
     alt = html.escape(alt[:125], quote=True)
-    credit = html.escape(f"Illustrative image. {im['credit_line']}", quote=False)
+    credit = im["credit_line"]
+    if im.get("illustrative"):
+        credit = "Illustrative image. " + credit
     return (
-        '<figure style="margin:20px 0;text-align:center">'
-        f'<img src="{html.escape(im["url"], quote=True)}" alt="{alt}" loading="lazy" '
+        '<figure style="margin:0 0 22px;text-align:center">'
+        f'<img src="{html.escape(im["url"], quote=True)}" alt="{alt}" referrerpolicy="no-referrer" '
         'style="width:100%;max-width:100%;height:auto;border-radius:12px"/>'
         f'<figcaption style="font-size:13px;opacity:.85;margin-top:8px"><strong>{html.escape(cap, quote=False)}</strong><br/>'
-        f'<span style="opacity:.8">{credit}</span></figcaption></figure>'
+        f'<span style="opacity:.8">{html.escape(credit, quote=False)}</span></figcaption></figure>'
     )
 
 
 def build_html(article):
     m = article["meta"]
     kw = m["focus_keyword"]
-    parts = [
-        '<div class="tnd-article">',
+    parts = ['<div class="tnd-article">']
+    hero = next((s for s in article["sections"] if s["image"]), None)
+    if hero:
+        parts.append(figure(hero, kw))  # the single image, right at the top
+    parts.append(
         '<div style="border-left:5px solid #e11d48;background:rgba(225,29,72,.08);padding:14px 18px;border-radius:10px;margin:0 0 22px">'
-        f"<strong>In short:</strong> {html.escape(m['short_summary'], quote=False)}</div>",
-    ]
-    images = []
+        f"<strong>In short:</strong> {html.escape(m['short_summary'], quote=False)}</div>"
+    )
+    images = [hero["image"]["url"]] if hero else []
     for s in article["sections"]:
-        if s["image"]:
-            images.append(s["image"]["url"])
         h2 = f"<h2>{html.escape(s['heading'], quote=False)}</h2>"
         body = md_to_html(s["body"])
-        if s["id"] in ("hook", "main"):
-            parts.append((figure(s, kw) if s["image"] else "") + h2 + body)
-        elif s["id"] == "keys":
+        if s["id"] == "keys":
             parts.append(
                 '<div style="border:2px solid #e11d48;border-radius:14px;padding:6px 20px 10px;margin:26px 0">' + h2 + body + "</div>"
             )
         elif s["id"] == "outro":
             parts.append('<div style="border-top:3px solid #e11d48;margin-top:28px;padding-top:6px">' + h2 + body + "</div>")
         else:
-            parts.append(h2 + (figure(s, kw) if s["image"] else "") + body)
+            parts.append(h2 + body)
     if m["keywords"]:
         parts.append(
             '<p style="font-size:13px;opacity:.8"><em>Topics covered: '
