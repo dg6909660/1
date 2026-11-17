@@ -25,7 +25,8 @@
   "4474d1b52113cf0b",
   "c2bf10ae6da6b30a",
   "60958b77c8a63b24",
-  "393be579022b445e"
+  "393be579022b445e",
+  "f2cc3b8fc278a2cb"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -144,9 +145,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/trump-asean-summit.html",
    "label": "World News",
    "ts": 1794906357
+  },
+  {
+   "title": "NHS Ends A&E Corridor Care by 2029",
+   "titles": [
+    "'I spent more than two days waiting in A&E' - NHS bids to end corridor care"
+   ],
+   "focus": "A&E corridor care",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nhes-stop-aecorridor-care.html",
+   "label": "Health",
+   "ts": 1794908865
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
