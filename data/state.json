@@ -75,7 +75,13 @@
   "fc7fe1669c57645a",
   "6782d9f170fcb72b",
   "447ab83e329fa24e",
-  "dd80da1ad235a85b"
+  "dd80da1ad235a85b",
+  "1515856f859a13bb",
+  "53a6313eb598a450",
+  "9466f73c9f1d4585",
+  "0129ad58649038c8",
+  "566598e1eca81ebb",
+  "fbe1847f933b3456"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -392,9 +398,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/shakespeare-institute-university.html",
    "label": "Education",
    "ts": 1794951348
+  },
+  {
+   "title": "US Soldier Spying Case in UK: Joint FBI, US Army, UK Counter",
+   "titles": [
+    "American soldier held in UK suspected of spying for Russia taken into US military custody",
+    "American soldier arrested by UK police on suspicion of spying taken into US military custody"
+   ],
+   "focus": "US soldier spying",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/us-soldier-spying-case.html",
+   "label": "World News",
+   "ts": 1794954554
   }
  ],
- "next_idx": 6,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
