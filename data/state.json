@@ -45,7 +45,13 @@
   "11d740d735555cec",
   "c8803f105a406600",
   "961479e61fb9484f",
-  "fa070605e9f213a9"
+  "fa070605e9f213a9",
+  "81a5f1c53cf319aa",
+  "3642c1ffb44033e9",
+  "2a25e8c6bdfa0819",
+  "a077b67b56722504",
+  "47b4728cc9a6d81a",
+  "0a0e369d3f8b767c"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -249,9 +255,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/milburn-neets-plan-2036.html",
    "label": "Business",
    "ts": 1794926244
+  },
+  {
+   "title": "UK Imposes Sanctions on Israeli Settlement Firms",
+   "titles": [
+    "UK sanctions firms over Israeli West Bank settlements",
+    "Ed Miliband announces first sanctions on Israeli firms working in West Bank"
+   ],
+   "focus": "UK sanctions Israel",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/uk-sanctions-israel-imposes-israeli.html",
+   "label": "Political",
+   "ts": 1794928704
   }
  ],
- "next_idx": 2,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
