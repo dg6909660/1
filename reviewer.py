@@ -3,7 +3,6 @@ import time
 import traceback
 
 import config
-import images
 import llm
 import validators
 import writer
@@ -17,7 +16,7 @@ RUBRIC = {
     "conversational_tone": "Tone is natural and conversational, not a dry textbook.",
     "key_points_marked": "Key points are marked (bold, highlight, bullets) and easy to scan.",
     "outro_open_question": "Conclusion summarizes briefly and ends with an open-ended question.",
-    "images_match_evidence": "Each image caption matches the facts of its section; images are honest and relevant.",
+    "images_match_evidence": "The image caption matches the story and its key fact (the image is the story's own photo).",
     "seo_ready": "Title, description, keyword use, headings and structure are SEO-ready.",
 }
 
@@ -30,9 +29,9 @@ ROUNDS = [
     (1, "Fact-check", "fact", "Compare every sentence with the SOURCES. Flag anything unsupported, exaggerated or contradicted."),
     (2, "Style and language", "style", "Grammar, spelling, repetition, robotic or awkward phrasing, tone consistency, natural headings."),
     (3, "Structure and readability", "style",
-     "Order: short summary, hook, background, core facts, storytelling, key takeaways, conclusion. Scannability, paragraph length, highlights."),
-    (4, "Images and SEO", "seo",
-     "Image captions vs the evidence in each section, image honesty, title and description, keyword use, headings."),
+     "Order: image, short summary, hook, background, core facts, storytelling, key takeaways, conclusion. Scannability, paragraph length, highlights."),
+    (4, "Image and SEO", "seo",
+     "Image caption vs the story, title and description, keyword use, headings."),
     (5, "Final approval", "final", "Act as chief editor and decide if the article is ready to publish. Be strict about accuracy."),
 ]
 
@@ -50,9 +49,7 @@ def article_text(article):
         lines.append(f"\n[SECTION {s['id']}] {s['heading']}\n{s['body']}")
         if s["image"]:
             im = s["image"]
-            lines.append(
-                f"[IMAGE for {s['id']}] caption: {s['caption']} | photo title: {im['title']} | photo details: {im['desc'][:160]}"
-            )
+            lines.append(f"[IMAGE (top of article)] caption: {s['caption']} | image description: {im['title']}")
     return "\n".join(lines)
 
 
@@ -70,7 +67,6 @@ def _normalize(article, issue):
 
 
 def _apply(article, issues):
-    ids = {s["id"]: s for s in article["sections"]}
     grouped = {}
     for i in issues:
         sid = _normalize(article, i)
@@ -80,12 +76,8 @@ def _apply(article, issues):
         try:
             if sid == "meta":
                 writer.fix_meta(article, lst)
-                continue
-            sec = ids[sid]
-            text = " ".join((x.get("problem", "") + " " + x.get("fix", "")).lower() for x in lst)
-            if sec["has_image"] and re.search(r"\b(image|photo|picture)\b", text):
-                images.replace_image(article, sid)
-            writer.fix_section(article, sid, lst)
+            elif sid in writer.SPEC:
+                writer.fix_section(article, sid, lst)
         except llm.OutOfTime:
             raise
         except Exception as e:
