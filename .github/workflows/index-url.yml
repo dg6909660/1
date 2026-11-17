@@ -1,0 +1,35 @@
+name: Index a URL manually
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Page address (https://...)"
+        required: true
+      action:
+        description: "update = new/changed page, delete = removed page, status = check, sitemap = submit sitemap"
+        required: true
+        default: "update"
+        type: choice
+        options: [update, delete, status, sitemap]
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install google-auth requests
+      - name: Run
+        run: |
+          case "${{ github.event.inputs.action }}" in
+            delete)  python indexing.py "${{ github.event.inputs.url }}" --delete ;;
+            status)  python indexing.py "${{ github.event.inputs.url }}" --status ;;
+            sitemap) python indexing.py "${{ github.event.inputs.url }}" --sitemap ;;
+            *)       python indexing.py "${{ github.event.inputs.url }}" ;;
+          esac
