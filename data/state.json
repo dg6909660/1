@@ -62,7 +62,14 @@
   "701564270e850da1",
   "5e39bb37b737a778",
   "2f9a8ae680bc27f0",
-  "d395daa074b46681"
+  "d395daa074b46681",
+  "9775fff4b2849085",
+  "6b350c9c2b492758",
+  "36f71dc747c1e3ea",
+  "f6e43b434e77fcf2",
+  "09a764319905301b",
+  "fde850be0cc8a6a6",
+  "907a6b705a796b45"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -334,9 +341,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/lungbrainaxis-airpollution-epilepsy.html",
    "label": "Health",
    "ts": 1794941305
+  },
+  {
+   "title": "...Iran Denies Dirty Bomb Threat...",
+   "titles": [
+    "Is Iran plotting a ‘dirty bomb’ attack in the US? What we know",
+    "Iran dismisses report of alleged 'dirty bomb' attack on Washington",
+    "What is a dirty bomb? What to know about reported Iran threat"
+   ],
+   "focus": "Iran dirty bomb",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/iran-denies-dirty-bomb.html",
+   "label": "World News",
+   "ts": 1794943797
   }
  ],
- "next_idx": 1,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
