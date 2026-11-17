@@ -2,7 +2,8 @@
  "seen": [
   "29145374f8690efa",
   "55f43fa74192ee67",
-  "773600b325201c4e"
+  "773600b325201c4e",
+  "3871cc67e0443490"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -30,11 +31,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/robert-pattinson-bond.html",
    "label": "World News",
    "ts": 1794881583
+  },
+  {
+   "title": "United Airlines Resolves System Outage Amid Tech Disruptions",
+   "src_title": "United Airlines resolves system outage that affected departing flights",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/united-airlines-resolves-system-outage.html",
+   "label": "Business",
+   "ts": 1794885137
   }
  ],
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794875585,
-  "World News": 1794881583
+  "World News": 1794881583,
+  "Business": 1794885137
  }
 }
