@@ -26,7 +26,9 @@
   "c2bf10ae6da6b30a",
   "60958b77c8a63b24",
   "393be579022b445e",
-  "f2cc3b8fc278a2cb"
+  "f2cc3b8fc278a2cb",
+  "458954e371fb7479",
+  "59e6ae9bc1ba3f74"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -155,9 +157,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nhes-stop-aecorridor-care.html",
    "label": "Health",
    "ts": 1794908865
+  },
+  {
+   "title": "...US Banks Struggle with Service Outage...",
+   "titles": [
+    "Customers report service outages at major US banks",
+    "Customers report difficulty accessing online services at major US banks"
+   ],
+   "focus": "US banks service outage",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/us-banks-service-outage-struggle.html",
+   "label": "Business",
+   "ts": 1794911342
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
