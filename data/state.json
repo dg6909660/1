@@ -52,7 +52,9 @@
   "a077b67b56722504",
   "47b4728cc9a6d81a",
   "0a0e369d3f8b767c",
-  "1c4f421c594a5fc3"
+  "1c4f421c594a5fc3",
+  "1a2c85b60266f2e6",
+  "2f730ed45da87e4f"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -278,9 +280,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nanogap-wse2-quantum-light-sources.html",
    "label": "Science",
    "ts": 1794931230
+  },
+  {
+   "title": "...Milburn Neets Plan...",
+   "titles": [
+    "Out of work and not in college: How quickly could Milburn's plans help you?",
+    "We can't afford to hire under-25s, say firms. Will Milburn plans help?"
+   ],
+   "focus": "Milburn Neets Plan",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/milburn-neets-plan.html",
+   "label": "Education",
+   "ts": 1794933840
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
