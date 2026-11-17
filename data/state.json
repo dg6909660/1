@@ -12,7 +12,11 @@
   "643dde1ba15847aa",
   "e6c927f989913d89",
   "6a0b0cc96336930c",
-  "ddbbc267e449a5b0"
+  "ddbbc267e449a5b0",
+  "2990b0f21e2f6c8b",
+  "2f3e3028b5a9d2c9",
+  "8c2c38fe4c9afe70",
+  "6cf698d0cf3181d7"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -87,9 +91,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/ukrainebridges-ukraine-mayor-bridges.html",
    "label": "World News",
    "ts": 1794896563
+  },
+  {
+   "title": "...OpenAI lawsuit",
+   "titles": [
+    "California sues OpenAI over hacking risks",
+    "California sues OpenAI over Hugging Face attack",
+    "California attorney general sues OpenAI over alleged safety failures"
+   ],
+   "focus": "OpenAI lawsuit",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/openai-lawsuit.html",
+   "label": "Political",
+   "ts": 1794898900
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
