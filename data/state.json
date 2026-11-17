@@ -37,7 +37,12 @@
   "7d4573cf4949fac2",
   "08cb1bd51201e43e",
   "85ffccd678494595",
-  "0ee92d00ba8ab01c"
+  "0ee92d00ba8ab01c",
+  "b4ec1ae921da29d2",
+  "52c31bf358d635a9",
+  "2bf24907448112ae",
+  "cf7d471cbf203e50",
+  "11d740d735555cec"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -209,9 +214,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/gta-6-belfast-boys-model-prize.html",
    "label": "Education",
    "ts": 1794918767
+  },
+  {
+   "title": "...James Bond: New Era in the Franchise...",
+   "titles": [
+    "The A.I. Fight Dividing the Trump Administration, and the Next James Bond",
+    "James Bond: What we know so far about the next 007 film"
+   ],
+   "focus": "James Bond",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/james-bond-era-franchise.html",
+   "label": "Movie",
+   "ts": 1794921277
   }
  ],
- "next_idx": 6,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
