@@ -18,7 +18,8 @@
   "8c2c38fe4c9afe70",
   "6cf698d0cf3181d7",
   "0d58915ba7c3c9fc",
-  "2dccb7b1f465beee"
+  "2dccb7b1f465beee",
+  "2ae5bdea6b1b75aa"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -116,9 +117,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/leonid-meteor-shower.html",
    "label": "Science",
    "ts": 1794901398
+  },
+  {
+   "title": "Funding Cuts Threaten NI Youth Orchestras",
+   "titles": [
+    "Youth orchestras could be at risk due to further funding cuts"
+   ],
+   "focus": "youth orchestras",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/youthorchestras-funding-threat.html",
+   "label": "Education",
+   "ts": 1794903858
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
