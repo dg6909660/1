@@ -85,7 +85,9 @@
   "46bd1587f896f009",
   "31a340241a73a2d5",
   "5b565cfaa4953e93",
-  "1090a85f87f6bf79"
+  "1090a85f87f6bf79",
+  "da3a9e04e060fd24",
+  "0c81d45ecbbb9aad"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -434,9 +436,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nvidia-board-declines-huang.html",
    "label": "Business",
    "ts": 1794959558
+  },
+  {
+   "title": "...Israel Speaker...",
+   "titles": [
+    "Israel parliament elects Gadi Eisenkot ally Matan Kahana as new speaker",
+    "Matan Kahana Elected Speaker of Israel’s Parliament"
+   ],
+   "focus": "Israel Speaker",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/israel-speaker.html",
+   "label": "World News",
+   "ts": 1794962019
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
