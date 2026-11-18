@@ -130,7 +130,8 @@
   "231a189cb27a66f1",
   "434657a0e157fa1f",
   "4e768de972a086fb",
-  "9646f9efd40ca63b"
+  "9646f9efd40ca63b",
+  "5296b6f36502c26d"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -689,9 +690,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/wiley-knowitall-2027.html",
    "label": "Health",
    "ts": 1795005485
+  },
+  {
+   "title": "...Target sales growth 7.1%",
+   "titles": [
+    "Target posts best sales growth in five years, raises guidance"
+   ],
+   "focus": "Target sales growth",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/target-sales-growth.html",
+   "label": "Business",
+   "ts": 1795008031
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
