@@ -138,7 +138,8 @@
   "bc8d75d2d96eaf56",
   "3fe1b4aa20c0db19",
   "4db63cd937ae4e0c",
-  "56e4daaf37dfc891"
+  "56e4daaf37dfc891",
+  "cb7dbc75129d13dd"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -744,9 +745,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/uk-exam-cheating-penalties.html",
    "label": "Education",
    "ts": 1795015429
+  },
+  {
+   "title": "Severance Meets Harlan Coben in Disney+ Series Adaptation",
+   "titles": [
+    "Severance Meets Harlan Coben In New Disney+ Series Adaptation"
+   ],
+   "focus": "Severance Disney+",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/severance-disney.html",
+   "label": "Movie",
+   "ts": 1795017892
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

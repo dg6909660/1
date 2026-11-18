@@ -1,6 +1,6 @@
 {
  "day": "2026-11-18",
- "count": 41,
+ "count": 42,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -204,6 +204,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/uk-exam-cheating-penalties.html": {
    "ts": 1795015444,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/severance-disney.html": {
+   "ts": 1795017909,
    "type": "URL_UPDATED",
    "ok": true
   }
