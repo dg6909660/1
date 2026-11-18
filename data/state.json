@@ -147,7 +147,11 @@
   "61d2d4a2c08a390b",
   "78a120ff2a587062",
   "574f499b55a7cf42",
-  "c3095342acd15fc8"
+  "c3095342acd15fc8",
+  "ff776c31ccfe588c",
+  "ec1bee06011bc5b2",
+  "ba3c542b44119aba",
+  "7c7e5226df0ab628"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -798,9 +802,22 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nvidia-national-security-committee.html",
    "label": "Business",
    "ts": 1795025408
+  },
+  {
+   "title": "Grand Theft Auto 6: Why It’s A Game-Changer (2026)",
+   "titles": [
+    "Grand Theft Auto 6 is a masterpiece, say critics",
+    "What makes 'Grand Theft Auto VI' more than just a game?",
+    "Gamers react as New Zealand first to see Grand Theft Auto 6",
+    "The Real-Life City That Inspires Grand Theft Auto VI"
+   ],
+   "focus": "Grand Theft Auto 6",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/grand-theft-auto-6-gamechanger.html",
+   "label": "World News",
+   "ts": 1795027915
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
