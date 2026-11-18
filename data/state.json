@@ -124,7 +124,8 @@
   "89ebf33e3c4fddef",
   "71288f95fb59ec2f",
   "dd94eb52e02fb52c",
-  "5145e7813db470b1"
+  "5145e7813db470b1",
+  "daa705b16f5e486c"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -651,9 +652,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/childhood-neglect-neet-crisis.html",
    "label": "Education",
    "ts": 1794998193
+  },
+  {
+   "title": "GTA 6 PS5 Firmware Update: Key Facts 2026",
+   "titles": [
+    "GTA 6 Will Officially Be Unplayable If PS5 Gamers Skip This Step"
+   ],
+   "focus": "GTA 6 PS5 firmware update",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/gta6-ps5-firmware.html",
+   "label": "Movie",
+   "ts": 1795000658
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
