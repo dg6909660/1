@@ -154,7 +154,9 @@
   "7c7e5226df0ab628",
   "692111756940f8e8",
   "c91b8a9740b25f51",
-  "5adb739a3a57c927"
+  "5adb739a3a57c927",
+  "5a93ed7d17fddda8",
+  "f6ffe1e2e5672089"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -842,9 +844,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/wales-young-people-budget.html",
    "label": "Education",
    "ts": 1795032033
+  },
+  {
+   "title": "...The Comeback King trailer: Recovery in Country Music",
+   "titles": [
+    "‘The Comeback King’ Trailer: Glen Powell Is a Cancelled Country Star in Judd Apatow’s Latest Directing Project",
+    "‘The Comeback King’ Trailer: Glen Powell Is a Washed-Up Country Star in Judd Apatow’s New Comedy"
+   ],
+   "focus": "The Comeback King trailer",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/comeback-king-trailer-recovery.html",
+   "label": "Movie",
+   "ts": 1795034513
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
