@@ -48,29 +48,41 @@ def access_token():
     return r.json()["access_token"]
 
 
-def publish_post(title, html_content, labels, slug_title=None):
-    """Publishes with the AI permalink phrase as the first title (Blogger makes the URL from it),
-    then switches to the real headline. The URL stays fixed after first publish."""
+def publish_post(title, html_content, labels, slug_title=None, html_after=None):
+    """Publishes with the AI permalink phrase as the first title (Blogger makes the URL from it), then switches to the
+    real headline and, once the final URL is known, rewrites the content with URL-aware SEO data (schema.org)."""
     headers = {"Authorization": f"Bearer {access_token()}"}
-    body = {"kind": "blogger#post", "title": slug_title or title, "content": html_content}
+    body = {"kind": "blogger#post", "title": slug_title or title, "content": html_content, "readerComments": "ALLOW"}
     if labels:
         body["labels"] = labels
-    r = _req("POST", f"{API}/posts", params={"isDraft": str(config.PUBLISH_DRAFT).lower()}, headers=headers, json=body)
+    params = {"isDraft": str(config.PUBLISH_DRAFT).lower()}
+    r = _req("POST", f"{API}/posts", params=params, headers=headers, json=body)
+    if r.status_code == 400 and "readerComments" in r.text:
+        body.pop("readerComments", None)
+        r = _req("POST", f"{API}/posts", params=params, headers=headers, json=body)
     if r.status_code in (401, 403, 404):
         raise PublishError(f"Blogger error {r.status_code}: {r.text[:300]} -> check BLOG_ID, account access and that Blogger API v3 is enabled")
     if r.status_code >= 300:
         raise RuntimeError(f"Blogger error {r.status_code}: {r.text[:300]}")
     data = r.json()
     post_id, url = data.get("id"), data.get("url", "")
-    if slug_title and post_id and slug_title != title:
+    patch = {}
+    if slug_title and slug_title != title:
+        patch["title"] = title
+    if html_after and url:
+        try:
+            patch["content"] = html_after(url)
+        except Exception as e:
+            print("  could not build final content:", e, flush=True)
+    if patch and post_id:
         for _ in range(3):
-            rp = _req("PATCH", f"{API}/posts/{post_id}", headers=headers, json={"title": title})
+            rp = _req("PATCH", f"{API}/posts/{post_id}", headers=headers, json=patch)
             if rp.status_code < 300:
                 break
-            print(f"  title update failed {rp.status_code}: {rp.text[:150]}", flush=True)
+            print(f"  post update failed {rp.status_code}: {rp.text[:150]}", flush=True)
             time.sleep(5)
         else:
-            print("  WARNING: post stays with the short permalink title", flush=True)
+            print("  WARNING: post keeps its first title/content", flush=True)
     return url, post_id
 
 
