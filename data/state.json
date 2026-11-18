@@ -113,7 +113,10 @@
   "d717dcbe1732bddb",
   "e63a04bafdaa554f",
   "b1a28720a6b67989",
-  "26a5df592f6a30ba"
+  "26a5df592f6a30ba",
+  "941d9d7c875e4ee0",
+  "9e0a57da6fc9782c",
+  "4003574a4fa9700c"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -597,9 +600,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/firefighter-cancer-lagoon.html",
    "label": "Health",
    "ts": 1794988439
+  },
+  {
+   "title": "UK Inflation Hits 3.6% in 2026: Key Facts Explained",
+   "titles": [
+    "UK inflation rises to highest level in a year on back of higher petrol and diesel prices – business live",
+    "Higher petrol and diesel prices push UK inflation to 3.6%"
+   ],
+   "focus": "UK inflation",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/uk-inflation-key-facts.html",
+   "label": "Business",
+   "ts": 1794990966
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
