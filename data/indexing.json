@@ -1,6 +1,6 @@
 {
  "day": "2026-11-18",
- "count": 38,
+ "count": 39,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -189,6 +189,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/target-sales-growth.html": {
    "ts": 1795008045,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/trump-apec-summit.html": {
+   "ts": 1795010526,
    "type": "URL_UPDATED",
    "ok": true
   }

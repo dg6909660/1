@@ -131,7 +131,11 @@
   "434657a0e157fa1f",
   "4e768de972a086fb",
   "9646f9efd40ca63b",
-  "5296b6f36502c26d"
+  "5296b6f36502c26d",
+  "ff96299067217bce",
+  "45c19e2f8827aac5",
+  "495b7c0c2863b983",
+  "bc8d75d2d96eaf56"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -700,9 +704,22 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/target-sales-growth.html",
    "label": "Business",
    "ts": 1795008031
+  },
+  {
+   "title": "...Trump APEC Summit...",
+   "titles": [
+    "Trump lands in China with key meetings with Xi and Putin on the agenda",
+    "Trump arrives in China ahead of trilateral summit with Xi, Putin",
+    "APEC summit: Xi, Trump and Putin gather in Shenzhen, China",
+    "Xi, Putin condemn sanctions as Trump arrives in China"
+   ],
+   "focus": "Trump APEC summit",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/trump-apec-summit.html",
+   "label": "World News",
+   "ts": 1795010512
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
