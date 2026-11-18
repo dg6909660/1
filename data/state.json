@@ -159,7 +159,8 @@
   "f6ffe1e2e5672089",
   "1a5115cb92d28c75",
   "b08df09c0c70e619",
-  "678303faed6d7868"
+  "678303faed6d7868",
+  "c58e9f67fb14a149"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -869,9 +870,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/julio-iglesias-sexual-abuse.html",
    "label": "World News",
    "ts": 1795037051
+  },
+  {
+   "title": "Sutter Health LATE Biobank: Inside the Registry 2026",
+   "titles": [
+    "Sutter Health launches biobank registry to accelerate research into LATE"
+   ],
+   "focus": "Sutter Health LATE biobank",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/sutter-health-late-biobank.html",
+   "label": "Health",
+   "ts": 1795039535
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
