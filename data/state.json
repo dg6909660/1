@@ -90,14 +90,18 @@
   "0c81d45ecbbb9aad",
   "dfe6755aa106b17b",
   "cdd4aca4f2eb36c1",
-  "adae717e460e3f85"
+  "adae717e460e3f85",
+  "77ab65f34ee9bcc6",
+  "b38f795818b06e9c"
  ],
  "failed": {
   "29145374f8690efa": 1,
   "c2bf10ae6da6b30a": 1,
   "e37abfc0f60f6b78": 1,
   "5e776772777c1d14": 1,
-  "191716913866e5a0": 1
+  "191716913866e5a0": 1,
+  "eaad75998d3da0b3": 1,
+  "59f28fd2c5eb9d7c": 1
  },
  "posts": [
   {
@@ -461,9 +465,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/eu-options-announcement.html",
    "label": "Political",
    "ts": 1794964503
+  },
+  {
+   "title": "...UK Youth Study Examines Social Media Ban...",
+   "titles": [
+    "Largest British study to check social media ban's effect on youth mental health"
+   ],
+   "focus": "social media ban",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/3-6-lowercase-english-words-without.html",
+   "label": "Education",
+   "ts": 1794966893
   }
  ],
- "next_idx": 4,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
