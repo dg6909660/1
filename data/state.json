@@ -116,7 +116,12 @@
   "26a5df592f6a30ba",
   "941d9d7c875e4ee0",
   "9e0a57da6fc9782c",
-  "4003574a4fa9700c"
+  "4003574a4fa9700c",
+  "0febd4b104b3fcf1",
+  "8ac52b315ad50f92",
+  "e54ccd81a1434eb7",
+  "113387287da11b86",
+  "89ebf33e3c4fddef"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -611,9 +616,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/uk-inflation-key-facts.html",
    "label": "Business",
    "ts": 1794990966
+  },
+  {
+   "title": "Nvidia 2026: Major Sales Surge, Why Investors Should Care",
+   "titles": [
+    "Nvidia reports strong third quarter after Huang departs",
+    "Nvidia says it won't reinstate Huang as it reports soaring sales"
+   ],
+   "focus": "Nvidia sales",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nvidia-sales-rise.html",
+   "label": "Political",
+   "ts": 1794993334
   }
  ],
- "next_idx": 2,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
