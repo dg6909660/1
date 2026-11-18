@@ -137,7 +137,8 @@
   "495b7c0c2863b983",
   "bc8d75d2d96eaf56",
   "3fe1b4aa20c0db19",
-  "4db63cd937ae4e0c"
+  "4db63cd937ae4e0c",
+  "56e4daaf37dfc891"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -151,7 +152,10 @@
   "c68bfd35df723788": 1,
   "df628f78fe125a27": 1,
   "74fb30eed810c616": 1,
-  "785a20ba43c605a5": 1
+  "785a20ba43c605a5": 1,
+  "d9a3373a421ae1ac": 1,
+  "a46463247f42cf02": 1,
+  "09f474c372f9b2d6": 1
  },
  "posts": [
   {
@@ -730,9 +734,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/three-tier-policing.html",
    "label": "Political",
    "ts": 1795012955
+  },
+  {
+   "title": "...UK exam cheating: Ofqual warns of severe penalties...",
+   "titles": [
+    "Ofqual urges ‘life-altering’ penalties for students who use tech to cheat"
+   ],
+   "focus": "UK exam cheating",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/uk-exam-cheating-penalties.html",
+   "label": "Education",
+   "ts": 1795015429
   }
  ],
- "next_idx": 4,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
