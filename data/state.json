@@ -153,7 +153,8 @@
   "ba3c542b44119aba",
   "7c7e5226df0ab628",
   "692111756940f8e8",
-  "c91b8a9740b25f51"
+  "c91b8a9740b25f51",
+  "5adb739a3a57c927"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -170,7 +171,10 @@
   "785a20ba43c605a5": 1,
   "d9a3373a421ae1ac": 1,
   "a46463247f42cf02": 1,
-  "09f474c372f9b2d6": 1
+  "09f474c372f9b2d6": 1,
+  "bc92dc831ac52f33": 1,
+  "86c7d201cfb5274a": 1,
+  "fe1ab9936f135e7d": 1
  },
  "posts": [
   {
@@ -828,9 +832,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/iran-gulf-strikes.html",
    "label": "Political",
    "ts": 1795030327
+  },
+  {
+   "title": "...Wales Young People Budget",
+   "titles": [
+    "Is there bad news for young people in Wales' budget?"
+   ],
+   "focus": "wales young people budget",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/wales-young-people-budget.html",
+   "label": "Education",
+   "ts": 1795032033
   }
  ],
- "next_idx": 4,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
