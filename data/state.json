@@ -144,7 +144,10 @@
   "017ffa83242fd131",
   "f1d6df3f79186f07",
   "8e0369d51c17b430",
-  "61d2d4a2c08a390b"
+  "61d2d4a2c08a390b",
+  "78a120ff2a587062",
+  "574f499b55a7cf42",
+  "c3095342acd15fc8"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -783,9 +786,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/gut-viruses-116k-explained-means.html",
    "label": "Health",
    "ts": 1795022904
+  },
+  {
+   "title": "...Nvidia National Security Committee 2026",
+   "titles": [
+    "Jensen Huang and Nvidia is not a honeypot story. It is a national security story",
+    "Jensen Huang to testify before Congress on ‘potential breach of national security’",
+    "Nvidia forms national security committee after Huang affair"
+   ],
+   "focus": "Nvidia national security committee",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nvidia-national-security-committee.html",
+   "label": "Business",
+   "ts": 1795025408
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

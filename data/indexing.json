@@ -1,6 +1,6 @@
 {
  "day": "2026-11-18",
- "count": 44,
+ "count": 45,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -219,6 +219,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/gut-viruses-116k-explained-means.html": {
    "ts": 1795022916,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/nvidia-national-security-committee.html": {
+   "ts": 1795025422,
    "type": "URL_UPDATED",
    "ok": true
   }
