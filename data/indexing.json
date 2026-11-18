@@ -1,6 +1,6 @@
 {
  "day": "2026-11-18",
- "count": 32,
+ "count": 33,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -159,6 +159,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/nvidia-sales-rise.html": {
    "ts": 1794993352,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/cddwy-key-humanism.html": {
+   "ts": 1794995842,
    "type": "URL_UPDATED",
    "ok": true
   }

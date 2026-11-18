@@ -121,7 +121,9 @@
   "8ac52b315ad50f92",
   "e54ccd81a1434eb7",
   "113387287da11b86",
-  "89ebf33e3c4fddef"
+  "89ebf33e3c4fddef",
+  "71288f95fb59ec2f",
+  "dd94eb52e02fb52c"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -627,9 +629,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nvidia-sales-rise.html",
    "label": "Political",
    "ts": 1794993334
+  },
+  {
+   "title": "Humanism Key to 2026 Cambridge Dictionary Word of the Year: Why",
+   "titles": [
+    "‘Human’ wins Cambridge dictionary’s word of the year",
+    "'Human' is Cambridge Dictionary Word of the Year"
+   ],
+   "focus": "Cambridge Dictionary Word of the Year",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/cddwy-key-humanism.html",
+   "label": "Science",
+   "ts": 1794995828
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
