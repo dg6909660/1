@@ -1,6 +1,6 @@
 {
  "day": "2026-11-18",
- "count": 49,
+ "count": 50,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -244,6 +244,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/comeback-king-trailer-recovery.html": {
    "ts": 1795034528,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/julio-iglesias-sexual-abuse.html": {
+   "ts": 1795037067,
    "type": "URL_UPDATED",
    "ok": true
   }

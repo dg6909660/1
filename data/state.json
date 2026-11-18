@@ -156,7 +156,10 @@
   "c91b8a9740b25f51",
   "5adb739a3a57c927",
   "5a93ed7d17fddda8",
-  "f6ffe1e2e5672089"
+  "f6ffe1e2e5672089",
+  "1a5115cb92d28c75",
+  "b08df09c0c70e619",
+  "678303faed6d7868"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -855,9 +858,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/comeback-king-trailer-recovery.html",
    "label": "Movie",
    "ts": 1795034513
+  },
+  {
+   "title": "...Julio Iglesias Sexual Abuse Investigation...",
+   "titles": [
+    "Spanish court investigates Julio Iglesias over sexual abuse claims",
+    "Julio Iglesias facing court investigation over alleged sexual offences"
+   ],
+   "focus": "Julio Iglesias sexual abuse investigation",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/julio-iglesias-sexual-abuse.html",
+   "label": "World News",
+   "ts": 1795037051
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
