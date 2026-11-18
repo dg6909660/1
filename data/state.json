@@ -87,7 +87,10 @@
   "5b565cfaa4953e93",
   "1090a85f87f6bf79",
   "da3a9e04e060fd24",
-  "0c81d45ecbbb9aad"
+  "0c81d45ecbbb9aad",
+  "dfe6755aa106b17b",
+  "cdd4aca4f2eb36c1",
+  "adae717e460e3f85"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -447,9 +450,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/israel-speaker.html",
    "label": "World News",
    "ts": 1794962019
+  },
+  {
+   "title": "...EU Options Announcement",
+   "titles": [
+    "Burnham to set out options next month for long-term EU relationship",
+    "Burnham delays announcement about options for closer relationship with EU until next month – as it happened"
+   ],
+   "focus": "EU Options Announcement",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/eu-options-announcement.html",
+   "label": "Political",
+   "ts": 1794964503
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
