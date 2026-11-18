@@ -95,7 +95,10 @@
   "b38f795818b06e9c",
   "ca20e13a2af433dd",
   "97eaca789f3d820b",
-  "0e81110995ea7854"
+  "0e81110995ea7854",
+  "9930675cb3525cd0",
+  "65b2ae1c09d978bd",
+  "60cb9759cba14e4d"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -104,7 +107,8 @@
   "5e776772777c1d14": 1,
   "191716913866e5a0": 1,
   "eaad75998d3da0b3": 1,
-  "59f28fd2c5eb9d7c": 1
+  "59f28fd2c5eb9d7c": 1,
+  "45065a85d99ccd80": 1
  },
  "posts": [
   {
@@ -489,9 +493,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/ida-documentary-awards-announces.html",
    "label": "Movie",
    "ts": 1794969423
+  },
+  {
+   "title": "...William and Kate Earthshot Prize 2026...",
+   "titles": [
+    "William and Kate on Earthshot Prize green carpet in Mumbai",
+    "William and Kate celebrate Earthshot Prize winners in Mumbai"
+   ],
+   "focus": "William and Kate Earthshot Prize",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/william-kate-earthshot-prize.html",
+   "label": "World News",
+   "ts": 1794971841
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
