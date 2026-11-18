@@ -62,6 +62,19 @@ def _trim(t, n):
     return t[:n].rsplit(" ", 1)[0].rstrip(",:;-– ")
 
 
+def _list(v, n):
+    if isinstance(v, str):
+        v = re.split(r"[,;\n]", v)
+    if not isinstance(v, list):
+        return []
+    out = []
+    for x in v:
+        x = _clean(x)
+        if x and x.lower() not in [o.lower() for o in out]:
+            out.append(x)
+    return out[:n]
+
+
 def sources_text(sources, limit=7000):
     per = max(1200, limit // max(1, len(sources)))
     return "\n\n".join(f"SOURCE {i + 1} - {s['title']}\n{s['text'][:per]}" for i, s in enumerate(sources))
@@ -76,36 +89,64 @@ def _sentences(text):
     return [p.strip() for p in parts if 40 <= len(p.strip()) <= 300]
 
 
+def _build_meta(item, raw):
+    title = _clean(raw.get("title")) or item["title"]
+    summary = _clean(raw.get("short_summary")) or _trim(item["summary"] or item["title"], 300)
+    kw = _clean(raw.get("focus_keyword")) or " ".join(title.split()[:3])
+    low = lambda L: [x.lower() for x in L]
+    sec = [k for k in _list(raw.get("secondary_keywords"), 6) if k.lower() != kw.lower()]
+    for f in (f"{kw} news", f"{kw} explained", f"latest {kw} update", f"{kw} impact", f"what is {kw}"):
+        if len(sec) >= 5:
+            break
+        if f.lower() not in low(sec):
+            sec.append(f)
+    lt = _list(raw.get("long_tail_keywords"), 5)
+    for f in (f"what you need to know about {kw}", f"why {kw} matters", f"latest {kw} update explained", f"how {kw} affects you"):
+        if len(lt) >= 4:
+            break
+        if f.lower() not in low(lt):
+            lt.append(f)
+    qs = [q if q.endswith("?") else q + "?" for q in _list(raw.get("questions"), 5)]
+    for f in (f"What is {kw}?", f"Why does {kw} matter?", f"What happens next with {kw}?", f"Who is affected by {kw}?"):
+        if len(qs) >= 4:
+            break
+        if f.lower() not in low(qs):
+            qs.append(f)
+    return {
+        "title": title,
+        "focus_keyword": kw,
+        "keywords": list(dict.fromkeys([kw] + sec[:5] + lt[:4] + _list(raw.get("keywords"), 8)))[:10],
+        "secondary": sec[:5],
+        "longtail": lt[:4],
+        "questions": qs[:4],
+        "meta_description": _clean(raw.get("meta_description")) or _trim(summary, 155),
+        "category": _clean(raw.get("category")),
+        "short_summary": summary,
+    }
+
+
 def plan_meta(item, sources):
     user = (
         sources_text(sources, 7000)
         + "\n\nReturn JSON with these keys: "
         "title (45-60 characters, accurate, contains the focus keyword, no clickbait), "
-        "focus_keyword (2-4 words), keywords (array of 6 short phrases), "
+        "focus_keyword (2-4 words, the phrase people would really type into Google for this story), "
+        "secondary_keywords (array of 5 related search phrases, 2-4 words each), "
+        "long_tail_keywords (array of 4 longer search phrases, 4-7 words each), "
+        "questions (array of 4 questions readers search for about this story), "
+        "keywords (array of 6 short phrases), "
         "meta_description (130-155 characters, contains the focus keyword), "
         f"category (one of {CATS} or \"None\" if none clearly fits), "
         "short_summary (2-3 plain sentences, 45-70 words: what happened and why it matters)."
     )
     try:
-        raw = llm.chat_json(M["writer"], SYS, user, temperature=0.3, num_predict=500)
+        raw = llm.chat_json(M["writer"], SYS, user, temperature=0.3, num_predict=700)
     except llm.OutOfTime:
         raise
     except Exception as e:
         print(f"  meta planning failed ({e}), using fallback", flush=True)
         raw = {}
-    kws = raw.get("keywords") or []
-    if not isinstance(kws, list):
-        kws = [kws]
-    title = _clean(raw.get("title")) or item["title"]
-    summary = _clean(raw.get("short_summary")) or _trim(item["summary"] or item["title"], 300)
-    return {
-        "title": title,
-        "focus_keyword": _clean(raw.get("focus_keyword")) or " ".join(title.split()[:3]),
-        "keywords": [_clean(k) for k in kws if k][:8],
-        "meta_description": _clean(raw.get("meta_description")) or _trim(summary, 155),
-        "category": _clean(raw.get("category")),
-        "short_summary": summary,
-    }
+    return _build_meta(item, raw)
 
 
 def extract_facts(sources):
@@ -157,17 +198,29 @@ def _clean_body(b):
     return b.strip()
 
 
+def sec_keywords(m, sid):
+    kw, sec, lt = m["focus_keyword"], m["secondary"], m["longtail"]
+    g = lambda L, i: L[i:i + 1]
+    plan = {
+        "hook": [kw] + g(sec, 0), "context": g(sec, 1) + g(lt, 0), "core1": g(sec, 2) + g(lt, 1),
+        "core2": g(sec, 3) + g(lt, 2), "story": g(sec, 4) + g(lt, 3), "keys": [kw] + g(sec, 0), "outro": [kw],
+    }
+    return plan.get(sid, [kw])
+
+
 def write_section(article, spec, done_headings):
     m = article["meta"]
     cap = (
         ', "caption": "one sentence, max 22 words, describing what the story\'s main photo shows in relation to the key fact; do not invent details"'
         if spec["image"] else ""
     )
+    kws = ", ".join(sec_keywords(m, spec["id"]))
     user = (
         f"STORY SUMMARY: {m['short_summary']}\nFOCUS KEYWORD: {m['focus_keyword']}\n\nVERIFIED FACTS:\n{facts_block(article)}\n\n"
         f"Headings already used (do not repeat ideas): {done_headings}\n\n"
         f"WRITE SECTION '{spec['id']}'.\nTask: {spec['brief']}\nLength: {spec['words']} words.\n{FORMAT_RULES}\n"
-        "Use the focus keyword naturally where it fits. Use only the verified facts.\n"
+        f"Search keywords to weave in naturally where they fit (keep the same natural, conversational style; never force or repeat them awkwardly): {kws}\n"
+        "Use only the verified facts.\n"
         'Return JSON: {"heading": "natural news-style subheading, 4-9 words, never a generic label like Hook or Background", '
         '"body": "the section text"' + cap + "}"
     )
@@ -241,26 +294,17 @@ def quick_article(item, sources):
         + "\n\nWrite a complete news article of 450-600 words in your own words using only the sources. "
         "Structure: a hook, background, core facts with evidence, a conversational part, a short summary, and end with an open-ended question. "
         + FORMAT_RULES
-        + f"\nReturn JSON with keys: title (45-60 chars), meta_description (130-155 chars), focus_keyword, keywords (array), "
+        + "\nReturn JSON with keys: title (45-60 chars), meta_description (130-155 chars), focus_keyword, secondary_keywords (array of 5), "
+        "long_tail_keywords (array of 4), questions (array of 4), keywords (array), "
         f"category (one of {CATS} or \"None\"), short_summary (2-3 sentences), body."
     )
-    raw = llm.chat_json(M["writer"], SYS, user, temperature=0.4, num_predict=1100)
+    raw = llm.chat_json(M["writer"], SYS, user, temperature=0.4, num_predict=1200)
     body = _clean_body(raw.get("body"))
     if len(body.split()) < 120:
         raise ValueError("quick article too short")
-    title = _clean(raw.get("title")) or item["title"]
-    summary = _clean(raw.get("short_summary")) or _trim(item["summary"] or title, 300)
-    kws = raw.get("keywords") or []
-    meta = {
-        "title": title,
-        "focus_keyword": _clean(raw.get("focus_keyword")) or " ".join(title.split()[:3]),
-        "keywords": [_clean(k) for k in (kws if isinstance(kws, list) else [kws]) if k][:8],
-        "meta_description": _clean(raw.get("meta_description")) or _trim(summary, 155),
-        "category": _clean(raw.get("category")),
-        "short_summary": summary,
-    }
+    meta = _build_meta(item, raw)
     label = item["category"] if item["category"] in CATS else (meta["category"] if meta["category"] in CATS else None)
-    sec = {"id": "main", "heading": "The Full Story", "body": body, "caption": title, "has_image": True, "image": None}
+    sec = {"id": "main", "heading": "The Full Story", "body": body, "caption": meta["title"], "has_image": True, "image": None}
     return {"meta": meta, "facts": [], "label": label, "sections": [sec], "quick": True}
 
 
@@ -273,7 +317,7 @@ def make_permalink(article):
             M["seo"],
             "You create short SEO-friendly URL slugs for news articles.",
             f"Headline: {m['title']}\nFocus keyword: {m['focus_keyword']}\n\n"
-            "Create a permalink phrase: 3 to 6 lowercase English words, at most 36 characters in total, containing the main words "
+            "Create a permalink phrase: 3 to 6 lowercase English words, at most 36 characters in total, starting with the main words "
             "of the focus keyword, without filler words (the, a, of, in, to), without numbers unless essential, without punctuation.\n"
             'Return JSON: {"slug": "..."}',
             temperature=0.2, num_predict=60,
@@ -385,54 +429,79 @@ def figure(sec, kw):
         credit = "Illustrative image. " + credit
     return (
         '<figure style="margin:0 0 22px;text-align:center">'
-        f'<img src="{html.escape(im["url"], quote=True)}" alt="{alt}" referrerpolicy="no-referrer" '
+        f'<img src="{html.escape(im["url"], quote=True)}" alt="{alt}" title="{alt}" referrerpolicy="no-referrer" fetchpriority="high" '
         'style="width:100%;max-width:100%;height:auto;border-radius:12px"/>'
         f'<figcaption style="font-size:13px;opacity:.85;margin-top:8px"><strong>{html.escape(cap, quote=False)}</strong><br/>'
         f'<span style="opacity:.8">{html.escape(credit, quote=False)}</span></figcaption></figure>'
     )
 
 
-def build_html(article):
+def _ld(obj):
+    return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+
+
+def build_html(article, url=None):
     m = article["meta"]
     kw = m["focus_keyword"]
-    parts = ['<div class="tnd-article">']
+    lead = m["meta_description"].strip()
+    summ = m["short_summary"].strip()
+    rest = "" if (not summ or summ.lower()[:50] == lead.lower()[:50]) else " " + summ
+    parts = [
+        '<div class="tnd-article">',
+        # the first text of the post becomes the search-result snippet, so it starts with the meta description
+        '<div style="border-left:5px solid #e11d48;background:rgba(225,29,72,.08);padding:14px 18px;border-radius:10px;margin:0 0 22px">'
+        f'<p style="margin:0"><strong>{html.escape(lead, quote=False)}</strong>{html.escape(rest, quote=False)}</p></div>',
+    ]
     hero = next((s for s in article["sections"] if s["image"]), None)
     if hero:
-        parts.append(figure(hero, kw))  # the single image, right at the top
-    parts.append(
-        '<div style="border-left:5px solid #e11d48;background:rgba(225,29,72,.08);padding:14px 18px;border-radius:10px;margin:0 0 22px">'
-        f"<strong>In short:</strong> {html.escape(m['short_summary'], quote=False)}</div>"
-    )
+        parts.append(figure(hero, kw))
     images = [hero["image"]["url"]] if hero else []
+    faq = article.get("faq") or []
+    total_words = 0
     for s in article["sections"]:
+        total_words += len(re.findall(r"\w+", s["body"]))
         h2 = f"<h2>{html.escape(s['heading'], quote=False)}</h2>"
         body = md_to_html(s["body"])
         if s["id"] == "keys":
-            parts.append(
-                '<div style="border:2px solid #e11d48;border-radius:14px;padding:6px 20px 10px;margin:26px 0">' + h2 + body + "</div>"
-            )
+            parts.append('<div style="border:2px solid #e11d48;border-radius:14px;padding:6px 20px 10px;margin:26px 0">' + h2 + body + "</div>")
         elif s["id"] == "outro":
+            if faq:
+                parts.append(
+                    f"<h2>{html.escape(kw.title(), quote=False)}: Frequently Asked Questions</h2>"
+                    + "".join(f"<h3>{html.escape(f['q'], quote=False)}</h3><p>{html.escape(f['a'], quote=False)}</p>" for f in faq)
+                )
             parts.append('<div style="border-top:3px solid #e11d48;margin-top:28px;padding-top:6px">' + h2 + body + "</div>")
         else:
             parts.append(h2 + body)
     if m["keywords"]:
-        parts.append(
-            '<p style="font-size:13px;opacity:.8"><em>Topics covered: '
-            + html.escape(", ".join(m["keywords"]), quote=False)
-            + "</em></p>"
-        )
+        parts.append('<p style="font-size:13px;opacity:.8"><em>Topics covered: ' + html.escape(", ".join(m["keywords"]), quote=False) + "</em></p>")
     parts.append("</div>")
     if config.ADD_JSONLD:
-        ld = {
+        now = datetime.now(timezone.utc).isoformat()
+        art = {
             "@context": "https://schema.org",
             "@type": "NewsArticle",
             "headline": m["title"][:110],
             "description": m["meta_description"],
             "image": images,
-            "datePublished": datetime.now(timezone.utc).isoformat(),
+            "datePublished": now,
+            "dateModified": now,
             "keywords": ", ".join(m["keywords"]),
+            "articleSection": article.get("label") or "News",
+            "wordCount": total_words,
+            "inLanguage": "en",
+            "isAccessibleForFree": True,
             "author": {"@type": "Organization", "name": config.SITE_NAME},
             "publisher": {"@type": "Organization", "name": config.SITE_NAME},
         }
-        parts.append('<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
+        if url:
+            art["mainEntityOfPage"] = {"@type": "WebPage", "@id": url}
+            art["url"] = url
+        parts.append(_ld(art))
+        if faq:
+            parts.append(_ld({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in faq],
+            }))
     return "\n".join(parts)
