@@ -1,6 +1,6 @@
 {
  "day": "2026-11-18",
- "count": 18,
+ "count": 24,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -89,6 +89,36 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/lungbrainaxis-airpollution-epilepsy.html": {
    "ts": 1794983533,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/outlander-fantasy-masterclass.html": {
+   "ts": 1794986008,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status.html": {
+   "ts": 1794986008,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/hunger-games.html": {
+   "ts": 1794986008,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/milburn-neets-plan.html": {
+   "ts": 1794986008,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/nanogap-wse2-quantum-light-sources.html": {
+   "ts": 1794986008,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/uk-sanctions-israel-imposes-israeli.html": {
+   "ts": 1794986008,
    "type": "URL_UPDATED",
    "ok": true
   }

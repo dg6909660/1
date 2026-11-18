@@ -108,7 +108,9 @@
   "ccdc55a3667f81f3",
   "b89196117897ee8f",
   "a4893d7b977efe14",
-  "77e030b9583859e6"
+  "77e030b9583859e6",
+  "fbac5101a560b177",
+  "d717dcbe1732bddb"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -572,9 +574,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/french-school-phone-ban-protests.html",
    "label": "Education",
    "ts": 1794983516
+  },
+  {
+   "title": "Outlander: Why It's a Masterclass in Fantasy Adaptations",
+   "titles": [
+    "101-Episode Fantasy Show Delivers A Masterclass In Book Adaptations"
+   ],
+   "focus": "outlander fantasy adaptation",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/outlander-fantasy-masterclass.html",
+   "label": "Movie",
+   "ts": 1794985992
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
