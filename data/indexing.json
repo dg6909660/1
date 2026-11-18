@@ -33,25 +33,31 @@
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/nvidia-board-declines-huang.html": {
-   "ts": 1794966910,
+   "ts": 1794969438,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/israel-speaker.html": {
-   "ts": 1794966910,
+   "ts": 1794969438,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/eu-options-announcement.html": {
-   "ts": 1794966910,
+   "ts": 1794969438,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/3-6-lowercase-english-words-without.html": {
-   "ts": 1794966910,
+   "ts": 1794969438,
+   "type": "URL_UPDATED",
+   "ok": false,
+   "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/ida-documentary-awards-announces.html": {
+   "ts": 1794969438,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"

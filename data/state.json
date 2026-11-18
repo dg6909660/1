@@ -92,7 +92,10 @@
   "cdd4aca4f2eb36c1",
   "adae717e460e3f85",
   "77ab65f34ee9bcc6",
-  "b38f795818b06e9c"
+  "b38f795818b06e9c",
+  "ca20e13a2af433dd",
+  "97eaca789f3d820b",
+  "0e81110995ea7854"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -475,9 +478,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/3-6-lowercase-english-words-without.html",
    "label": "Education",
    "ts": 1794966893
+  },
+  {
+   "title": "IDA Announces 42nd Awards Noms",
+   "titles": [
+    "IDA Documentary Awards 2026 Nominations: ‘You Can See Everything,’ ‘Concrete Land,’ and More Earn Nods",
+    "‘Concrete Land’ Leads IDA Documentary Award Nominations With Six; ‘To Hold a Mountain,’ ‘You Can See Everything’ Also Score"
+   ],
+   "focus": "IDA Documentary Awards",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/ida-documentary-awards-announces.html",
+   "label": "Movie",
+   "ts": 1794969423
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
