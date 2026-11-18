@@ -1,18 +1,16 @@
 {
  "day": "2026-11-18",
- "count": 6,
+ "count": 12,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
-   "ts": 1794966911,
+   "ts": 1794981063,
    "type": "URL_UPDATED",
-   "ok": false,
-   "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+   "ok": true
   },
   "https://thenewsdetail.blogspot.com/2026/11/us-soldier-spying-case.html": {
-   "ts": 1794964516,
+   "ts": 1794981064,
    "type": "URL_UPDATED",
-   "ok": false,
-   "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+   "ok": true
   },
   "https://thenewsdetail.blogspot.com/2026/11/shakespeare-institute-university.html": {
    "ts": 1794962036,
@@ -33,22 +31,19 @@
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/nvidia-board-declines-huang.html": {
-   "ts": 1794969438,
+   "ts": 1794981063,
    "type": "URL_UPDATED",
-   "ok": false,
-   "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+   "ok": true
   },
   "https://thenewsdetail.blogspot.com/2026/11/israel-speaker.html": {
-   "ts": 1794971856,
+   "ts": 1794981063,
    "type": "URL_UPDATED",
-   "ok": false,
-   "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+   "ok": true
   },
   "https://thenewsdetail.blogspot.com/2026/11/eu-options-announcement.html": {
-   "ts": 1794974199,
+   "ts": 1794981063,
    "type": "URL_UPDATED",
-   "ok": false,
-   "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+   "ok": true
   },
   "https://thenewsdetail.blogspot.com/2026/11/3-6-lowercase-english-words-without.html": {
    "ts": 1794978681,
@@ -77,6 +72,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/mary-peltola-alaska-senate.html": {
    "ts": 1794978681,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/ecuadorian-fishermen-drone-lawsuit.html": {
+   "ts": 1794981063,
    "type": "URL_UPDATED",
    "ok": true
   }

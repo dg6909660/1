@@ -105,7 +105,9 @@
   "fd8654b77e1182e7",
   "e4b774a1e4bd0f17",
   "4ddd6dcd396177b8",
-  "ccdc55a3667f81f3"
+  "ccdc55a3667f81f3",
+  "b89196117897ee8f",
+  "a4893d7b977efe14"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -115,7 +117,8 @@
   "191716913866e5a0": 1,
   "eaad75998d3da0b3": 1,
   "59f28fd2c5eb9d7c": 1,
-  "45065a85d99ccd80": 1
+  "45065a85d99ccd80": 1,
+  "c68bfd35df723788": 1
  },
  "posts": [
   {
@@ -544,9 +547,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/mary-peltola-alaska-senate.html",
    "label": "World News",
    "ts": 1794978668
+  },
+  {
+   "title": "...Ecuadorian fishermen drone strike lawsuit...",
+   "titles": [
+    "Ecuadorian fishermen sue Trump administration after surviving boat strike",
+    "Ecuadorian fishermen sue Trump administration over drone strike"
+   ],
+   "focus": "Ecuadorian fishermen drone strike lawsuit",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/ecuadorian-fishermen-drone-lawsuit.html",
+   "label": "Political",
+   "ts": 1794981046
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
