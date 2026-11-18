@@ -160,7 +160,8 @@
   "1a5115cb92d28c75",
   "b08df09c0c70e619",
   "678303faed6d7868",
-  "c58e9f67fb14a149"
+  "c58e9f67fb14a149",
+  "aa5fe9c235cb3e44"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -880,9 +881,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/sutter-health-late-biobank.html",
    "label": "Health",
    "ts": 1795039535
+  },
+  {
+   "title": "Waymo Autonomous Vehicles: Safety Scrutiny and Restrictions",
+   "titles": [
+    "Waymo says its robotaxis crash far less than humans. California just called them an ‘imminent hazard’ and pulled them off freeways"
+   ],
+   "focus": "Waymo autonomous vehicles",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/waymo-autonomous-vehicles.html",
+   "label": "Business",
+   "ts": 1795042100
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
