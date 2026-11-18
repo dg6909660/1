@@ -1,6 +1,6 @@
 {
  "day": "2026-11-18",
- "count": 42,
+ "count": 43,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -209,6 +209,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/severance-disney.html": {
    "ts": 1795017909,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/jeffries-speaker-key-facts.html": {
+   "ts": 1795020397,
    "type": "URL_UPDATED",
    "ok": true
   }
