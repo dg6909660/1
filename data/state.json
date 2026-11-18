@@ -110,7 +110,10 @@
   "a4893d7b977efe14",
   "77e030b9583859e6",
   "fbac5101a560b177",
-  "d717dcbe1732bddb"
+  "d717dcbe1732bddb",
+  "e63a04bafdaa554f",
+  "b1a28720a6b67989",
+  "26a5df592f6a30ba"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -120,7 +123,7 @@
   "191716913866e5a0": 1,
   "eaad75998d3da0b3": 1,
   "59f28fd2c5eb9d7c": 1,
-  "45065a85d99ccd80": 1,
+  "45065a85d99ccd80": 2,
   "c68bfd35df723788": 1,
   "df628f78fe125a27": 1,
   "74fb30eed810c616": 1,
@@ -584,9 +587,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/outlander-fantasy-masterclass.html",
    "label": "Movie",
    "ts": 1794985992
+  },
+  {
+   "title": "Lagoon Fire 1980: Why Toxic Waste Linked to Cancer",
+   "titles": [
+    "I want to know if toxic lagoon fire caused my husband's rare deadly cancer"
+   ],
+   "focus": "firefighter cancer lagoon",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/firefighter-cancer-lagoon.html",
+   "label": "Health",
+   "ts": 1794988439
   }
  ],
- "next_idx": 7,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

@@ -1,6 +1,6 @@
 {
  "day": "2026-11-18",
- "count": 24,
+ "count": 30,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -119,6 +119,36 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/uk-sanctions-israel-imposes-israeli.html": {
    "ts": 1794986008,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/firefighter-cancer-lagoon.html": {
+   "ts": 1794988455,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/milburn-neets-plan-2036.html": {
+   "ts": 1794988455,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/nfl-cte-75.html": {
+   "ts": 1794988455,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/james-bond-era-franchise.html": {
+   "ts": 1794988455,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/gta-6-belfast-boys-model-prize.html": {
+   "ts": 1794988456,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/voyager-1-light-day.html": {
+   "ts": 1794988456,
    "type": "URL_UPDATED",
    "ok": true
   }
