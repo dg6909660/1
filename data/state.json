@@ -128,7 +128,9 @@
   "daa705b16f5e486c",
   "e596be1e9e781400",
   "231a189cb27a66f1",
-  "434657a0e157fa1f"
+  "434657a0e157fa1f",
+  "4e768de972a086fb",
+  "9646f9efd40ca63b"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -677,9 +679,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/tech-outages-cause.html",
    "label": "World News",
    "ts": 1795003165
+  },
+  {
+   "title": "...Wiley KnowItAll 2027",
+   "titles": [
+    "Wiley releases KnowItAll 2027, adding more analytical techniques to help labs identify substances with greater ease and confidence"
+   ],
+   "focus": "Wiley KnowItAll 2027",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/wiley-knowitall-2027.html",
+   "label": "Health",
+   "ts": 1795005485
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
