@@ -135,7 +135,9 @@
   "ff96299067217bce",
   "45c19e2f8827aac5",
   "495b7c0c2863b983",
-  "bc8d75d2d96eaf56"
+  "bc8d75d2d96eaf56",
+  "3fe1b4aa20c0db19",
+  "4db63cd937ae4e0c"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -717,9 +719,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/trump-apec-summit.html",
    "label": "World News",
    "ts": 1795010512
+  },
+  {
+   "title": "Home Sec. Tackles Two-Tier Policing Perceptions",
+   "titles": [
+    "Home secretary plans to tackle 'corrosive' perception of two-tier policing",
+    "Shabana Mahmood to set out plans to tackle ‘corrosive’ perception of two-tier policing"
+   ],
+   "focus": "two-tier policing",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/three-tier-policing.html",
+   "label": "Political",
+   "ts": 1795012955
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
