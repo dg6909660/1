@@ -9,6 +9,7 @@ import images
 import indexing
 import publisher
 import reviewer
+import seo
 import sources
 import writer
 from llm import OutOfTime
@@ -45,6 +46,9 @@ def try_post(item, st, live):
     if art is None:
         art = writer.quick_article(item, srcs)
 
+    log("  SEO boost (title, description, keywords, headings, FAQ)...")
+    seo.optimize(art, srcs)
+
     log("  taking the story's own image...")
     images.attach_images(art, item, srcs)
     for s in art["sections"]:
@@ -70,6 +74,8 @@ def try_post(item, st, live):
     else:
         reviewer.finalize(art, srcs)
 
+    seo.finalize(art, srcs)  # keep the strongest title/description after the reviewers
+
     config.DEADLINE = max(config.DEADLINE, time.time() + 300)  # always leave time to publish + share
     html_content = writer.build_html(art)
     labels = [art["label"]] if art["label"] else []
@@ -79,7 +85,10 @@ def try_post(item, st, live):
         log(html_content)
         return True
 
-    url, _pid = publisher.publish_post(art["meta"]["title"], html_content, labels, slug_title)
+    url, _pid = publisher.publish_post(
+        art["meta"]["title"], html_content, labels, slug_title,
+        html_after=lambda u: writer.build_html(art, url=u),  # final content with the real post URL in the schema data
+    )
     log(f"  PUBLISHED: {url}  label={labels or 'Home only'}")
     st.add_post(item, art, url)
     st.save()  # remember immediately so this story is never posted twice
