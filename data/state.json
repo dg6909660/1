@@ -98,7 +98,8 @@
   "0e81110995ea7854",
   "9930675cb3525cd0",
   "65b2ae1c09d978bd",
-  "60cb9759cba14e4d"
+  "60cb9759cba14e4d",
+  "fd769306bb74aaed"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -504,9 +505,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/william-kate-earthshot-prize.html",
    "label": "World News",
    "ts": 1794971841
+  },
+  {
+   "title": "...New Study Reveals Key Insights on Dementia Prevention 2026...",
+   "titles": [
+    "Newer generations show better memory and slower cognitive decline"
+   ],
+   "focus": "dementia prevention",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/dementia-prevention-study-reveals.html",
+   "label": "Health",
+   "ts": 1794974185
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
