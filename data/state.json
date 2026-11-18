@@ -151,7 +151,9 @@
   "ff776c31ccfe588c",
   "ec1bee06011bc5b2",
   "ba3c542b44119aba",
-  "7c7e5226df0ab628"
+  "7c7e5226df0ab628",
+  "692111756940f8e8",
+  "c91b8a9740b25f51"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -815,9 +817,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/grand-theft-auto-6-gamechanger.html",
    "label": "World News",
    "ts": 1795027915
+  },
+  {
+   "title": "...Iran Strikes Gulf in Response to US Strike",
+   "titles": [
+    "Iran attacks US air base in Kuwait",
+    "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island"
+   ],
+   "focus": "Iran strikes Gulf",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/iran-gulf-strikes.html",
+   "label": "Political",
+   "ts": 1795030327
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
