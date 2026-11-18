@@ -107,7 +107,8 @@
   "4ddd6dcd396177b8",
   "ccdc55a3667f81f3",
   "b89196117897ee8f",
-  "a4893d7b977efe14"
+  "a4893d7b977efe14",
+  "77e030b9583859e6"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -118,7 +119,10 @@
   "eaad75998d3da0b3": 1,
   "59f28fd2c5eb9d7c": 1,
   "45065a85d99ccd80": 1,
-  "c68bfd35df723788": 1
+  "c68bfd35df723788": 1,
+  "df628f78fe125a27": 1,
+  "74fb30eed810c616": 1,
+  "785a20ba43c605a5": 1
  },
  "posts": [
   {
@@ -558,9 +562,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/ecuadorian-fishermen-drone-lawsuit.html",
    "label": "Political",
    "ts": 1794981046
+  },
+  {
+   "title": "...French school phone ban protests...",
+   "titles": [
+    "Macron banned smartphones in schools. A month later, France was ablaze. Could they be connected? | Joseph de Weck"
+   ],
+   "focus": "French school phone ban protests",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/french-school-phone-ban-protests.html",
+   "label": "Education",
+   "ts": 1794983516
   }
  ],
- "next_idx": 4,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
