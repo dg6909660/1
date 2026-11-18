@@ -123,7 +123,8 @@
   "113387287da11b86",
   "89ebf33e3c4fddef",
   "71288f95fb59ec2f",
-  "dd94eb52e02fb52c"
+  "dd94eb52e02fb52c",
+  "5145e7813db470b1"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -640,9 +641,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/cddwy-key-humanism.html",
    "label": "Science",
    "ts": 1794995828
+  },
+  {
+   "title": "Childhood Neglect Neet Crisis...",
+   "titles": [
+    "Childhood neglect, unmet needs, mental health struggles: this is the making of a Neet | Mark Mon-Williams"
+   ],
+   "focus": "childhood neglect Neet crisis",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/childhood-neglect-neet-crisis.html",
+   "label": "Education",
+   "ts": 1794998193
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
