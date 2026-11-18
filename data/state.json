@@ -101,7 +101,11 @@
   "60cb9759cba14e4d",
   "fd769306bb74aaed",
   "4d0c3e89742fb557",
-  "9c4d5859c587fa65"
+  "9c4d5859c587fa65",
+  "fd8654b77e1182e7",
+  "e4b774a1e4bd0f17",
+  "4ddd6dcd396177b8",
+  "ccdc55a3667f81f3"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -527,9 +531,22 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/waymo-driverless-taxis-safety.html",
    "label": "Business",
    "ts": 1794976757
+  },
+  {
+   "title": "...Mary Peltola Alaska Senate...",
+   "titles": [
+    "Mary Peltola flips Alaska Senate seat in another Democratic win",
+    "Mary Peltola flips Alaska's Senate seat into Democrats' column",
+    "Mary Peltola unseats Sen. Dan Sullivan, giving Dems a 56-seat Senate majority",
+    "Mary Peltola flips Republican Senate seat in Alaska"
+   ],
+   "focus": "Mary Peltola Alaska Senate",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/mary-peltola-alaska-senate.html",
+   "label": "World News",
+   "ts": 1794978668
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
