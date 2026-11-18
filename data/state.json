@@ -99,7 +99,9 @@
   "9930675cb3525cd0",
   "65b2ae1c09d978bd",
   "60cb9759cba14e4d",
-  "fd769306bb74aaed"
+  "fd769306bb74aaed",
+  "4d0c3e89742fb557",
+  "9c4d5859c587fa65"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -515,9 +517,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/dementia-prevention-study-reveals.html",
    "label": "Health",
    "ts": 1794974185
+  },
+  {
+   "title": "Waymo Driverless Taxis: Safety Concerns and What It Means",
+   "titles": [
+    "Waymo temporarily pulls driverless taxis from all US freeways"
+   ],
+   "focus": "Waymo driverless taxis",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/waymo-driverless-taxis-safety.html",
+   "label": "Business",
+   "ts": 1794976757
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

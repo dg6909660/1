@@ -51,25 +51,31 @@
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/3-6-lowercase-english-words-without.html": {
-   "ts": 1794974199,
+   "ts": 1794976770,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/ida-documentary-awards-announces.html": {
-   "ts": 1794974199,
+   "ts": 1794976770,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/william-kate-earthshot-prize.html": {
-   "ts": 1794974199,
+   "ts": 1794976770,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
   },
   "https://thenewsdetail.blogspot.com/2026/11/dementia-prevention-study-reveals.html": {
-   "ts": 1794974199,
+   "ts": 1794976770,
+   "type": "URL_UPDATED",
+   "ok": false,
+   "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/waymo-driverless-taxis-safety.html": {
+   "ts": 1794976770,
    "type": "URL_UPDATED",
    "ok": false,
    "err": "403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission denied. Failed to verify the URL ownership.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
