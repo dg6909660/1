@@ -177,7 +177,8 @@
   "2ca39d4f8817204e",
   "2a15f4a28bcbff36",
   "be8b727b149731d8",
-  "56673e8fb67a197f"
+  "56673e8fb67a197f",
+  "5c19dcc510fb1f6e"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -974,9 +975,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/anthropic-ipo-raises-81-3b-world.html",
    "label": "Business",
    "ts": 1795057479
+  },
+  {
+   "title": "...chronic pancreatitis exocrine insufficiency...",
+   "titles": [
+    "Four in ten chronic pancreatitis patients develop exocrine pancreatic insufficiency"
+   ],
+   "focus": "chronic pancreatitis exocrine insufficiency",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/chronic-pancreatitis-exocrine.html",
+   "label": "Health",
+   "ts": 1795060058
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
