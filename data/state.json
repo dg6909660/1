@@ -168,7 +168,9 @@
   "68398d901986638f",
   "f5974850414e0694",
   "a607527b516f4d39",
-  "23c6a48b4dcd35cc"
+  "23c6a48b4dcd35cc",
+  "997e32038a38c901",
+  "406359353ab9e696"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -912,9 +914,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/israel-gaza-operation.html",
    "label": "World News",
    "ts": 1795045084
+  },
+  {
+   "title": "... Russell Brand YouTube account ...",
+   "titles": [
+    "Google rejects UK request for Russell Brand YouTube video to be removed, sources say",
+    "UK ministers reportedly ask Google to block Russell Brand’s YouTube account"
+   ],
+   "focus": "Russell Brand YouTube account",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/russell-brand-youtube.html",
+   "label": "Political",
+   "ts": 1795047641
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

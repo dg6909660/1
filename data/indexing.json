@@ -1,6 +1,6 @@
 {
- "day": "2026-11-18",
- "count": 53,
+ "day": "2026-11-19",
+ "count": 1,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -264,6 +264,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/israel-gaza-operation.html": {
    "ts": 1795045098,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/russell-brand-youtube.html": {
+   "ts": 1795047655,
    "type": "URL_UPDATED",
    "ok": true
   }
