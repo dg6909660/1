@@ -186,7 +186,8 @@
   "ee7b14dff8918da3",
   "54aad51ab0711549",
   "b2883768adfb7180",
-  "cb99e6aef1e50fe6"
+  "cb99e6aef1e50fe6",
+  "4c9a622b70806704"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1020,9 +1021,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/hegseth-venezuela-military.html",
    "label": "World News",
    "ts": 1795064985
+  },
+  {
+   "title": "...Andy Burnham EU Summit",
+   "titles": [
+    "Andy Burnham is in danger of over-selling his big Brussels summit. What happens if he under-delivers? | Joël Reland"
+   ],
+   "focus": "Andy Burnham EU summit",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/andy-burnham-eu-summit.html",
+   "label": "Political",
+   "ts": 1795068029
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
