@@ -220,7 +220,9 @@
   "aeff9386d01183cd",
   "ba55bb3dd4c723df",
   "fb27a1cf171c2c1c",
-  "e481cf0ebb471f46"
+  "e481cf0ebb471f46",
+  "421fe2bd9b346442",
+  "258b80e0534057cc"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1213,9 +1215,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/tories-london-mayor.html",
    "label": "Political",
    "ts": 1795102710
+  },
+  {
+   "title": "NSF Nomination Rejected by Senate",
+   "titles": [
+    "Senate committee rejects Trump nominee to lead National Science Foundation",
+    "Cassidy rejects Trump nominee to lead National Science Foundation"
+   ],
+   "focus": "NSF nomination rejected",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nsf-nomination-rejected.html",
+   "label": "Science",
+   "ts": 1795105153
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
