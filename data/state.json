@@ -198,7 +198,8 @@
   "c6e6b7a8cac534b9",
   "ced773150d763501",
   "161d4c5f799237d1",
-  "f36728dcb859265a"
+  "f36728dcb859265a",
+  "a995c33de1b31fc8"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1095,9 +1096,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/sino-biological-ai-proteins.html",
    "label": "Health",
    "ts": 1795080670
+  },
+  {
+   "title": "1K BAE Jobs Cut: What It Means for UK Airforce",
+   "titles": [
+    "BAE to slash 1,000 jobs across head office and air business to streamline orders"
+   ],
+   "focus": "BAE Systems job cuts",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/bae-systems-job-cuts-1k-jobs.html",
+   "label": "Business",
+   "ts": 1795083143
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

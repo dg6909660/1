@@ -1,6 +1,6 @@
 {
  "day": "2026-11-19",
- "count": 14,
+ "count": 15,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -334,6 +334,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/sino-biological-ai-proteins.html": {
    "ts": 1795080687,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/bae-systems-job-cuts-1k-jobs.html": {
+   "ts": 1795083160,
    "type": "URL_UPDATED",
    "ok": true
   }
