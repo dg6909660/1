@@ -180,7 +180,11 @@
   "56673e8fb67a197f",
   "5c19dcc510fb1f6e",
   "253230d17cbe0959",
-  "75c12444c6ea9571"
+  "75c12444c6ea9571",
+  "7ffa1a1a27915fa9",
+  "a84d1d248302c696",
+  "ee7b14dff8918da3",
+  "54aad51ab0711549"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -998,9 +1002,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/elon-musk-midterms-spending.html",
    "label": "Business",
    "ts": 1795062617
+  },
+  {
+   "title": "...Pete Hegseth Venezuela Military Deal (US)",
+   "titles": [
+    "Hegseth unveils new US-Venezuela military deal",
+    "Hegseth uses Venezuela visit to boast of Maduro’s capture by US military",
+    "US Pentagon chief Hegseth signs military deal in Venezuela"
+   ],
+   "focus": "Hegseth Venezuela Military Deal",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/hegseth-venezuela-military.html",
+   "label": "World News",
+   "ts": 1795064985
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
