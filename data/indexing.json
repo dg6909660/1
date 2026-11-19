@@ -1,6 +1,6 @@
 {
  "day": "2026-11-19",
- "count": 4,
+ "count": 5,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -284,6 +284,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/blumhouseatomic-keyfacts.html": {
    "ts": 1795054981,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/anthropic-ipo-raises-81-3b-world.html": {
+   "ts": 1795057495,
    "type": "URL_UPDATED",
    "ok": true
   }

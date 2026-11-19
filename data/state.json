@@ -174,7 +174,10 @@
   "31593a42e2f009f7",
   "dd372e073c80d7be",
   "0b44efabe96b47ec",
-  "2ca39d4f8817204e"
+  "2ca39d4f8817204e",
+  "2a15f4a28bcbff36",
+  "be8b727b149731d8",
+  "56673e8fb67a197f"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -960,9 +963,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/blumhouseatomic-keyfacts.html",
    "label": "Movie",
    "ts": 1795054966
+  },
+  {
+   "title": "Anthropic IPO Raises $81.3B - World's Most Valuable AI Startup",
+   "titles": [
+    "Anthropic Sells $81.3 Billion in Shares for a Record IPO",
+    "Anthropic IPO raises record $81.3 billion on strong AI demand"
+   ],
+   "focus": "Anthropic IPO",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/anthropic-ipo-raises-81-3b-world.html",
+   "label": "Business",
+   "ts": 1795057479
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
