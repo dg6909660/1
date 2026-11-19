@@ -223,7 +223,8 @@
   "e481cf0ebb471f46",
   "421fe2bd9b346442",
   "258b80e0534057cc",
-  "df4b75045c55b0a6"
+  "df4b75045c55b0a6",
+  "2f40b4a8dde51cab"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1237,9 +1238,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/swiss-cottage-school.html",
    "label": "Education",
    "ts": 1795107673
+  },
+  {
+   "title": "5 Things You Need to Know About Invincible Season 5",
+   "titles": [
+    "Invincible Season 5 Release Date Officially Confirmed By Prime Video"
+   ],
+   "focus": "Invincible season 5",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/invincible-season-5.html",
+   "label": "Movie",
+   "ts": 1795110203
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
