@@ -173,7 +173,8 @@
   "406359353ab9e696",
   "31593a42e2f009f7",
   "dd372e073c80d7be",
-  "0b44efabe96b47ec"
+  "0b44efabe96b47ec",
+  "2ca39d4f8817204e"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -949,9 +950,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/young-musicians-funding-cuts-hit-ni.html",
    "label": "Education",
    "ts": 1795052463
+  },
+  {
+   "title": "Blumhouse Atomic Key Facts 2026: Horror’s Rise",
+   "titles": [
+    "Jason Blum and James Wan Discuss Why Horror Is Hollywood’s Hottest Genre and How ‘Obsession’ Hit Big at Blumhouse Atomic’s Business of Fear"
+   ],
+   "focus": "Blumhouse Atomic",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/blumhouseatomic-keyfacts.html",
+   "label": "Movie",
+   "ts": 1795054966
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
