@@ -205,7 +205,9 @@
   "da28dacabaf0124f",
   "0e7dc7acf2fd8e5c",
   "c2974be76578118a",
-  "dca49aa9e9bb915f"
+  "dca49aa9e9bb915f",
+  "cb28e554f8067df7",
+  "b568ca9c68bad0bd"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1144,9 +1146,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/teachers-prepare-post-16-students.html",
    "label": "Education",
    "ts": 1795090627
+  },
+  {
+   "title": "...Ella Langley CMA Awards 2026",
+   "titles": [
+    "Ella Langley sweeps Country Music Awards as Taylor Swift performs",
+    "Ella Langley Sweeps and Taylor Swift Returns at the 2026 CMA Awards"
+   ],
+   "focus": "Ella Langley CMA Awards",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/ellalangley-cmaawards.html",
+   "label": "Movie",
+   "ts": 1795093179
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
