@@ -222,7 +222,8 @@
   "fb27a1cf171c2c1c",
   "e481cf0ebb471f46",
   "421fe2bd9b346442",
-  "258b80e0534057cc"
+  "258b80e0534057cc",
+  "df4b75045c55b0a6"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1226,9 +1227,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nsf-nomination-rejected.html",
    "label": "Science",
    "ts": 1795105153
+  },
+  {
+   "title": "Swiss Cottage School: World's Best Special Needs School 2026",
+   "titles": [
+    "‘We don’t produce Neets’: the London school recognised at World’s Best School awards"
+   ],
+   "focus": "Swiss Cottage School",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/swiss-cottage-school.html",
+   "label": "Education",
+   "ts": 1795107673
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

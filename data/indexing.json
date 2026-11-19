@@ -1,6 +1,6 @@
 {
  "day": "2026-11-19",
- "count": 24,
+ "count": 25,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -384,6 +384,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/nsf-nomination-rejected.html": {
    "ts": 1795105167,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/swiss-cottage-school.html": {
+   "ts": 1795107690,
    "type": "URL_UPDATED",
    "ok": true
   }
