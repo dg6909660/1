@@ -237,7 +237,8 @@
   "aced4709009275dd",
   "2afee04d8105f8f3",
   "3432b89d3c37b065",
-  "5107e59575ddcbbf"
+  "5107e59575ddcbbf",
+  "575d117779b4504d"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -265,7 +266,8 @@
   "cd1c1c7f4734f308": 1,
   "62e8ae5e0094b242": 1,
   "00929c54775570d1": 1,
-  "14742ba7621bb720": 1
+  "14742ba7621bb720": 1,
+  "1c5b6523c6c6e4cb": 1
  },
  "posts": [
   {
@@ -1303,9 +1305,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/uk-eu-talks-fees.html",
    "label": "Political",
    "ts": 1795120260
+  },
+  {
+   "title": "...Pseudomonas aeruginosa antibiotic resistance...",
+   "titles": [
+    "Pathogen P. aeruginosa uses protein to limit entry of last-resort antibiotic"
+   ],
+   "focus": "Pseudomonas aeruginosa antibiotic resistance",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/pseudomonas-aeruginosa-resistance.html",
+   "label": "Science",
+   "ts": 1795122751
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

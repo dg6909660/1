@@ -1,6 +1,6 @@
 {
  "day": "2026-11-19",
- "count": 30,
+ "count": 31,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -414,6 +414,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/uk-eu-talks-fees.html": {
    "ts": 1795120274,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/pseudomonas-aeruginosa-resistance.html": {
+   "ts": 1795122768,
    "type": "URL_UPDATED",
    "ok": true
   }
