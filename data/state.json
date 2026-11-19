@@ -224,7 +224,11 @@
   "421fe2bd9b346442",
   "258b80e0534057cc",
   "df4b75045c55b0a6",
-  "2f40b4a8dde51cab"
+  "2f40b4a8dde51cab",
+  "53599df9cd5d5c7e",
+  "8a8850b6d8944f34",
+  "adfd0efdc5571eb4",
+  "94d1cffd8a5c3802"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1248,9 +1252,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/invincible-season-5.html",
    "label": "Movie",
    "ts": 1795110203
+  },
+  {
+   "title": "Van Gogh Painting Sotheby's 2026 Auction: Inside the Deal",
+   "titles": [
+    "Watch: Moment Van Gogh painting sells for record $190.4m (£144.8m)",
+    "Van Gogh painting sells for record $190.4m after row over its Nazi history"
+   ],
+   "focus": "Van Gogh painting Sotheby's",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/vangogh-painting-sotheby.html",
+   "label": "World News",
+   "ts": 1795112748
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
