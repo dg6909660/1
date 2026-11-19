@@ -229,7 +229,8 @@
   "8a8850b6d8944f34",
   "adfd0efdc5571eb4",
   "94d1cffd8a5c3802",
-  "213f217f41a2719d"
+  "213f217f41a2719d",
+  "f1b9eaa5143f7c9f"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1274,9 +1275,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/mrna-vaccine-food-allergies-2026-key.html",
    "label": "Health",
    "ts": 1795115243
+  },
+  {
+   "title": "Key Facts on Anthropic IPO: What It Means for AI Tech",
+   "titles": [
+    "Anthropic keeps the AI party swinging, but the atmosphere is bubbly | Nils Pratley"
+   ],
+   "focus": "Anthropic IPO",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/anthropic-ipo-meaning.html",
+   "label": "Business",
+   "ts": 1795117802
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
