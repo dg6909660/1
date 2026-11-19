@@ -211,7 +211,8 @@
   "d6d5a75fc790921b",
   "92d630801d950c59",
   "6d2cd392f2813d71",
-  "cee3f6355b6dc5a3"
+  "cee3f6355b6dc5a3",
+  "13429205ba75c5ad"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1173,9 +1174,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/trump-putin-handshake.html",
    "label": "World News",
    "ts": 1795095690
+  },
+  {
+   "title": "Able to Know: Surgeon’s Calls for Corporate Homicide Probe (2026)",
+   "titles": [
+    "Surgeon calls for corporate homicide probe over claims patients unnecessarily bled to death"
+   ],
+   "focus": "surgeon corporate homicide investigation",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/surgeon-corporate-homicide.html",
+   "label": "Health",
+   "ts": 1795098254
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
