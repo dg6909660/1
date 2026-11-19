@@ -1,6 +1,6 @@
 {
  "day": "2026-11-19",
- "count": 2,
+ "count": 3,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -274,6 +274,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/earth-missing-history.html": {
    "ts": 1795049971,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/young-musicians-funding-cuts-hit-ni.html": {
+   "ts": 1795052477,
    "type": "URL_UPDATED",
    "ok": true
   }

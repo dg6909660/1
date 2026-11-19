@@ -172,7 +172,8 @@
   "997e32038a38c901",
   "406359353ab9e696",
   "31593a42e2f009f7",
-  "dd372e073c80d7be"
+  "dd372e073c80d7be",
+  "0b44efabe96b47ec"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -938,9 +939,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/earth-missing-history.html",
    "label": "Science",
    "ts": 1795049955
+  },
+  {
+   "title": "Why Young Musicians Funding Cuts Hit NI Hard",
+   "titles": [
+    "Transport for young musicians withdrawn amid EA cuts"
+   ],
+   "focus": "young musicians funding cuts",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/young-musicians-funding-cuts-hit-ni.html",
+   "label": "Education",
+   "ts": 1795052463
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
