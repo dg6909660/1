@@ -238,7 +238,8 @@
   "2afee04d8105f8f3",
   "3432b89d3c37b065",
   "5107e59575ddcbbf",
-  "575d117779b4504d"
+  "575d117779b4504d",
+  "ad05a4f34bbf9acd"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1315,9 +1316,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/pseudomonas-aeruginosa-resistance.html",
    "label": "Science",
    "ts": 1795122751
+  },
+  {
+   "title": "...Childhood Lying: Why fibbing about snacks is normal in",
+   "titles": [
+    "Why fibbing about stolen snacks is an important part of childhood"
+   ],
+   "focus": "Childhood Lying",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/childhood-lying-fibbing-snacks.html",
+   "label": "Education",
+   "ts": 1795125278
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
