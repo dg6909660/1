@@ -228,7 +228,8 @@
   "53599df9cd5d5c7e",
   "8a8850b6d8944f34",
   "adfd0efdc5571eb4",
-  "94d1cffd8a5c3802"
+  "94d1cffd8a5c3802",
+  "213f217f41a2719d"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1263,9 +1264,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/vangogh-painting-sotheby.html",
    "label": "World News",
    "ts": 1795112748
+  },
+  {
+   "title": "2026 Key Facts: Molecule Vaccine for Food Allergies",
+   "titles": [
+    "New mRNA vaccine steps closer to treating multiple food allergies"
+   ],
+   "focus": "mRNA vaccine food allergies",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/mrna-vaccine-food-allergies-2026-key.html",
+   "label": "Health",
+   "ts": 1795115243
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
