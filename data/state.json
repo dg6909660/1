@@ -188,7 +188,8 @@
   "b2883768adfb7180",
   "cb99e6aef1e50fe6",
   "4c9a622b70806704",
-  "b6a46e31c2256d80"
+  "b6a46e31c2256d80",
+  "6addfade593ec8e1"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1042,9 +1043,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0611089746.html",
    "label": "Science",
    "ts": 1795070572
+  },
+  {
+   "title": "UK-EU Deal Details 2026 Revealed",
+   "titles": [
+    "Cheese, pet passports and youth mobility: what’s in the UK-EU ‘relationship reset’ draft?"
+   ],
+   "focus": "UK-EU deal details",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/uk-eu-deal-details.html",
+   "label": "Education",
+   "ts": 1795073085
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
