@@ -203,7 +203,8 @@
   "8e682d8061416c56",
   "7f5dccfcc1fb8c9b",
   "da28dacabaf0124f",
-  "0e7dc7acf2fd8e5c"
+  "0e7dc7acf2fd8e5c",
+  "c2974be76578118a"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -229,7 +230,9 @@
   "106bc63de6e01e37": 1,
   "c3e5d012328378d6": 1,
   "cd1c1c7f4734f308": 1,
-  "62e8ae5e0094b242": 1
+  "62e8ae5e0094b242": 1,
+  "00929c54775570d1": 1,
+  "14742ba7621bb720": 1
  },
  "posts": [
   {
@@ -1120,9 +1123,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/uk-supply-drones-ukraine.html",
    "label": "Political",
    "ts": 1795085649
+  },
+  {
+   "title": "Moon Food Revolution: What It Means for Space Travel",
+   "titles": [
+    "Potatoes grown in simulated lunar soil match Earth-grown performance"
+   ],
+   "focus": "moon potatoes growth",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/moon-potatoes-growth-food-revolution.html",
+   "label": "Science",
+   "ts": 1795088104
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
