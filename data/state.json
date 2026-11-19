@@ -204,7 +204,8 @@
   "7f5dccfcc1fb8c9b",
   "da28dacabaf0124f",
   "0e7dc7acf2fd8e5c",
-  "c2974be76578118a"
+  "c2974be76578118a",
+  "dca49aa9e9bb915f"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1133,9 +1134,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/moon-potatoes-growth-food-revolution.html",
    "label": "Science",
    "ts": 1795088104
+  },
+  {
+   "title": "Teachers Aim to Prepare Students for Post-16 Life",
+   "titles": [
+    "Teachers want to prepare pupils for post-16 life. This is why it’s so difficult | Lola Okolosie"
+   ],
+   "focus": "teachers prepare post-16 students",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/teachers-prepare-post-16-students.html",
+   "label": "Education",
+   "ts": 1795090627
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
