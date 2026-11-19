@@ -214,7 +214,13 @@
   "cee3f6355b6dc5a3",
   "13429205ba75c5ad",
   "8ea62b1fb64a9c75",
-  "4e7f1380400f84b9"
+  "4e7f1380400f84b9",
+  "727ee1260bb25fa0",
+  "c092fcc533765bec",
+  "aeff9386d01183cd",
+  "ba55bb3dd4c723df",
+  "fb27a1cf171c2c1c",
+  "e481cf0ebb471f46"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1196,9 +1202,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/anthropic-ipo.html",
    "label": "Business",
    "ts": 1795100743
+  },
+  {
+   "title": "Tories London Mayor 2028: James Cleverly Selected",
+   "titles": [
+    "Cleverly to run as Tory London mayor candidate",
+    "Tories select James Cleverly as candidate for London mayor"
+   ],
+   "focus": "tories london mayor",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/tories-london-mayor.html",
+   "label": "Political",
+   "ts": 1795102710
   }
  ],
- "next_idx": 2,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
