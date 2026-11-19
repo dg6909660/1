@@ -199,7 +199,11 @@
   "ced773150d763501",
   "161d4c5f799237d1",
   "f36728dcb859265a",
-  "a995c33de1b31fc8"
+  "a995c33de1b31fc8",
+  "8e682d8061416c56",
+  "7f5dccfcc1fb8c9b",
+  "da28dacabaf0124f",
+  "0e7dc7acf2fd8e5c"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1106,9 +1110,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/bae-systems-job-cuts-1k-jobs.html",
    "label": "Business",
    "ts": 1795083143
+  },
+  {
+   "title": "UK to Supply Ukraine with 1,000 Drones: What It Means",
+   "titles": [
+    "UK to provide Ukraine with 1,000 long-range strike drones"
+   ],
+   "focus": "UK supply drones to Ukraine",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/uk-supply-drones-ukraine.html",
+   "label": "Political",
+   "ts": 1795085649
   }
  ],
- "next_idx": 2,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
