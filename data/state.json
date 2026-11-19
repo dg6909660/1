@@ -241,7 +241,10 @@
   "575d117779b4504d",
   "ad05a4f34bbf9acd",
   "d51fb79b2b4acb3f",
-  "4b15221ca75a794e"
+  "4b15221ca75a794e",
+  "c4d50d7d7eb79bfb",
+  "7d68e8a5be2d8b28",
+  "c492951e0fc67243"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1339,9 +1342,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/trashmountain-deal.html",
    "label": "Movie",
    "ts": 1795127771
+  },
+  {
+   "title": "Fiona the Hippo Dies: Key Facts 2026",
+   "titles": [
+    "Fiona the Hippo, Star of Cincinnati Zoo and Beyond, Dies After Eating Child’s Hat",
+    "Fiona the hippo dies after swallowing a hat at Cincinnati Zoo",
+    "Fiona the Hippo dies days after ingesting hat, Cincinnati Zoo announces"
+   ],
+   "focus": "Fiona the Hippo dies",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/fiona-hippo-dies-key-facts-2026.html",
+   "label": "World News",
+   "ts": 1795130209
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
