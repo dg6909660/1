@@ -1,6 +1,6 @@
 {
  "day": "2026-11-19",
- "count": 12,
+ "count": 13,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -324,6 +324,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/murder-galicia-netflix-5-major-facts.html": {
    "ts": 1795075600,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/icj-myanmar-genocide.html": {
+   "ts": 1795078209,
    "type": "URL_UPDATED",
    "ok": true
   }

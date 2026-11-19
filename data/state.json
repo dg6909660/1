@@ -191,7 +191,13 @@
   "b6a46e31c2256d80",
   "6addfade593ec8e1",
   "ab2a67ace5ae02da",
-  "423e5409b8c1af13"
+  "423e5409b8c1af13",
+  "a0d058379b8b5b29",
+  "75d31c6e61e4d315",
+  "c07ac66b11d21b8c",
+  "c6e6b7a8cac534b9",
+  "ced773150d763501",
+  "161d4c5f799237d1"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1065,9 +1071,22 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/murder-galicia-netflix-5-major-facts.html",
    "label": "Movie",
    "ts": 1795075587
+  },
+  {
+   "title": "...ICJ Myanmar Genocide Verdict",
+   "titles": [
+    "What to Know About the Myanmar Genocide Case at the World Court",
+    "ICJ to rule on Rohingya genocide case against Myanmar: What’s at stake?",
+    "ICJ to rule on Rohingya genocide case against Myanmar",
+    "ICJ to rule on Rohingya genocide case against Myanmar: What to know"
+   ],
+   "focus": "ICJ Myanmar Genocide",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/icj-myanmar-genocide.html",
+   "label": "World News",
+   "ts": 1795078194
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
