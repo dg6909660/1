@@ -207,7 +207,11 @@
   "c2974be76578118a",
   "dca49aa9e9bb915f",
   "cb28e554f8067df7",
-  "b568ca9c68bad0bd"
+  "b568ca9c68bad0bd",
+  "d6d5a75fc790921b",
+  "92d630801d950c59",
+  "6d2cd392f2813d71",
+  "cee3f6355b6dc5a3"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1157,9 +1161,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/ellalangley-cmaawards.html",
    "label": "Movie",
    "ts": 1795093179
+  },
+  {
+   "title": "Why Trump Putin Handshake Means US-Russia Relations",
+   "titles": [
+    "Trump Greets Putin as ‘My Friend,’ and the Rise of GLP-1s for Children",
+    "‘It’s my friend’: Moment Trump greets Putin at China summit",
+    "Watch: Trump greets 'my friend' Putin as pair shake hands"
+   ],
+   "focus": "Trump Putin handshake",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/trump-putin-handshake.html",
+   "label": "World News",
+   "ts": 1795095690
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
