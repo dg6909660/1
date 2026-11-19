@@ -178,7 +178,9 @@
   "2a15f4a28bcbff36",
   "be8b727b149731d8",
   "56673e8fb67a197f",
-  "5c19dcc510fb1f6e"
+  "5c19dcc510fb1f6e",
+  "253230d17cbe0959",
+  "75c12444c6ea9571"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -985,9 +987,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/chronic-pancreatitis-exocrine.html",
    "label": "Health",
    "ts": 1795060058
+  },
+  {
+   "title": "...Elon Musk Midterms Spending",
+   "titles": [
+    "Elon Musk says record spending on US midterms was 'pretty foolish'",
+    "Musk on midterms spending: ‘I feel pretty foolish’"
+   ],
+   "focus": "Elon Musk midterms spending",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/elon-musk-midterms-spending.html",
+   "label": "Business",
+   "ts": 1795062617
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
