@@ -244,7 +244,9 @@
   "4b15221ca75a794e",
   "c4d50d7d7eb79bfb",
   "7d68e8a5be2d8b28",
-  "c492951e0fc67243"
+  "c492951e0fc67243",
+  "0038996b3c3032e5",
+  "c92b9550e174b3b1"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1354,9 +1356,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/fiona-hippo-dies-key-facts-2026.html",
    "label": "World News",
    "ts": 1795130209
+  },
+  {
+   "title": "Everything to Know: IU and Anxiety in College Students, 2026",
+   "titles": [
+    "Rising intolerance of uncertainty drives anxiety in young adults",
+    "Intolerance of Uncertainty Is Rising in Young Adults"
+   ],
+   "focus": "intolerance of uncertainty anxiety",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/intolerance-uncertainty-3to6.html",
+   "label": "Health",
+   "ts": 1795132761
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
