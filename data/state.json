@@ -230,7 +230,14 @@
   "adfd0efdc5571eb4",
   "94d1cffd8a5c3802",
   "213f217f41a2719d",
-  "f1b9eaa5143f7c9f"
+  "f1b9eaa5143f7c9f",
+  "2cffe10e1ae95f00",
+  "ec90b959028157df",
+  "832ede64c0e1c4f4",
+  "aced4709009275dd",
+  "2afee04d8105f8f3",
+  "3432b89d3c37b065",
+  "5107e59575ddcbbf"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1285,9 +1292,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/anthropic-ipo-meaning.html",
    "label": "Business",
    "ts": 1795117802
+  },
+  {
+   "title": "UK-EU Talks: Youth Mobility, Food Rules, and Fees",
+   "titles": [
+    "EU-UK talks going down to the wire, says No 10",
+    "UK-EU reset talks will go ‘down to the wire’ as crunch summit approaches"
+   ],
+   "focus": "UK-EU talks",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/uk-eu-talks-fees.html",
+   "label": "Political",
+   "ts": 1795120260
   }
  ],
- "next_idx": 2,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
