@@ -197,7 +197,8 @@
   "c07ac66b11d21b8c",
   "c6e6b7a8cac534b9",
   "ced773150d763501",
-  "161d4c5f799237d1"
+  "161d4c5f799237d1",
+  "f36728dcb859265a"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1084,9 +1085,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/icj-myanmar-genocide.html",
    "label": "World News",
    "ts": 1795078194
+  },
+  {
+   "title": "Sino Biological AI Proteins 4S System",
+   "titles": [
+    "Sino Biological introduces AI-trusted and qualified target protein collections for AI-driven discovery"
+   ],
+   "focus": "Sino Biological AI proteins",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/sino-biological-ai-proteins.html",
+   "label": "Health",
+   "ts": 1795080670
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
