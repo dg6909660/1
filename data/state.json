@@ -189,7 +189,9 @@
   "cb99e6aef1e50fe6",
   "4c9a622b70806704",
   "b6a46e31c2256d80",
-  "6addfade593ec8e1"
+  "6addfade593ec8e1",
+  "ab2a67ace5ae02da",
+  "423e5409b8c1af13"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1053,9 +1055,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/uk-eu-deal-details.html",
    "label": "Education",
    "ts": 1795073085
+  },
+  {
+   "title": "5 Major Facts About Murder in Galicia Netflix Series 2026",
+   "titles": [
+    "Murder in Galicia Is Netflix's Best New 3-Part Crime Thriller To Binge This Week"
+   ],
+   "focus": "Murder in Galicia Netflix",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/murder-galicia-netflix-5-major-facts.html",
+   "label": "Movie",
+   "ts": 1795075587
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
