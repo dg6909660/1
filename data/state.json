@@ -239,7 +239,9 @@
   "3432b89d3c37b065",
   "5107e59575ddcbbf",
   "575d117779b4504d",
-  "ad05a4f34bbf9acd"
+  "ad05a4f34bbf9acd",
+  "d51fb79b2b4acb3f",
+  "4b15221ca75a794e"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1326,9 +1328,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/childhood-lying-fibbing-snacks.html",
    "label": "Education",
    "ts": 1795125278
+  },
+  {
+   "title": "Why Magnolia Pictures Buys 'Trash Mountain' in 2026: Major Deal",
+   "titles": [
+    "Caleb Hearon and Zooey Deschanel TIFF Dramedy ‘Trash Mountain’ Acquired by Magnolia Pictures",
+    "Fall Festival Movies Sold: Magnolia Heaps Dollars on ‘Trash Mountain’ with Caleb Hearon and Zooey Deschanel"
+   ],
+   "focus": "Trash Mountain",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/trashmountain-deal.html",
+   "label": "Movie",
+   "ts": 1795127771
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
