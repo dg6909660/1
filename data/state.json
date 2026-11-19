@@ -170,7 +170,9 @@
   "a607527b516f4d39",
   "23c6a48b4dcd35cc",
   "997e32038a38c901",
-  "406359353ab9e696"
+  "406359353ab9e696",
+  "31593a42e2f009f7",
+  "dd372e073c80d7be"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -925,9 +927,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/russell-brand-youtube.html",
    "label": "Political",
    "ts": 1795047641
+  },
+  {
+   "title": "Earth's Missing Billion Years: Key Facts Revealed 2026",
+   "titles": [
+    "Earth is missing over a billion years of geological history. Scientists may have discovered why",
+    "More than a billion years of Earth's history vanished. Scientists may finally know why"
+   ],
+   "focus": "Earth missing geological history",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/earth-missing-history.html",
+   "label": "Science",
+   "ts": 1795049955
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
