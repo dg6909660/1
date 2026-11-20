@@ -277,7 +277,8 @@
   "11a8aa5fd92f82ca",
   "584db0d8b9b3e36b",
   "281a2874b1b5de27",
-  "8f4c6a379360f7bd"
+  "8f4c6a379360f7bd",
+  "18b598518360bf9d"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1550,9 +1551,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/doctors-strike-pay-means-northern.html",
    "label": "Health",
    "ts": 1795166983
+  },
+  {
+   "title": "Asian Stocks Decline: Why Investors Are Worried (2026)",
+   "titles": [
+    "Asian stocks headed for worst week since 2020 as Anthropic IPO fails to end AI rout – business live"
+   ],
+   "focus": "Asian stocks",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/asian-stocks-decline-investors.html",
+   "label": "Business",
+   "ts": 1795169050
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
