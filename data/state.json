@@ -303,7 +303,8 @@
   "8e544d08ae6a24aa",
   "ff3a3dd766afb3bd",
   "896293758279f0ca",
-  "378d332f77f8d29a"
+  "378d332f77f8d29a",
+  "da7e5fee0fcf031a"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1704,9 +1705,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/pontins-fine-holiday-park.html",
    "label": "World News",
    "ts": 1795196653
+  },
+  {
+   "title": "Everything to Know About IACS-6274 Ovarian Cancer Therapy (2026)",
+   "titles": [
+    "New combination therapy delivers durable responses for advanced ovarian cancer"
+   ],
+   "focus": "IACS-6274 ovarian cancer therapy",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/iacs-6274-ovarian-cancer.html",
+   "label": "Health",
+   "ts": 1795198883
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
