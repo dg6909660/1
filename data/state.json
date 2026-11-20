@@ -269,7 +269,8 @@
   "e3fb41ae8b3f75aa",
   "69b38db4bf986a79",
   "ee6874af8839ae3f",
-  "8864c85aaebc7531"
+  "8864c85aaebc7531",
+  "b82da36cedfe5a91"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1498,9 +1499,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/bepicolombo-mission.html",
    "label": "Science",
    "ts": 1795157085
+  },
+  {
+   "title": "Academy Trust Pays Out After Palestinian Badge Issue",
+   "titles": [
+    "Academy trust pays out after Prevent threat over children’s Palestine badges"
+   ],
+   "focus": "Palestinian badge school incident",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/palestinian-badge-school-incident.html",
+   "label": "Education",
+   "ts": 1795159611
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

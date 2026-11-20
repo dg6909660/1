@@ -1,6 +1,6 @@
 {
  "day": "2026-11-20",
- "count": 10,
+ "count": 11,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -489,6 +489,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/bepicolombo-mission.html": {
    "ts": 1795157103,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/palestinian-badge-school-incident.html": {
+   "ts": 1795159624,
    "type": "URL_UPDATED",
    "ok": true
   }
