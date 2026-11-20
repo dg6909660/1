@@ -301,7 +301,9 @@
   "a75883d5bb1617fa",
   "08d61e7ea3b705c8",
   "8e544d08ae6a24aa",
-  "ff3a3dd766afb3bd"
+  "ff3a3dd766afb3bd",
+  "896293758279f0ca",
+  "378d332f77f8d29a"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1691,9 +1693,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/gta-6-lucia-dress-guide.html",
    "label": "Movie",
    "ts": 1795194139
+  },
+  {
+   "title": "Pontins Owner Fined £1m for Holiday Park Collapse: Key Facts",
+   "titles": [
+    "Pontins holiday park fined £1m after grandmother's death",
+    "Pontins owner fined £1m over death of woman at Somerset holiday park"
+   ],
+   "focus": "Pontins holiday park fine",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/pontins-fine-holiday-park.html",
+   "label": "World News",
+   "ts": 1795196653
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

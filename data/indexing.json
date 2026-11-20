@@ -1,6 +1,6 @@
 {
  "day": "2026-11-20",
- "count": 25,
+ "count": 26,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -564,6 +564,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/gta-6-lucia-dress-guide.html": {
    "ts": 1795194156,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/pontins-fine-holiday-park.html": {
+   "ts": 1795196669,
    "type": "URL_UPDATED",
    "ok": true
   }
