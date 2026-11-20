@@ -284,7 +284,9 @@
   "bfad6145e3fb8837",
   "27ac58e8151bf2e3",
   "4cbd4e9e8f863b20",
-  "c3f46f9359649aac"
+  "c3f46f9359649aac",
+  "2eeefeb6af9538dd",
+  "9153b4b67a52b055"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1597,9 +1599,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/uk-teachers-abuse.html",
    "label": "Education",
    "ts": 1795176647
+  },
+  {
+   "title": "5 Crime Movie Couples to Know: Jason and Lucia in 2026",
+   "titles": [
+    "Best Crime Movie Couples Like GTA 6's Jason And Lucia Ranked, Including Bonnie And Clyde"
+   ],
+   "focus": "crime movie couples",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/crime-movie-couples.html",
+   "label": "Movie",
+   "ts": 1795179130
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
