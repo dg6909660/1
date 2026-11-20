@@ -282,7 +282,8 @@
   "1497b93042f896ab",
   "bfdf50e94b05bb4c",
   "bfad6145e3fb8837",
-  "27ac58e8151bf2e3"
+  "27ac58e8151bf2e3",
+  "4cbd4e9e8f863b20"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1575,9 +1576,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nyc-rikers-island-jail-plan.html",
    "label": "Political",
    "ts": 1795171540
+  },
+  {
+   "title": "Major Heat Pump Trends: 2026 Installation Costs Explained",
+   "titles": [
+    "What are heat pumps and how much do they cost?"
+   ],
+   "focus": "heat pumps cost",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/heat-pumps-cost-major-pump-trends.html",
+   "label": "Science",
+   "ts": 1795174101
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
