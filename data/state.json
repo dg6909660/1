@@ -289,7 +289,8 @@
   "9153b4b67a52b055",
   "bc7ca4a145728fd4",
   "530174c81fe91601",
-  "a51d54d0d1826e7a"
+  "a51d54d0d1826e7a",
+  "c8606f7a59d7ed62"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1633,9 +1634,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/ketosis-liver-fat.html",
    "label": "Health",
    "ts": 1795184167
+  },
+  {
+   "title": "...EU UK Brexit and Future Relations...",
+   "titles": [
+    "EU wants ‘closest possible relationship’ with UK after agreeing Brexit reset deal – live"
+   ],
+   "focus": "EU UK Brexit",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/eukbrexit-future.html",
+   "label": "Business",
+   "ts": 1795186729
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
