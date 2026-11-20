@@ -255,7 +255,9 @@
   "66e0ad99cb0f3feb",
   "57ecf2957b815b38",
   "24f0933c7ee3ceb4",
-  "cce4eee7a68c5b2b"
+  "cce4eee7a68c5b2b",
+  "06f2886371f4c9b3",
+  "7c10a613123cdb90"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1420,9 +1422,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/blanche-wife-medical-claims-means-s.html",
    "label": "Education",
    "ts": 1795142344
+  },
+  {
+   "title": "Bill Hader Film They Know: What It Means for 2026",
+   "titles": [
+    "Bill Hader’s Feature Directorial Debut ‘They Know’ Acquired by Black Bear",
+    "Bill Hader’s Feature Directorial Debut ‘They Know’ Lands at Black Bear"
+   ],
+   "focus": "Bill Hader film",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/bill-hader-film-know.html",
+   "label": "Movie",
+   "ts": 1795144859
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
