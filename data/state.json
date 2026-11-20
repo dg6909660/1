@@ -254,7 +254,8 @@
   "5c16bf2a998fb398",
   "66e0ad99cb0f3feb",
   "57ecf2957b815b38",
-  "24f0933c7ee3ceb4"
+  "24f0933c7ee3ceb4",
+  "cce4eee7a68c5b2b"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1409,9 +1410,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/climate-finance-africa-s-challenges.html",
    "label": "Science",
    "ts": 1795139962
+  },
+  {
+   "title": "What It Means: Blanche Wife's Unproven Medical Claims 2026",
+   "titles": [
+    "Wife of Trump ally Todd Blanche sold treatments with unproven medical claims"
+   ],
+   "focus": "Blanche wife medical claims",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/blanche-wife-medical-claims-means-s.html",
+   "label": "Education",
+   "ts": 1795142344
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
