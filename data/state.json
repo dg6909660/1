@@ -257,7 +257,11 @@
   "24f0933c7ee3ceb4",
   "cce4eee7a68c5b2b",
   "06f2886371f4c9b3",
-  "7c10a613123cdb90"
+  "7c10a613123cdb90",
+  "8b7d6e98f9b274af",
+  "62f78e3d4b404b15",
+  "e43a8cb3f143187e",
+  "0c4ba43f83dfd6f1"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1433,9 +1437,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/bill-hader-film-know.html",
    "label": "Movie",
    "ts": 1795144859
+  },
+  {
+   "title": "Everything to Know: Advanced Therapies Key Facts 2026",
+   "titles": [
+    "Continuing advanced therapies before surgery linked to fewer Crohn's complications"
+   ],
+   "focus": "Crohn's disease surgery complications",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/crohns-surgery-complications.html",
+   "label": "Health",
+   "ts": 1795147310
   }
  ],
- "next_idx": 7,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
