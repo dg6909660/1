@@ -278,7 +278,11 @@
   "584db0d8b9b3e36b",
   "281a2874b1b5de27",
   "8f4c6a379360f7bd",
-  "18b598518360bf9d"
+  "18b598518360bf9d",
+  "1497b93042f896ab",
+  "bfdf50e94b05bb4c",
+  "bfad6145e3fb8837",
+  "27ac58e8151bf2e3"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1561,9 +1565,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/asian-stocks-decline-investors.html",
    "label": "Business",
    "ts": 1795169050
+  },
+  {
+   "title": "...NYC Rikers Island Jail Plan...",
+   "titles": [
+    "New York City unveils a bold plan to move its jails off Rikers Island"
+   ],
+   "focus": "NYC Rikers Island Jail Plan",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nyc-rikers-island-jail-plan.html",
+   "label": "Political",
+   "ts": 1795171540
   }
  ],
- "next_idx": 2,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
