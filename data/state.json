@@ -268,7 +268,8 @@
   "f21f255fd91ab703",
   "e3fb41ae8b3f75aa",
   "69b38db4bf986a79",
-  "ee6874af8839ae3f"
+  "ee6874af8839ae3f",
+  "8864c85aaebc7531"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1487,9 +1488,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/trump-pardons-pete-rose.html",
    "label": "Political",
    "ts": 1795154713
+  },
+  {
+   "title": "...BepiColombo Mercury mission...",
+   "titles": [
+    "Mysterious Mercury is about to get a visitor - after spacecraft's eight-year epic voyage"
+   ],
+   "focus": "BepiColombo Mercury mission",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/bepicolombo-mission.html",
+   "label": "Science",
+   "ts": 1795157085
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
