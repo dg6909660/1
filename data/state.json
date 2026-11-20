@@ -276,7 +276,8 @@
   "11147e28a0c160e4",
   "11a8aa5fd92f82ca",
   "584db0d8b9b3e36b",
-  "281a2874b1b5de27"
+  "281a2874b1b5de27",
+  "8f4c6a379360f7bd"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1539,9 +1540,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/anthropic-debut.html",
    "label": "Business",
    "ts": 1795164504
+  },
+  {
+   "title": "What It Means: Northern Ireland Doctors' Strike 2026",
+   "titles": [
+    "Resident doctors begin 24-hour strike over pay"
+   ],
+   "focus": "doctors strike pay",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/doctors-strike-pay-means-northern.html",
+   "label": "Health",
+   "ts": 1795166983
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
