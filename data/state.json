@@ -288,7 +288,8 @@
   "2eeefeb6af9538dd",
   "9153b4b67a52b055",
   "bc7ca4a145728fd4",
-  "530174c81fe91601"
+  "530174c81fe91601",
+  "a51d54d0d1826e7a"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1622,9 +1623,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/cop31-africa-climate.html",
    "label": "World News",
    "ts": 1795181708
+  },
+  {
+   "title": "Keto Diet 2026: Why It Means Significant Weight Loss",
+   "titles": [
+    "Keto diet slashes liver fat by 67% in just 4 months"
+   ],
+   "focus": "ketogenic diet liver fat",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/ketosis-liver-fat.html",
+   "label": "Health",
+   "ts": 1795184167
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

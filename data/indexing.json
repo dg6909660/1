@@ -1,6 +1,6 @@
 {
  "day": "2026-11-20",
- "count": 20,
+ "count": 21,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -539,6 +539,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/cop31-africa-climate.html": {
    "ts": 1795181722,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/ketosis-liver-fat.html": {
+   "ts": 1795184182,
    "type": "URL_UPDATED",
    "ok": true
   }
