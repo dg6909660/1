@@ -263,7 +263,9 @@
   "e43a8cb3f143187e",
   "0c4ba43f83dfd6f1",
   "9b2835c8ee7502e7",
-  "80ef4e04236d32fd"
+  "80ef4e04236d32fd",
+  "489ec39e3cbcc710",
+  "f21f255fd91ab703"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1460,9 +1462,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/cal-nv-subp.html",
    "label": "Business",
    "ts": 1795149747
+  },
+  {
+   "title": "US Senators Urge AI Chief to Fix 2026 Outages Key Facts",
+   "titles": [
+    "White House replaces cyber security chief after tech outages",
+    "US senators urge White House AI chief to fix vulnerabilities after mass outages"
+   ],
+   "focus": "US Senators AI Outages",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/us-senators-ai-outages.html",
+   "label": "World News",
+   "ts": 1795152235
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
