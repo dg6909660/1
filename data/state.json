@@ -295,7 +295,10 @@
   "658331a48964a228",
   "3a74e67a3c9fa68a",
   "8cc6dba50c640afb",
-  "13b8208971a61ca3"
+  "13b8208971a61ca3",
+  "d110e28f6dfb7de2",
+  "db18c3c5862651cb",
+  "a75883d5bb1617fa"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1650,9 +1653,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/eukbrexit-future.html",
    "label": "Business",
    "ts": 1795186729
+  },
+  {
+   "title": "Citi Simplicity Card Offers 0% Interest for 2026: Inside",
+   "titles": [
+    "It's official: now avoid credit card interest into 2024"
+   ],
+   "focus": "Citi Simplicity Card",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/citi-simplicity-card-0-interest.html",
+   "label": "World News",
+   "ts": 1795189259
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
