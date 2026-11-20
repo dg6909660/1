@@ -310,7 +310,9 @@
   "c7b977dd291cabfa",
   "992dd27169f7eb0d",
   "d2969e8f1e87c281",
-  "81c0414eb3e191b5"
+  "81c0414eb3e191b5",
+  "e19e3498aec20630",
+  "b838cca1a5c39c0c"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1742,9 +1744,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/costoflivingprotests-europe.html",
    "label": "World News",
    "ts": 1795203941
+  },
+  {
+   "title": "...Army Lead Azide Detonation Delay...",
+   "titles": [
+    "Environmental groups sue to block Army’s lead detonation at Iowa ammunition plant",
+    "Dems aim to block Iran war funding. And, Army delays lead azide detonation in Iowa"
+   ],
+   "focus": "Army lead azide detonation delay",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/army-lead-azide-delay.html",
+   "label": "Political",
+   "ts": 1795206464
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
