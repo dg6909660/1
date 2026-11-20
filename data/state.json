@@ -283,7 +283,8 @@
   "bfdf50e94b05bb4c",
   "bfad6145e3fb8837",
   "27ac58e8151bf2e3",
-  "4cbd4e9e8f863b20"
+  "4cbd4e9e8f863b20",
+  "c3f46f9359649aac"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1586,9 +1587,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/heat-pumps-cost-major-pump-trends.html",
    "label": "Science",
    "ts": 1795174101
+  },
+  {
+   "title": "UK Schools: Inside School Abuse Experiences (2026)",
+   "titles": [
+    "UK teachers: have you experienced abuse in schools?"
+   ],
+   "focus": "UK teachers abuse",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/uk-teachers-abuse.html",
+   "label": "Education",
+   "ts": 1795176647
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
