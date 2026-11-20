@@ -306,7 +306,11 @@
   "378d332f77f8d29a",
   "da7e5fee0fcf031a",
   "4dfd121c6c304146",
-  "ae58bd9e7f4a9216"
+  "ae58bd9e7f4a9216",
+  "c7b977dd291cabfa",
+  "992dd27169f7eb0d",
+  "d2969e8f1e87c281",
+  "81c0414eb3e191b5"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1727,9 +1731,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/supermarket-fridge-cyber-attack.html",
    "label": "Business",
    "ts": 1795201409
+  },
+  {
+   "title": "Everything to Know: Cost of Living Protests Europe 2026",
+   "titles": [
+    "Protests held across Europe over wages, services, high living costs",
+    "Cost of living protests sweep across Europe"
+   ],
+   "focus": "cost of living protests Europe",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/costoflivingprotests-europe.html",
+   "label": "World News",
+   "ts": 1795203941
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
