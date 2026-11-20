@@ -246,7 +246,9 @@
   "7d68e8a5be2d8b28",
   "c492951e0fc67243",
   "0038996b3c3032e5",
-  "c92b9550e174b3b1"
+  "c92b9550e174b3b1",
+  "6dd2ec3981ff138f",
+  "d116a97c5f1a7a3f"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1367,9 +1369,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/intolerance-uncertainty-3to6.html",
    "label": "Health",
    "ts": 1795132761
+  },
+  {
+   "title": "Inside How 7 Anthropic Founders Plan to Use 2026 IPO Wealth",
+   "titles": [
+    "Who are Anthropic’s seven co-founders, now worth $180bn?",
+    "The seven Anthropic founders who are about to become multi-billionaires"
+   ],
+   "focus": "Anthropic founders",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/anthropic-founders-ipo-plan.html",
+   "label": "Business",
+   "ts": 1795135235
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
