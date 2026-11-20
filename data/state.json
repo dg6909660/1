@@ -270,7 +270,9 @@
   "69b38db4bf986a79",
   "ee6874af8839ae3f",
   "8864c85aaebc7531",
-  "b82da36cedfe5a91"
+  "b82da36cedfe5a91",
+  "d89b46ea88b9751b",
+  "8cfe91354b1439fa"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1509,9 +1511,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/palestinian-badge-school-incident.html",
    "label": "Education",
    "ts": 1795159611
+  },
+  {
+   "title": "How Cliff Booth Survived Hollywood: Key Facts in 2026",
+   "titles": [
+    "The Further Mis-Adventures of Cliff Booth review – Tarantino and Fincher join forces for Brad Pitt’s glorious return",
+    "‘The Further Mis-Adventures of Cliff Booth’ Review: David Fincher’s Breezy Tarantino Spinoff Is a Disappointing Compromise Between Great Directors"
+   ],
+   "focus": "...The Further Mis-Adventures of Cliff Booth review",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/further-misadventures-cliff.html",
+   "label": "Movie",
+   "ts": 1795162044
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
