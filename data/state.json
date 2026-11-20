@@ -300,7 +300,8 @@
   "db18c3c5862651cb",
   "a75883d5bb1617fa",
   "08d61e7ea3b705c8",
-  "8e544d08ae6a24aa"
+  "8e544d08ae6a24aa",
+  "ff3a3dd766afb3bd"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -332,7 +333,11 @@
   "1c5b6523c6c6e4cb": 1,
   "bb2a9edbe6cdeac0": 1,
   "77e911f395b79618": 1,
-  "12d8d4f29b57845c": 1
+  "12d8d4f29b57845c": 1,
+  "7b0714736133ef6e": 1,
+  "16496c6f475a0ec2": 1,
+  "75d65474db4c5e24": 1,
+  "b324a05a5607ae61": 1
  },
  "posts": [
   {
@@ -1676,9 +1681,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/texas-execution-2026-took-1-hour.html",
    "label": "Political",
    "ts": 1795191752
+  },
+  {
+   "title": "GTA 6 Lucia Dress Choice Guide: Why Gold?",
+   "titles": [
+    "GTA 6: Should You Choose The Gold, Brown, Or Black Dress For Lucia?"
+   ],
+   "focus": "GTA 6 Lucia dress choice",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/gta-6-lucia-dress-guide.html",
+   "label": "Movie",
+   "ts": 1795194139
   }
  ],
- "next_idx": 4,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
