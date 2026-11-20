@@ -298,7 +298,9 @@
   "13b8208971a61ca3",
   "d110e28f6dfb7de2",
   "db18c3c5862651cb",
-  "a75883d5bb1617fa"
+  "a75883d5bb1617fa",
+  "08d61e7ea3b705c8",
+  "8e544d08ae6a24aa"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1663,9 +1665,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/citi-simplicity-card-0-interest.html",
    "label": "World News",
    "ts": 1795189259
+  },
+  {
+   "title": "Texas Execution 2026: Why It Took Over 1 Hour, Explained",
+   "titles": [
+    "Texas execution took over an hour as staff struggled to find vein; Reinaldo Dennes moaned about pain",
+    "Texas execution took over an hour as staff struggled to find vein; Reinaldo Dennes moaned about pain"
+   ],
+   "focus": "Texas execution",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/texas-execution-2026-took-1-hour.html",
+   "label": "Political",
+   "ts": 1795191752
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

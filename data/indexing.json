@@ -1,6 +1,6 @@
 {
  "day": "2026-11-20",
- "count": 23,
+ "count": 24,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -554,6 +554,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/citi-simplicity-card-0-interest.html": {
    "ts": 1795189272,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/texas-execution-2026-took-1-hour.html": {
+   "ts": 1795191768,
    "type": "URL_UPDATED",
    "ok": true
   }
