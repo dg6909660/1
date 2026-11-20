@@ -316,7 +316,9 @@
   "6206406e5e9ed090",
   "d49ed9bd24bbc091",
   "c791dbe540075510",
-  "c262f425bba41b2e"
+  "c262f425bba41b2e",
+  "234635f653a52633",
+  "79e278dcea22de21"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1773,9 +1775,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/home-alone-sequel-enter-disney.html",
    "label": "Movie",
    "ts": 1795208908
+  },
+  {
+   "title": "Major News: COP31 Draft Text Avoids Fossil Fuel References",
+   "titles": [
+    "Cop31 talks go into overtime as debate rages over lack of fossil fuels in draft deal",
+    "No mention of fossil fuels in latest COP31 draft deal"
+   ],
+   "focus": "COP31 fossil fuels",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/copp31-fossil-fuels.html",
+   "label": "World News",
+   "ts": 1795211411
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
