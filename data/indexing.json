@@ -1,6 +1,6 @@
 {
  "day": "2026-11-20",
- "count": 34,
+ "count": 35,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -609,6 +609,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/trump-ai-data-tax.html": {
    "ts": 1795216448,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/french-police-racism.html": {
+   "ts": 1795218978,
    "type": "URL_UPDATED",
    "ok": true
   }

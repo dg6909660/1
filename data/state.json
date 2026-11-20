@@ -323,7 +323,9 @@
   "4fa85ae7ae72f760",
   "766ed3f25898a7c9",
   "1b03632f32bcce9f",
-  "46bb805ec67e903d"
+  "46bb805ec67e903d",
+  "4939f70f711bb596",
+  "8ed73d92e1a547ca"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1814,9 +1816,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/trump-ai-data-tax.html",
    "label": "Business",
    "ts": 1795216432
+  },
+  {
+   "title": "...French Police Racism Verdict...",
+   "titles": [
+    "French police officers sentenced for beating of music producer Michel Zecler",
+    "French police officers found guilty of racist assault on black music producer"
+   ],
+   "focus": "French police racism",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/french-police-racism.html",
+   "label": "World News",
+   "ts": 1795218962
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
