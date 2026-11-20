@@ -1,6 +1,6 @@
 {
  "day": "2026-11-20",
- "count": 1,
+ "count": 2,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -444,6 +444,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/anthropic-founders-ipo-plan.html": {
    "ts": 1795135250,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/trump-defamation-lawsuit.html": {
+   "ts": 1795137585,
    "type": "URL_UPDATED",
    "ok": true
   }

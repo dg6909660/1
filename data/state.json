@@ -248,7 +248,12 @@
   "0038996b3c3032e5",
   "c92b9550e174b3b1",
   "6dd2ec3981ff138f",
-  "d116a97c5f1a7a3f"
+  "d116a97c5f1a7a3f",
+  "601a1f5e1984a251",
+  "947e6ec924674139",
+  "5c16bf2a998fb398",
+  "66e0ad99cb0f3feb",
+  "57ecf2957b815b38"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1380,9 +1385,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/anthropic-founders-ipo-plan.html",
    "label": "Business",
    "ts": 1795135235
+  },
+  {
+   "title": "Key Facts: Trump’s Defamation Suit Against NYT Proceeds 2026",
+   "titles": [
+    "Judge rules Trump’s defamation case against New York Times, Penguin Random House may proceed",
+    "Trump’s case against NYT and Penguin Random House may proceed: Judge"
+   ],
+   "focus": "Trump defamation lawsuit",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/trump-defamation-lawsuit.html",
+   "label": "Political",
+   "ts": 1795137571
   }
  ],
- "next_idx": 2,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
