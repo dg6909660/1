@@ -312,7 +312,11 @@
   "d2969e8f1e87c281",
   "81c0414eb3e191b5",
   "e19e3498aec20630",
-  "b838cca1a5c39c0c"
+  "b838cca1a5c39c0c",
+  "6206406e5e9ed090",
+  "d49ed9bd24bbc091",
+  "c791dbe540075510",
+  "c262f425bba41b2e"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -348,7 +352,9 @@
   "7b0714736133ef6e": 1,
   "16496c6f475a0ec2": 1,
   "75d65474db4c5e24": 1,
-  "b324a05a5607ae61": 1
+  "b324a05a5607ae61": 1,
+  "36376e3810aab6ea": 1,
+  "bee47c1ead79ea5a": 1
  },
  "posts": [
   {
@@ -1755,9 +1761,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/army-lead-azide-delay.html",
    "label": "Political",
    "ts": 1795206464
+  },
+  {
+   "title": "Critical Update: Home Alone Sequel Enters Disney Development",
+   "titles": [
+    "A ‘Home Alone’ Legacyquel with Macaulay Culkin in Early Development with Seth Rogen and Evan Goldberg",
+    "‘Home Alone’ Reboot in the Works at Disney from Macaulay Culkin, Seth Rogen and Evan Goldberg",
+    "Home Alone sequel reportedly in development with Macaulay Culkin returning"
+   ],
+   "focus": "Home Alone sequel",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/home-alone-sequel-enter-disney.html",
+   "label": "Movie",
+   "ts": 1795208908
   }
  ],
- "next_idx": 4,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
