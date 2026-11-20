@@ -265,7 +265,10 @@
   "9b2835c8ee7502e7",
   "80ef4e04236d32fd",
   "489ec39e3cbcc710",
-  "f21f255fd91ab703"
+  "f21f255fd91ab703",
+  "e3fb41ae8b3f75aa",
+  "69b38db4bf986a79",
+  "ee6874af8839ae3f"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1473,9 +1476,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/us-senators-ai-outages.html",
    "label": "World News",
    "ts": 1795152235
+  },
+  {
+   "title": "Trump Pardons Pete Rose: What It Means in 2026",
+   "titles": [
+    "Trump posthumously pardons Pete Rose",
+    "Trump posthumously pardons US baseball legend Pete Rose"
+   ],
+   "focus": "Trump pardons Pete Rose",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/trump-pardons-pete-rose.html",
+   "label": "Political",
+   "ts": 1795154713
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
