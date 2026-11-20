@@ -318,7 +318,8 @@
   "c791dbe540075510",
   "c262f425bba41b2e",
   "234635f653a52633",
-  "79e278dcea22de21"
+  "79e278dcea22de21",
+  "7d632dc95c4deebe"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1786,9 +1787,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/copp31-fossil-fuels.html",
    "label": "World News",
    "ts": 1795211411
+  },
+  {
+   "title": "...Bacteria antibiotic resistance...",
+   "titles": [
+    "Bacteria rapidly block entry channels to resist last-resort antibiotics"
+   ],
+   "focus": "bacteria antibiotic resistance",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/bacteria-resistance.html",
+   "label": "Health",
+   "ts": 1795213898
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
