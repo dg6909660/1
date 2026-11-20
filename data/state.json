@@ -319,7 +319,11 @@
   "c262f425bba41b2e",
   "234635f653a52633",
   "79e278dcea22de21",
-  "7d632dc95c4deebe"
+  "7d632dc95c4deebe",
+  "4fa85ae7ae72f760",
+  "766ed3f25898a7c9",
+  "1b03632f32bcce9f",
+  "46bb805ec67e903d"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1797,9 +1801,22 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/bacteria-resistance.html",
    "label": "Health",
    "ts": 1795213898
+  },
+  {
+   "title": "Why Trump's AI Data Center Tax Threat: A Key Facts Overview",
+   "titles": [
+    "Trump threatens ban on US firms building AI data centres overseas",
+    "Trump threatens tax on US tech firms building AI data centres abroad",
+    "Trump seeks curbs on US companies building data centers overseas",
+    "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad"
+   ],
+   "focus": "Trump AI data centers tax",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/trump-ai-data-tax.html",
+   "label": "Business",
+   "ts": 1795216432
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
