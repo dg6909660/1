@@ -304,7 +304,9 @@
   "ff3a3dd766afb3bd",
   "896293758279f0ca",
   "378d332f77f8d29a",
-  "da7e5fee0fcf031a"
+  "da7e5fee0fcf031a",
+  "4dfd121c6c304146",
+  "ae58bd9e7f4a9216"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1715,9 +1717,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/iacs-6274-ovarian-cancer.html",
    "label": "Health",
    "ts": 1795198883
+  },
+  {
+   "title": "...Supermarket Fridge Cyber Attack...",
+   "titles": [
+    "UK operation wards off risk of cyber-attack on supermarket fridges and freezers"
+   ],
+   "focus": "supermarket fridge cyber attack",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/supermarket-fridge-cyber-attack.html",
+   "label": "Business",
+   "ts": 1795201409
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
