@@ -253,7 +253,8 @@
   "947e6ec924674139",
   "5c16bf2a998fb398",
   "66e0ad99cb0f3feb",
-  "57ecf2957b815b38"
+  "57ecf2957b815b38",
+  "24f0933c7ee3ceb4"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -282,7 +283,9 @@
   "62e8ae5e0094b242": 1,
   "00929c54775570d1": 1,
   "14742ba7621bb720": 1,
-  "1c5b6523c6c6e4cb": 1
+  "1c5b6523c6c6e4cb": 1,
+  "bb2a9edbe6cdeac0": 1,
+  "77e911f395b79618": 1
  },
  "posts": [
   {
@@ -1396,9 +1399,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/trump-defamation-lawsuit.html",
    "label": "Political",
    "ts": 1795137571
+  },
+  {
+   "title": "Africa's Climate Challenges: Funding Urgently Needed",
+   "titles": [
+    "More climate money for Africa? Europe says use what's already pledged"
+   ],
+   "focus": "climate finance for Africa",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/climate-finance-africa-s-challenges.html",
+   "label": "Science",
+   "ts": 1795139962
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
