@@ -261,7 +261,9 @@
   "8b7d6e98f9b274af",
   "62f78e3d4b404b15",
   "e43a8cb3f143187e",
-  "0c4ba43f83dfd6f1"
+  "0c4ba43f83dfd6f1",
+  "9b2835c8ee7502e7",
+  "80ef4e04236d32fd"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1447,9 +1449,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/crohns-surgery-complications.html",
    "label": "Health",
    "ts": 1795147310
+  },
+  {
+   "title": "...California Nvidia subpoena...",
+   "titles": [
+    "California targets Nvidia in China AI chip probe",
+    "California attorney general issues subpoena to Nvidia over chip sales to China"
+   ],
+   "focus": "...California Nvidia subpoena...",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/cal-nv-subp.html",
+   "label": "Business",
+   "ts": 1795149747
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
