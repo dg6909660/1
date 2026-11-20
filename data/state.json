@@ -286,7 +286,9 @@
   "4cbd4e9e8f863b20",
   "c3f46f9359649aac",
   "2eeefeb6af9538dd",
-  "9153b4b67a52b055"
+  "9153b4b67a52b055",
+  "bc7ca4a145728fd4",
+  "530174c81fe91601"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1609,9 +1611,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/crime-movie-couples.html",
    "label": "Movie",
    "ts": 1795179130
+  },
+  {
+   "title": "...COP31 Africa Climate Demands...",
+   "titles": [
+    "Cop31 live: ‘We didn’t come here to beg’, African ministers say as climate talks enter final day",
+    "‘We didn’t come here to beg’: Africa’s message at COP31"
+   ],
+   "focus": "COP31 Africa climate demands",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/cop31-africa-climate.html",
+   "label": "World News",
+   "ts": 1795181708
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
