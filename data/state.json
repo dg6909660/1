@@ -363,7 +363,8 @@
   "3911aa237ba33720",
   "c21a55777b019b75",
   "79a02425ec1794ff",
-  "ca1952e7b9795a91"
+  "ca1952e7b9795a91",
+  "4e974cea1067bf12"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2130,9 +2131,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/princess-wales-cancer-facts.html",
    "label": "Health",
    "ts": 1795279053
+  },
+  {
+   "title": "19 Deaths Key Facts: NHS Grampian Surgery Review Ordered (2026)",
+   "titles": [
+    "Independent review ordered into surgery carried out by NHS Grampian"
+   ],
+   "focus": "NHS Grampian surgery review",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nhs-grampian-surgery-review.html",
+   "label": "Health",
+   "ts": 1795281555
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
