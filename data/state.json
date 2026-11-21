@@ -356,7 +356,9 @@
   "ce8b9b6899bf647e",
   "4ff3d221c75b9aed",
   "e2f87a58e22fbfb6",
-  "8e797836f2dc8906"
+  "8e797836f2dc8906",
+  "556448d4505387bc",
+  "61f99a21c2f0c690"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2077,9 +2079,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/coreweave-debt-crisis.html",
    "label": "Business",
    "ts": 1795269358
+  },
+  {
+   "title": "What It Means: Chaudhary's Heroics Lead Australia",
+   "titles": [
+    "Chaudhary helps Australia beat England in T20 shake-off of scandal-hit run",
+    "Australia's Chaudhary downs England in tetchy first T20"
+   ],
+   "focus": "Nikhil Chaudhary T20",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/nikhil-chaudhary-t20-means-s-heroics.html",
+   "label": "World News",
+   "ts": 1795271831
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
