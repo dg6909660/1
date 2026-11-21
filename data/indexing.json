@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 19,
+ "count": 20,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -709,6 +709,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/fathers-feeding-study-reveals-major.html": {
    "ts": 1795267014,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/coreweave-debt-crisis.html": {
+   "ts": 1795269374,
    "type": "URL_UPDATED",
    "ok": true
   }

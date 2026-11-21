@@ -355,7 +355,8 @@
   "df1655ff078fbd9b",
   "ce8b9b6899bf647e",
   "4ff3d221c75b9aed",
-  "e2f87a58e22fbfb6"
+  "e2f87a58e22fbfb6",
+  "8e797836f2dc8906"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2066,9 +2067,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/fathers-feeding-study-reveals-major.html",
    "label": "Health",
    "ts": 1795266997
+  },
+  {
+   "title": "CoreWeave Debt: Inside the GPU-Backed Debt Crisis 2026",
+   "titles": [
+    "‘Little room for error’: what a debt-laden cloud computing company says about the AI boom"
+   ],
+   "focus": "CoreWeave debt",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/coreweave-debt-crisis.html",
+   "label": "Business",
+   "ts": 1795269358
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
