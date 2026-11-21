@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 21,
+ "count": 22,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -719,6 +719,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/nikhil-chaudhary-t20-means-s-heroics.html": {
    "ts": 1795271845,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/un-talks-fail-autonomous-weapons.html": {
+   "ts": 1795274307,
    "type": "URL_UPDATED",
    "ok": true
   }

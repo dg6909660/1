@@ -358,7 +358,8 @@
   "e2f87a58e22fbfb6",
   "8e797836f2dc8906",
   "556448d4505387bc",
-  "61f99a21c2f0c690"
+  "61f99a21c2f0c690",
+  "158994b8ae4ecd45"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -407,7 +408,11 @@
   "5c37b2ccefd29033": 1,
   "ee235762b07c8795": 1,
   "a9fd645d8b260882": 1,
-  "b1d356bcbddb0ba9": 1
+  "b1d356bcbddb0ba9": 1,
+  "7f9f14078f08ecd8": 1,
+  "e07fbbcc34a7dde8": 1,
+  "37b67b7ce95adfc6": 1,
+  "353986995381cd3c": 1
  },
  "posts": [
   {
@@ -2090,9 +2095,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nikhil-chaudhary-t20-means-s-heroics.html",
    "label": "World News",
    "ts": 1795271831
+  },
+  {
+   "title": "UN Talks Fail to Reach Autonomous Weapons Treaty",
+   "titles": [
+    "International talks on controlling use of autonomous weapons collapse"
+   ],
+   "focus": "autonomous weapons treaty",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/un-talks-fail-autonomous-weapons.html",
+   "label": "Science",
+   "ts": 1795274292
   }
  ],
- "next_idx": 3,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
