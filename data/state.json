@@ -353,7 +353,8 @@
   "2b46772c5167c98d",
   "32c24ea15a1ea5e5",
   "df1655ff078fbd9b",
-  "ce8b9b6899bf647e"
+  "ce8b9b6899bf647e",
+  "4ff3d221c75b9aed"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2044,9 +2045,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/marrakech-film-festival-jury.html",
    "label": "Movie",
    "ts": 1795261962
+  },
+  {
+   "title": "Explained: Russian Cafe Blast Suspect Hearing 2026",
+   "titles": [
+    "Russian authorities detain suspect over St. Petersburg cafe blast"
+   ],
+   "focus": "Russian cafe blast suspect",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/russian-cafe-blast-suspect.html",
+   "label": "World News",
+   "ts": 1795264476
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

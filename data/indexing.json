@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 17,
+ "count": 18,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -699,6 +699,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/marrakech-film-festival-jury.html": {
    "ts": 1795261979,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/russian-cafe-blast-suspect.html": {
+   "ts": 1795264497,
    "type": "URL_UPDATED",
    "ok": true
   }
