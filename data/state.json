@@ -325,7 +325,9 @@
   "1b03632f32bcce9f",
   "46bb805ec67e903d",
   "4939f70f711bb596",
-  "8ed73d92e1a547ca"
+  "8ed73d92e1a547ca",
+  "15fb64e344333080",
+  "8bb9ea366d89db52"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -363,7 +365,8 @@
   "75d65474db4c5e24": 1,
   "b324a05a5607ae61": 1,
   "36376e3810aab6ea": 1,
-  "bee47c1ead79ea5a": 1
+  "bee47c1ead79ea5a": 1,
+  "e321099b79c6df85": 1
  },
  "posts": [
   {
@@ -1827,9 +1830,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/french-police-racism.html",
    "label": "World News",
    "ts": 1795218962
+  },
+  {
+   "title": "...UK-EU Brexit Deal 2023",
+   "titles": [
+    "What does the new Brexit deal mean for Northern Ireland?",
+    "What the new UK-EU deal could mean for future post-Brexit relations"
+   ],
+   "focus": "UK-EU Brexit deal",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/uk-eu-brexit-deal.html",
+   "label": "Political",
+   "ts": 1795221417
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
