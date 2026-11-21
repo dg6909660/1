@@ -335,7 +335,10 @@
   "e700433486fbb866",
   "e321099b79c6df85",
   "dac87da1566eceac",
-  "d836d8ed0f497e05"
+  "d836d8ed0f497e05",
+  "96a7f9767d2d2403",
+  "c55e5d041541502c",
+  "43662880de3c81d7"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1901,9 +1904,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/baby-sleeping-bag-safety-everything.html",
    "label": "Health",
    "ts": 1795233648
+  },
+  {
+   "title": "Roundup Cancer Payouts: What It Means After 2026 Settlement",
+   "titles": [
+    "Judge approves $7.25bn Bayer payout to settle claims that Roundup causes cancer",
+    "US judge approves Bayer's $7.25 billion cancer settlement",
+    "Judge Approves $7 Billion Settlement Over Claims That Roundup Caused Cancer"
+   ],
+   "focus": "Bayer Roundup Settlement",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/bayer-roundup-settlement-cancer.html",
+   "label": "Business",
+   "ts": 1795236121
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

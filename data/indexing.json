@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 6,
+ "count": 7,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -644,6 +644,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/baby-sleeping-bag-safety-everything.html": {
    "ts": 1795233664,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/bayer-roundup-settlement-cancer.html": {
+   "ts": 1795236138,
    "type": "URL_UPDATED",
    "ok": true
   }
