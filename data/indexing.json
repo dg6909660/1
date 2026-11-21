@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 1,
+ "count": 2,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -619,6 +619,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/uk-eu-brexit-deal.html": {
    "ts": 1795221431,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/rna-condensates-duke-berlin.html": {
+   "ts": 1795223675,
    "type": "URL_UPDATED",
    "ok": true
   }

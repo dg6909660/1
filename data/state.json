@@ -327,7 +327,8 @@
   "4939f70f711bb596",
   "8ed73d92e1a547ca",
   "15fb64e344333080",
-  "8bb9ea366d89db52"
+  "8bb9ea366d89db52",
+  "c318f192933752b3"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1841,9 +1842,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/uk-eu-brexit-deal.html",
    "label": "Political",
    "ts": 1795221417
+  },
+  {
+   "title": "RNA Condensates: Major Insights from Duke & Berlin",
+   "titles": [
+    "Broadening the role of RNA: A messenger, a mediator and now a condensate coordinator"
+   ],
+   "focus": "RNA condensates",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/rna-condensates-duke-berlin.html",
+   "label": "Science",
+   "ts": 1795223663
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
