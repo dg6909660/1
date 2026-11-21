@@ -329,7 +329,9 @@
   "15fb64e344333080",
   "8bb9ea366d89db52",
   "c318f192933752b3",
-  "a01e25a97fa39ac9"
+  "a01e25a97fa39ac9",
+  "00ac4b06054e388c",
+  "743a0bbdb618a7ef"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1863,9 +1865,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/girls-stop-playing-sports.html",
    "label": "Education",
    "ts": 1795226223
+  },
+  {
+   "title": "E.J. Carroll: How Did He Die at 66? Inside the Story",
+   "titles": [
+    "E.J. Carroll, Law And Order And GTA 5 Actor, Dies At 66",
+    "E.J. Carroll, ‘Law & Order,’ ‘GTA 5’ and ‘Blue Bloods’ Actor, Dies at 66"
+   ],
+   "focus": "E.J. Carroll death",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/e-j-carroll-death-did-die.html",
+   "label": "Movie",
+   "ts": 1795228707
   }
  ],
- "next_idx": 6,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
