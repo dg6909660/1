@@ -347,7 +347,9 @@
   "c7c292cd88703f22",
   "9bf52adb61806f3c",
   "83cab10cac574864",
-  "0c08a6f395c3cc5b"
+  "0c08a6f395c3cc5b",
+  "3c0ea5644fa21a5c",
+  "30aaa889f8ae2f05"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1996,9 +1998,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/inflation-beating-investments-key.html",
    "label": "Business",
    "ts": 1795251972
+  },
+  {
+   "title": "Everything to Know: Palisades Fire Conviction in 2026",
+   "titles": [
+    "Man convicted of arson over deadly 2025 Palisades fire in Los Angeles",
+    "Man convicted of starting Palisades fire in Los Angeles"
+   ],
+   "focus": "Palisades fire conviction",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/palisades-fire-conviction.html",
+   "label": "World News",
+   "ts": 1795254471
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
