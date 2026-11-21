@@ -352,7 +352,8 @@
   "30aaa889f8ae2f05",
   "2b46772c5167c98d",
   "32c24ea15a1ea5e5",
-  "df1655ff078fbd9b"
+  "df1655ff078fbd9b",
+  "ce8b9b6899bf647e"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2033,9 +2034,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/ebola-response-key-facts-2026.html",
    "label": "Science",
    "ts": 1795259459
+  },
+  {
+   "title": "Marion Cotillard's Marrakech Film Festival Jury Role",
+   "titles": [
+    "Marion Cotillard Says ‘I’m Not Here to Judge Movies’ as Marrakech Jury President and ‘Doesn’t Want Any Information’ Before Watching: ‘Like a Virgin’"
+   ],
+   "focus": "Marrakech Film Festival Jury",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/marrakech-film-festival-jury.html",
+   "label": "Movie",
+   "ts": 1795261962
   }
  ],
- "next_idx": 5,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
