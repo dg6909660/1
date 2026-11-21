@@ -342,7 +342,9 @@
   "1168a6bfee28c245",
   "08f48f73391d50af",
   "80154fe65d348e4e",
-  "d0dffaaf35398111"
+  "d0dffaaf35398111",
+  "03fe316625f44039",
+  "c7c292cd88703f22"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1950,9 +1952,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/spacex-classified-mission.html",
    "label": "Science",
    "ts": 1795241891
+  },
+  {
+   "title": "...Gérard Depardieu Sexual Allegations...",
+   "titles": [
+    "Gérard Depardieu and Michel Houellebecq investigated over on-set rape and assault allegations",
+    "Gérard Depardieu and French author investigated over sexual allegations"
+   ],
+   "focus": "Gérard Depardieu sexual allegations",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/gerard-depardieu-sexual-allegations.html",
+   "label": "Movie",
+   "ts": 1795244484
   }
  ],
- "next_idx": 5,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
