@@ -349,7 +349,9 @@
   "83cab10cac574864",
   "0c08a6f395c3cc5b",
   "3c0ea5644fa21a5c",
-  "30aaa889f8ae2f05"
+  "30aaa889f8ae2f05",
+  "2b46772c5167c98d",
+  "32c24ea15a1ea5e5"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2009,9 +2011,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/palisades-fire-conviction.html",
    "label": "World News",
    "ts": 1795254471
+  },
+  {
+   "title": "Why Neets Struggle: Morrison's Journey Inside (2026)",
+   "titles": [
+    "I hated life as a Neet. But now I’ve found a job, life is just as precarious | Emilija Morrison"
+   ],
+   "focus": "Neet job market",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/neet-job-market-neets-struggle.html",
+   "label": "Political",
+   "ts": 1795256970
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

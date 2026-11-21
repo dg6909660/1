@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 14,
+ "count": 15,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -684,6 +684,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/palisades-fire-conviction.html": {
    "ts": 1795254487,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/neet-job-market-neets-struggle.html": {
+   "ts": 1795256985,
    "type": "URL_UPDATED",
    "ok": true
   }
