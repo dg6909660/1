@@ -351,7 +351,8 @@
   "3c0ea5644fa21a5c",
   "30aaa889f8ae2f05",
   "2b46772c5167c98d",
-  "32c24ea15a1ea5e5"
+  "32c24ea15a1ea5e5",
+  "df1655ff078fbd9b"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -399,7 +400,8 @@
   "27d8a5d56f185531": 2,
   "5c37b2ccefd29033": 1,
   "ee235762b07c8795": 1,
-  "a9fd645d8b260882": 1
+  "a9fd645d8b260882": 1,
+  "b1d356bcbddb0ba9": 1
  },
  "posts": [
   {
@@ -2021,9 +2023,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/neet-job-market-neets-struggle.html",
    "label": "Political",
    "ts": 1795256970
+  },
+  {
+   "title": "Ebola Response Needs Community Leaders: Key Facts 2026",
+   "titles": [
+    "Beating Ebola takes more than medicine – I saw what worked in west Africa a decade ago | Kayode Akintola"
+   ],
+   "focus": "Ebola Response",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/ebola-response-key-facts-2026.html",
+   "label": "Science",
+   "ts": 1795259459
   }
  ],
- "next_idx": 4,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
