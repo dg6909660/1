@@ -368,7 +368,9 @@
   "634015564030f67d",
   "11a79bbce9a7451d",
   "7edb1f5909757f10",
-  "f7671820ae49b427"
+  "f7671820ae49b427",
+  "45292ef0df9fec67",
+  "1af11fa6c7cbeb46"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2167,9 +2169,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/el-chapo-isidro-arrest.html",
    "label": "World News",
    "ts": 1795286558
+  },
+  {
+   "title": "FBI National Crime Database Breach: USDA Compromised",
+   "titles": [
+    "FBI looking into possible breach of its crime database: Report",
+    "FBI national crime database suffers suspected breach: Reports"
+   ],
+   "focus": "FBI national crime database breach",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/fbi-national-crime-database-breach.html",
+   "label": "Political",
+   "ts": 1795288458
   }
  ],
- "next_idx": 3,
+ "next_idx": 4,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
