@@ -354,7 +354,8 @@
   "32c24ea15a1ea5e5",
   "df1655ff078fbd9b",
   "ce8b9b6899bf647e",
-  "4ff3d221c75b9aed"
+  "4ff3d221c75b9aed",
+  "e2f87a58e22fbfb6"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2055,9 +2056,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/russian-cafe-blast-suspect.html",
    "label": "World News",
    "ts": 1795264476
+  },
+  {
+   "title": "New Study Reveals Major Feeding Frustrations for Fathers (2026)",
+   "titles": [
+    "Study reveals uncertainty among new fathers navigating toddler feeding habits"
+   ],
+   "focus": "new fathers feeding",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/fathers-feeding-study-reveals-major.html",
+   "label": "Health",
+   "ts": 1795266997
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
