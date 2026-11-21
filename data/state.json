@@ -333,7 +333,9 @@
   "00ac4b06054e388c",
   "743a0bbdb618a7ef",
   "e700433486fbb866",
-  "e321099b79c6df85"
+  "e321099b79c6df85",
+  "dac87da1566eceac",
+  "d836d8ed0f497e05"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1889,9 +1891,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/trump-posttrip-conference.html",
    "label": "Political",
    "ts": 1795231169
+  },
+  {
+   "title": "Everything to Know: Next's Baby Sleeping Bag Safety (2026)",
+   "titles": [
+    "Sales of baby sleeping bag halted by Next after new mum raises alarm"
+   ],
+   "focus": "baby sleeping bag safety",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/baby-sleeping-bag-safety-everything.html",
+   "label": "Health",
+   "ts": 1795233648
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
