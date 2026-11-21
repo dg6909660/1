@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 10,
+ "count": 11,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -664,6 +664,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/gerard-depardieu-sexual-allegations.html": {
    "ts": 1795244498,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/pinduoduo-malware-threat.html": {
+   "ts": 1795246996,
    "type": "URL_UPDATED",
    "ok": true
   }
