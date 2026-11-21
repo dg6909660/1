@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 4,
+ "count": 5,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -634,6 +634,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/e-j-carroll-death-did-die.html": {
    "ts": 1795228723,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/trump-posttrip-conference.html": {
+   "ts": 1795231185,
    "type": "URL_UPDATED",
    "ok": true
   }

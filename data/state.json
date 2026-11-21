@@ -331,7 +331,9 @@
   "c318f192933752b3",
   "a01e25a97fa39ac9",
   "00ac4b06054e388c",
-  "743a0bbdb618a7ef"
+  "743a0bbdb618a7ef",
+  "e700433486fbb866",
+  "e321099b79c6df85"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1876,9 +1878,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/e-j-carroll-death-did-die.html",
    "label": "Movie",
    "ts": 1795228707
+  },
+  {
+   "title": "...Trump Post-Trip Conference...",
+   "titles": [
+    "Takeaways From Trump’s Post-Trip News Conference",
+    "5 takeaways from Trump’s Friday news conference"
+   ],
+   "focus": "Trump post-trip conference",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/trump-posttrip-conference.html",
+   "label": "Political",
+   "ts": 1795231169
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
