@@ -345,7 +345,8 @@
   "d0dffaaf35398111",
   "03fe316625f44039",
   "c7c292cd88703f22",
-  "9bf52adb61806f3c"
+  "9bf52adb61806f3c",
+  "83cab10cac574864"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1974,9 +1975,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/pinduoduo-malware-threat.html",
    "label": "World News",
    "ts": 1795246980
+  },
+  {
+   "title": "What It Means: New Brain Mapping Tool Reveals Eye Cells 2026",
+   "titles": [
+    "New brain mapping tool reveals how neurons independently calculate motion"
+   ],
+   "focus": "brain mapping eye motion",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/brain-mapping-eye-motion.html",
+   "label": "Health",
+   "ts": 1795249460
   }
  ],
- "next_idx": 8,
+ "next_idx": 1,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
