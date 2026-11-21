@@ -364,7 +364,8 @@
   "c21a55777b019b75",
   "79a02425ec1794ff",
   "ca1952e7b9795a91",
-  "4e974cea1067bf12"
+  "4e974cea1067bf12",
+  "634015564030f67d"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2141,9 +2142,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/nhs-grampian-surgery-review.html",
    "label": "Health",
    "ts": 1795281555
+  },
+  {
+   "title": "SNL Reveals $120K Caregiving Costs: What It Means 2026",
+   "titles": [
+    "The $120,500 cost of being ‘Sister’: SNL sketch puts a face on America’s caregiving crisis"
+   ],
+   "focus": "caregiving costs",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/caregiving-costs-snl-reveals-120k.html",
+   "label": "Business",
+   "ts": 1795284084
   }
  ],
- "next_idx": 1,
+ "next_idx": 2,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
