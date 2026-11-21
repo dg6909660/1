@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 26,
+ "count": 27,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -744,6 +744,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/caregiving-costs-snl-reveals-120k.html": {
    "ts": 1795284102,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/el-chapo-isidro-arrest.html": {
+   "ts": 1795286575,
    "type": "URL_UPDATED",
    "ok": true
   }

@@ -365,7 +365,10 @@
   "79a02425ec1794ff",
   "ca1952e7b9795a91",
   "4e974cea1067bf12",
-  "634015564030f67d"
+  "634015564030f67d",
+  "11a79bbce9a7451d",
+  "7edb1f5909757f10",
+  "f7671820ae49b427"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2152,9 +2155,21 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/caregiving-costs-snl-reveals-120k.html",
    "label": "Business",
    "ts": 1795284084
+  },
+  {
+   "title": "FBI Most Wanted El Chapo Isidro Arrested in Mexico (2026)",
+   "titles": [
+    "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid",
+    "Who is El Chapo Isidro, the alleged cartel boss arrested in Mexico?",
+    "Who Is the Mexican Drug Kingpin Known as El Chapo Isidro?"
+   ],
+   "focus": "El Chapo Isidro arrest",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/el-chapo-isidro-arrest.html",
+   "label": "World News",
+   "ts": 1795286558
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
