@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 22,
+ "count": 23,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -724,6 +724,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/un-talks-fail-autonomous-weapons.html": {
    "ts": 1795274307,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/rings-power-audience-score.html": {
+   "ts": 1795276743,
    "type": "URL_UPDATED",
    "ok": true
   }

@@ -359,7 +359,9 @@
   "8e797836f2dc8906",
   "556448d4505387bc",
   "61f99a21c2f0c690",
-  "158994b8ae4ecd45"
+  "158994b8ae4ecd45",
+  "3911aa237ba33720",
+  "c21a55777b019b75"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2105,9 +2107,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/un-talks-fail-autonomous-weapons.html",
    "label": "Science",
    "ts": 1795274292
+  },
+  {
+   "title": "...The Rings of Power audience score...",
+   "titles": [
+    "Why The Rings Of Power Season 3 Has The Show's Highest Audience RT Score Yet"
+   ],
+   "focus": "The Rings of Power audience score",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/rings-power-audience-score.html",
+   "label": "Movie",
+   "ts": 1795276730
   }
  ],
- "next_idx": 5,
+ "next_idx": 7,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
