@@ -338,7 +338,10 @@
   "d836d8ed0f497e05",
   "96a7f9767d2d2403",
   "c55e5d041541502c",
-  "43662880de3c81d7"
+  "43662880de3c81d7",
+  "1168a6bfee28c245",
+  "08f48f73391d50af",
+  "80154fe65d348e4e"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1916,9 +1919,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/bayer-roundup-settlement-cancer.html",
    "label": "Business",
    "ts": 1795236121
+  },
+  {
+   "title": "Explained: Denmark Expels Russian Diplomat 2026",
+   "titles": [
+    "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
+    "Denmark to expel Russian diplomat over alleged Moscow link to attempted killing of rapper"
+   ],
+   "focus": "Denmark expels Russian diplomat",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/denmark-expels-russian-diplomat.html",
+   "label": "World News",
+   "ts": 1795238484
   }
  ],
- "next_idx": 2,
+ "next_idx": 3,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,

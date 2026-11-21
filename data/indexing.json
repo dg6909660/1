@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "count": 7,
+ "count": 8,
  "items": {
   "https://thenewsdetail.blogspot.com/2026/11/us-loses-measles-elimination-status_0352604657.html": {
    "ts": 1794981063,
@@ -649,6 +649,11 @@
   },
   "https://thenewsdetail.blogspot.com/2026/11/bayer-roundup-settlement-cancer.html": {
    "ts": 1795236138,
+   "type": "URL_UPDATED",
+   "ok": true
+  },
+  "https://thenewsdetail.blogspot.com/2026/11/denmark-expels-russian-diplomat.html": {
+   "ts": 1795238499,
    "type": "URL_UPDATED",
    "ok": true
   }
