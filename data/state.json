@@ -341,7 +341,8 @@
   "43662880de3c81d7",
   "1168a6bfee28c245",
   "08f48f73391d50af",
-  "80154fe65d348e4e"
+  "80154fe65d348e4e",
+  "d0dffaaf35398111"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -386,7 +387,10 @@
   "75922390e5a146ff": 2,
   "3edbe78f667e6c3f": 2,
   "c6fd4e1582760c36": 2,
-  "27d8a5d56f185531": 2
+  "27d8a5d56f185531": 2,
+  "5c37b2ccefd29033": 1,
+  "ee235762b07c8795": 1,
+  "a9fd645d8b260882": 1
  },
  "posts": [
   {
@@ -1936,9 +1940,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/denmark-expels-russian-diplomat.html",
    "label": "World News",
    "ts": 1795238484
+  },
+  {
+   "title": "...SpaceX Classified Mission...",
+   "titles": [
+    "SpaceX launches classified mission for US Space Force from California"
+   ],
+   "focus": "SpaceX classified mission",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/spacex-classified-mission.html",
+   "label": "Science",
+   "ts": 1795241891
   }
  ],
- "next_idx": 3,
+ "next_idx": 5,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
