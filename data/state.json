@@ -328,7 +328,8 @@
   "8ed73d92e1a547ca",
   "15fb64e344333080",
   "8bb9ea366d89db52",
-  "c318f192933752b3"
+  "c318f192933752b3",
+  "a01e25a97fa39ac9"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -1852,9 +1853,19 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/rna-condensates-duke-berlin.html",
    "label": "Science",
    "ts": 1795223663
+  },
+  {
+   "title": "Girls Stop Playing Sports: Key Facts Explained 2026",
+   "titles": [
+    "'My biggest fear was getting changed in front of them' - why teenage girls stop playing sport"
+   ],
+   "focus": "girls stop playing sports",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/girls-stop-playing-sports.html",
+   "label": "Education",
+   "ts": 1795226223
   }
  ],
- "next_idx": 5,
+ "next_idx": 6,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
