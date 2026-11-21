@@ -361,7 +361,9 @@
   "61f99a21c2f0c690",
   "158994b8ae4ecd45",
   "3911aa237ba33720",
-  "c21a55777b019b75"
+  "c21a55777b019b75",
+  "79a02425ec1794ff",
+  "ca1952e7b9795a91"
  ],
  "failed": {
   "29145374f8690efa": 1,
@@ -2117,9 +2119,20 @@
    "url": "https://thenewsdetail.blogspot.com/2026/11/rings-power-audience-score.html",
    "label": "Movie",
    "ts": 1795276730
+  },
+  {
+   "title": "Princess Of Wales: Key Facts About Her Cancer Journey (2026)",
+   "titles": [
+    "Princess of Wales speaks about impact of cancer diagnosis in BBC film Heal",
+    "Catherine, Princess of Wales, Documents Life With Cancer in BBC Film"
+   ],
+   "focus": "Princess Of Wales cancer",
+   "url": "https://thenewsdetail.blogspot.com/2026/11/princess-wales-cancer-facts.html",
+   "label": "Health",
+   "ts": 1795279053
   }
  ],
- "next_idx": 7,
+ "next_idx": 8,
  "last_cat": {
   "General": 1794872172,
   "Movie": 1794888670,
